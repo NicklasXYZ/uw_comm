@@ -1,0 +1,337 @@
+{
+    "messages": [
+        {"id": "", "message": "OK", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "message": "OK", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "message": "OK", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Light Signal", "categories": [], "references": ["BL23"]},
+        
+        {"id": "", "message": "Stop", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Question", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Yes", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "No", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "I do not know", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Do not", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Descend", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Descend to level", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Ascend", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Ascend to level", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Come here", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Look", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "I (Me)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Level off (at this depth)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "This way", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Dive over (above)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Dive under (below)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Turn around", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Relax (slow down)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Maintain physical contact", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Faster (hurry up)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Lead-follow", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Remember (think)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Boat", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Wreck", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Navigate", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "This (there)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Ascend, exit this way", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Safety stop", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Safety stop", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Ceiling", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Pick me up", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Write it down", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Problem", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "message": "Problem and emergency", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Light Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Help", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Lost my buddy", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Low on air", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Out of air", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Give me air", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Visible danger", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Visible danger", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Danger", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Safe", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Ears not clearing", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Cold", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Sick", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Bitten", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Stung", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Venomous", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Bleeding", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Rescue", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Fear", "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Stuck", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Entanglement", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Exhaustion", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Dizziness", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Nitrogen marcosis", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Big bubbles", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Tiny bubbles", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Mask leaking", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Mask foggy", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Poor visibility foggy", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Cramp", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "I will get help", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "I am lost", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Gather", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "On your knees", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Breathe", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Attention", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Exercise begins", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Exercise ends", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Again (Repeat)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Buddy", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Get your buddy", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Move apart", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Descend slowly", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Ascend slowly", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Ascend a little", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Do not stir up sediment", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Lay down / hover", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "How much air?", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Air pressure", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Numbers", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+ 
+        {"id": "", "message": "Kelp (seaweed)", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Sponge", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Jellyfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Coral or anemone", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Clam", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Giant clam", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Sea slug", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Sea snail", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Cowry", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Octopus", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Squid", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Christmas tree worm", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Shrimp", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Cleaner shrimp", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Crab", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Hermit Crab", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Sea urchin", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Starfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Stingray", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Bluespotted stringray", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Electric ray", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Eagle ray", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Manta ray", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Reef shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Hammerhead shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Leopard shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Bull shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Thresher shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Angel shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Wobbegong", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Cat shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Tiger shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Sandtiger shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Blue shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Whale shark", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Baracuda", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Moray eel", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Garden eel", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Angelfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Grouper", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Pufferfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Boxfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Longhorn cowfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Ocean sunfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Butterfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Cardinalfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Drumfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Goatfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Clownfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Flathead", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Flatfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Cornetfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Hawkfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Jawfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Rabbitfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Batfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Butterflyfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Bannerfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Masked bannerfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Moorish idol", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Parrotfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        
+        {"id": "", "message": "Sweetlip", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Pipefish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Seahorse", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Lionfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Scorpionfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Stonefish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Triggerfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Surgeonfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Unicornfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Frogfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Monkfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Trumpetfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Soldierfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Napoleonfish", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Body Language", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Tuna or mackerel", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Whale", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Dolphin", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Sea turtle", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+
+        {"id": "", "message": "Sea snake", "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+    ],
+    "updated": "2023-05-14"
+}
