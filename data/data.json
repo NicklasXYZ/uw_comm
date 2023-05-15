@@ -116,7 +116,7 @@
 
         {"id": "", "message": "Stuck", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Entanglement", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"½]},
+        {"id": "", "message": "Entanglement", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
         {"id": "", "message": "Exhaustion", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
@@ -571,7 +571,7 @@
 
         {"id": "", "message": "Go to your right", "message_variations": [],  "description": "Searching signal: 3 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
 
-        {"id": "", "message": "Go to your left", "message_variations": [],  "description": "Searching signal: 4 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "message": "Go to your left", "message_variations": [],  "description": "Searching signal: 4 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]}
     ],
     "updated": "2023-05-14"
 }
