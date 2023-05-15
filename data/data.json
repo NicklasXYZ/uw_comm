@@ -8,9 +8,9 @@
 
         {"id": "", "message": "Question", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Yes", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "NOAA01"]},
+        {"id": "", "message": "Yes", "message_variations": ["Affirmative", "Correct"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "NOAA01"]},
 
-        {"id": "", "message": "No", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "NOAA01"]},
+        {"id": "", "message": "No", "message_variations": ["Negative", "Incorrect"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "NOAA01"]},
 
         {"id": "", "message": "Yes", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
