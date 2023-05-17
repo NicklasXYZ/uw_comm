@@ -1,577 +1,596 @@
 {
     "messages": [
-        {"id": "", "message": "OK", "message_variations": ["I am OK", "Are you OK?"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "NOAA01", "USND16"]},
-        {"id": "", "message": "OK", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "USND16"]},
-        {"id": "", "message": "OK", "message_variations": [],  "description": "The slow movement of the light in a moderate-sized circle (in either direction) indicates either, 'I am okay, are you okay?' when it is the initial signal, or 'Yes, I am okay, too, thanks for asking' when it's the reply.", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Light Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "OK", "message_variations": ["I am OK", "All is well", "Is all well?", "Are you OK?"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "NOAA01", "USND16", "BJ06"]},
+        {"id": "", "premise": "", "message": "OK", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "USND16", "BJ06"]},
+        {"id": "", "premise": "", "message": "OK", "message_variations": [],  "description": "The slow movement of the light in a moderate-sized circle (in either direction) indicates either, 'I am okay, are you okay?' when it is the initial signal, or 'Yes, I am okay, too, thanks for asking' when it's the reply.", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Light Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
         
-        {"id": "", "message": "Stop", "message_variations": ["Hold it", "Stay there"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Stop", "message_variations": ["Hold it", "Stay there", "Stay where you are"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "NOAA01", "USND16"]},
 
-        {"id": "", "message": "Question", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Question", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Yes", "message_variations": ["Affirmative", "Correct"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "NOAA01"]},
+        {"id": "", "premise": "", "message": "Yes", "message_variations": ["Affirmative", "Correct"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "NOAA01"]},
 
-        {"id": "", "message": "No", "message_variations": ["Negative", "Incorrect"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "NOAA01"]},
+        {"id": "", "premise": "", "message": "No", "message_variations": ["Negative", "Incorrect"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "NOAA01"]},
 
-        {"id": "", "message": "Yes", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Yes", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
-        {"id": "", "message": "No", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "No", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
 
-        {"id": "", "message": "I do not know", "message_variations": ["I do not understand"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RSTC05", "NOAA01"]},
+        {"id": "", "premise": "", "message": "I do not know", "message_variations": ["I do not understand"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RSTC05", "NOAA01"]},
 
-        {"id": "", "message": "Do not", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Do not", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Descend", "message_variations": ["Go down", "Going down"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Descend", "message_variations": ["Go down", "Going down", "I am going down"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Descend to level", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Descend to level", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Ascend", "message_variations": ["Go up", "Going up", "Surface"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Ascend", "message_variations": ["Go up", "Going up", "I am going up", "Surface"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Ascend to level", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Ascend to level", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Come here", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Come here", "message_variations": ["Come closer"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RSTC05", "NOAA01", "USND16"]},
 
-        {"id": "", "message": "Look", "message_variations": ["Watch"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RSTC05", "NOAA01"]},
+        {"id": "", "premise": "", "message": "Look", "message_variations": ["Watch", "Look at"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RSTC05", "NOAA01"]},
 
-        {"id": "", "message": "I (me)", "message_variations": ["Watch me"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "I (me)", "message_variations": ["Watch me"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
 
-        {"id": "", "message": "Level off (at this depth)", "message_variations": ["Stay at this depth", "How deep?", "What is the depth"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "USND16"]},
+        {"id": "", "premise": "", "message": "You", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BJ06"]},
 
-        {"id": "", "message": "Which way?", "message_variations": ["Which direction?"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Level off (at this depth)", "message_variations": ["Stay at this depth", "How deep?", "What is the depth"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "USND16", "BJ06"]},
 
-        {"id": "", "message": "This way", "message_variations": ["Go that way"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Which way?", "message_variations": ["Which direction?"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Dive over", "message_variations": ["Go over", "Go above"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "USND16"]},
+        {"id": "", "premise": "", "message": "This way", "message_variations": ["Go that way"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Dive under", "message_variations": ["Go under", "Go below"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "USND16"]},
+        {"id": "", "premise": "", "message": "Dive over", "message_variations": ["Go over", "Go above"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "USND16"]},
 
-        {"id": "", "message": "Turn around", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "RSTC05"]},
+        {"id": "", "premise": "", "message": "Dive under", "message_variations": ["Go under", "Go below"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "USND16"]},
 
-        {"id": "", "message": "Relax", "message_variations": ["Take it easy", "Slow down"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Turn around", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "RSTC05"]},
 
-        {"id": "", "message": "Maintain physical contact", "message_variations": ["Hold hands"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01"]},
+        {"id": "", "premise": "", "message": "Relax", "message_variations": ["Take it easy", "Slow down"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "RSTC05", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Faster", "message_variations": ["Hurry up", "Speed up"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Maintain physical contact", "message_variations": ["Hold hands"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01"]},
 
-        {"id": "", "message": "Lead-follow", "message_variations": ["You lead, I will follow"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Faster", "message_variations": ["Hurry up", "Speed up"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Remember", "message_variations": ["Think"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RSTC05"]},
+        {"id": "", "premise": "", "message": "Lead-follow", "message_variations": ["You lead. I will follow"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Boat", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RSTC05"]},
+        {"id": "", "premise": "", "message": "Remember", "message_variations": ["Think"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RSTC05"]},
 
-        {"id": "", "message": "Wreck", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Boat", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RSTC05"]},
 
-        {"id": "", "message": "Navigate", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Wreck", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "This (there)", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Navigate", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Ascend, exit this way", "message_variations": ["Direction to surface"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "This (there)", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Safety stop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Ascend, exit this way", "message_variations": ["Direction to surface"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Safety stop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Safety stop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Ceiling", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Safety stop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Pick me up", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Ceiling", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Write it down", "message_variations": ["Write down message"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Pick me up", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Problem", "message_variations": ["Something is wrong", "Bad"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "NOAA01", "USND16"]},
-        {"id": "", "message": "Problem", "message_variations": ["Attention", "Emergency"],  "description": "The signals for 'Emergency' and 'Attention' are performed by vigorous flashing movements of a diver's light beam in a horizontal or vertical direction.", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Light Signal", "categories": [], "references": ["BL23", "RD04", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Write it down", "message_variations": ["Write down message"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Help", "message_variations": ["Help me", "Distress", "Need help"],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Problem", "message_variations": ["Something is wrong", "I am in trouble", "Bad"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "PG90", "RSTC05", "NOAA01", "USND16", "BJ06"]},
+        {"id": "", "premise": "", "message": "Problem", "message_variations": ["Something is wrong", "Attention", "Emergency"],  "description": "The signals for 'Emergency' and 'Attention' are performed by vigorous flashing movements of a diver's light beam in a horizontal or vertical direction.", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Light Signal", "categories": [], "references": ["BL23", "RD04", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Lost my buddy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Help", "message_variations": ["Help me", "Distress", "I am in distress", "Need help", "Help immediately", "Come and get me", "Pick me up", "I am in trouble"],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Low on air", "message_variations": ["I am low on air"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01"]},
+        {"id": "", "premise": "", "message": "Lost my buddy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Out of air", "message_variations": ["I am out of air"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "PG90", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Low on air", "message_variations": ["I am low on air"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "BJ06"]},
 
-        {"id": "", "message": "Give me air", "message_variations": ["Buddy breathe", "Share air", "Let us share air"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Out of air", "message_variations": ["I am out of air", "I have no more air"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "PG90", "NOAA01", "USND16"]},
 
-        {"id": "", "message": "Visible danger", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05"]},
+        {"id": "", "premise": "", "message": "Give me air", "message_variations": ["Buddy breathe", "Share air", "Let us share air"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RSTC05", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Danger", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RSTC05", "NOAA01"]},
+        {"id": "", "premise": "", "message": "Visible danger", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05"]},
 
-        {"id": "", "message": "Safe", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Danger", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RSTC05", "NOAA01"]},
 
-        {"id": "", "message": "Ear(s) not clearing", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01"]},
+        {"id": "", "premise": "", "message": "Safe", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Cold", "message_variations": ["I am cold"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Ear(s) not clearing", "message_variations": ["I have ear trouble"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01"]},
 
-        {"id": "", "message": "Sick", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cold", "message_variations": ["I am cold"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01", "USND16"]},
 
-        {"id": "", "message": "Bitten", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sick", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Stung", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Bitten", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Venomous", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Stung", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Bleeding", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Venomous", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Rescue", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Bleeding", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Fear", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Rescue", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Stuck", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Fear", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Entanglement", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Stuck", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Exhaustion", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Entanglement", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Dizziness", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Exhaustion", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Nitrogen marcosis", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Dizziness", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Big bubbles", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Nitrogen marcosis", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Tiny bubbles", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Big bubbles", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Mask leaking", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Tiny bubbles", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Mask foggy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Mask leaking", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Poor visibility foggy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Mask foggy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Cramp", "message_variations": ["Muscle cramp"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Poor visibility", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "I will get help", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cramp", "message_variations": ["Muscle cramp"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "I am lost", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "I will get help", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Gather", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "I am lost", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "On your knees", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Gather", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Breathe", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "On your knees", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Attention", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Breathe", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Exercise begins", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Attention", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Exercise ends", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Exercise begins", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Again (Repeat)", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Exercise ends", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Buddy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Again (Repeat)", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Get with your buddy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01"]},
+        {"id": "", "premise": "", "message": "Buddy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Move apart", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Get with your buddy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "RD07", "RSTC05", "NOAA01"]},
 
-        {"id": "", "message": "Descend slowly", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Move apart", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Ascend slowly", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Descend slowly", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Ascend a little", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Ascend slowly", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Do not stir up sediment", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Ascend a little", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Lay down / hover", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Do not stir up sediment", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "How much air?", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Lay down / hover", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Air pressure", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "How much air?", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Zero", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Air pressure", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "One", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Zero", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Two", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "One", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Three", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Two", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Four", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Three", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Five", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Four", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Six", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Five", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Seven", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Six", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Eight", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Seven", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Nine", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Eight", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Ten", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Nine", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90", "USND16", "BJ06"]},
 
 
+        {"id": "", "premise": "", "message": "Kelp (seaweed)", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Kelp (seaweed)", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sponge", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sponge", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Jellyfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Jellyfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Coral or anemone", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Coral or anemone", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Clam", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Clam", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Giant clam", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Giant clam", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sea slug", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sea slug", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sea snail", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sea snail", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cowry", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Cowry", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Octopus", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Octopus", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Squid", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Squid", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Christmas tree worm", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Christmas tree worm", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Shrimp", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Shrimp", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cleaner shrimp", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Cleaner shrimp", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Crab", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Crab", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Hermit Crab", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Hermit Crab", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sea urchin", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sea urchin", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Starfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Starfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Stingray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Stingray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Bluespotted stringray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Bluespotted stringray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Electric ray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Electric ray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Eagle ray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Eagle ray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Manta ray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Manta ray", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Reef shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Reef shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Hammerhead shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Hammerhead shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Leopard shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Leopard shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Bull shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Bull shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Thresher shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Thresher shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Angel shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Angel shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Wobbegong", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Wobbegong", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cat shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Cat shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Tiger shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Tiger shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sandtiger shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sandtiger shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Blue shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Blue shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Whale shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Whale shark", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Baracuda", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Baracuda", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Moray eel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Moray eel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Garden eel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Garden eel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Angelfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Angelfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Grouper", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Grouper", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Pufferfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Pufferfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Boxfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Boxfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Longhorn cowfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Longhorn cowfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Ocean sunfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Ocean sunfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Butterfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Butterfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cardinalfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Cardinalfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Drumfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Drumfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Goatfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Goatfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Clownfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Clownfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Flathead", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Flathead", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Flatfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Flatfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cornetfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Cornetfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Hawkfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Hawkfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Jawfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Jawfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Rabbitfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Rabbitfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Batfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Batfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Butterflyfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Butterflyfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Bannerfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Bannerfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Masked bannerfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Masked bannerfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Moorish idol", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Moorish idol", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
-
-        {"id": "", "message": "Parrotfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Parrotfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
         
-        {"id": "", "message": "Sweetlip", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sweetlip", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Pipefish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Pipefish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Seahorse", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Seahorse", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Lionfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Lionfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Scorpionfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Scorpionfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Stonefish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Stonefish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Triggerfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Triggerfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Surgeonfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Surgeonfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Unicornfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Unicornfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Frogfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Frogfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Monkfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Monkfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Trumpetfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Trumpetfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Soldierfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Soldierfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Napoleonfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Napoleonfish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Tuna or mackerel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Tuna or mackerel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Whale", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Whale", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Dolphin", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Dolphin", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sea turtle", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sea turtle", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sea snake", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sea snake", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
 
 
-        {"id": "", "message": "Temperature", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Temperature", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Temperature rising", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Temperature rising", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Temperature falling", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Temperature falling", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Thermocline", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Thermocline", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Current", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Current", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Shallow", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Shallow", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Deep", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Deep", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sand", "message_variations": ["Silt"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Sand", "message_variations": ["Silt"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Cave or arc", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cave or arc", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Drop-off", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Drop-off", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Drop-off", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Drop-off", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Bridge or jetty", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Bridge or jetty", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Coral reef", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Coral reef", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Cleaning station", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Cleaning station", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Plastic waste", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Plastic waste", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
 
-        {"id": "", "message": "Love", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Love", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Aggressive", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Aggressive", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Laughing out loud", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Laughing out loud", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Happy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Happy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sad", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sad", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Too cool", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Too cool", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Boring", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Boring", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Whatever", "message_variations": ["I do not care"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Whatever", "message_variations": ["I do not care"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
 
-        {"id": "", "message": "Fish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Fish", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Big", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Big", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Small", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Small", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Male", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Male", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Female", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Female", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Mating", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Mating", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Sleeping", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Sleeping", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Dead", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Dead", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Lightweight", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Lightweight", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Heavyweight", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Heavyweight", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Search for...", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Search for...", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "No decompression limit", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "No decompression limit", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Decompression stop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Decompression stop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Time", "message_variations": ["What is the time?", "What is the remaining bottom time?"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Time", "message_variations": ["What time?", "What is the time?", "What is the remaining bottom time?"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Depth", "message_variations": ["What is the depth?"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["NOAA01"]},
+        {"id": "", "premise": "", "message": "Depth", "message_variations": ["What depth?", "What is the depth?"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["NOAA01", "BJ06"]},
 
-        {"id": "", "message": "Return", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Return", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Abort", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Abort", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "In charge", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "In charge", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Swim", "message_variations": ["Diver", "Swimmer"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Swim", "message_variations": ["Diver", "Swimmer"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Swim through", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Swim through", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Anchor", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Anchor", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Line", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Line", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Cut", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Cut", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Bind", "message_variations": ["Fix"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Bind", "message_variations": ["Fix"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Deploy surface marker buoy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Deploy surface marker buoy", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Reel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Reel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Deploy reef hook", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Deploy reef hook", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Hold", "message_variations": ["Hang on"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Hold", "message_variations": ["Hang on"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Knife", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Knife", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Touch", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Touch", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Do not touch", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Do not touch", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Drop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Drop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Take photo", "message_variations": ["Take picture"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "PG90"]},
+        {"id": "", "premise": "", "message": "Take photo", "message_variations": ["Take picture"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Body Language", "categories": [], "references": ["BL23", "PG90"]},
 
-        {"id": "", "message": "Battery full?", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Battery full?", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Battery full", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Battery full", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Battery half-full", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Battery half-full", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Battery low", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Battery low", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Light torch", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Light torch", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Speargun", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Speargun", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
-        {"id": "", "message": "Broken", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
+        {"id": "", "premise": "", "message": "Broken", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BL23"]},
 
 
 
-        {"id": "", "message": "Restriction", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Restriction", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
-        {"id": "", "message": "Tunnel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Tunnel", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
         
-        {"id": "", "message": "Room", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Room", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
-        {"id": "", "message": "Wall", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Wall", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
-        {"id": "", "message": "Swap places", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Swap places", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
-        {"id": "", "message": "Go around", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90", "USND16"]},
+        {"id": "", "premise": "", "message": "Go around", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90", "USND16"]},
 
-        {"id": "", "message": "Tie off", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Tie off", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
-        {"id": "", "message": "Turn on", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Turn on", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
-        {"id": "", "message": "Bent", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
-
-
-
-        {"id": "", "message": "Exit", "message_variations": [],  "description": "A plastic line arrow always points towards an exit with surface with breathable air.", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "asynchronous", "type": "Line Marker", "categories": [], "references": ["PG90"]},
-
-        {"id": "", "message": "Midpoint between enterences", "message_variations": [],  "description": "Two plastic line arrows placed back to back mark the spot as the midway distance between two entrances.", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "asynchronous", "type": "Line Marker", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Bent", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["PG90"]},
 
 
 
-        {"id": "", "message": "I am fouled and need the assistance of anohter diver", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Exit", "message_variations": [],  "description": "A plastic line arrow always points towards an exit with surface with breathable air.", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "asynchronous", "type": "Line Marker", "categories": [], "references": ["PG90"]},
 
-        {"id": "", "message": "I am fouled but can clear myself", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
-
-        {"id": "", "message": "Haul me up immediately", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Midpoint between enterences", "message_variations": [],  "description": "Two plastic line arrows placed back to back mark the spot as the midway distance between two entrances.", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "asynchronous", "type": "Line Marker", "categories": [], "references": ["PG90"]},
 
 
 
-        {"id": "", "message": "Are you alright?", "message_variations": [],  "description": "1 pull", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "Emergency", "message": "I am fouled and need the assistance of anohter diver", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
 
-        {"id": "", "message": "Stop", "message_variations": [],  "description": "1 pull, when the diver is descending", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "Emergency", "message": "I am fouled but can clear myself", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
 
-        {"id": "", "message": "Going down", "message_variations": [],  "description": "2 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
-
-        {"id": "", "message": "Stand by to come up", "message_variations": [],  "description": "3 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
-
-        {"id": "", "message": "Come up", "message_variations": [],  "description": "4 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
-
-        {"id": "", "message": "I understand", "message_variations": ["Answer the telephone", "Talk to me"],  "description": "2-1 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
-
-        {"id": "", "message": "Ventilate", "message_variations": [],  "description": "3-2 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["USND16"]},
-
-        {"id": "", "message": "Circulate", "message_variations": [],  "description": "4-3 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["USND16"]},
+        {"id": "", "premise": "Emergency", "message": "Haul me up immediately", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
 
 
 
+        {"id": "", "premise": "", "message": "Are you alright?", "message_variations": ["OK", "Are you okay?", "Are you OK?", "Attention"],  "description": "1 pull", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16", "ERDI22"]},
 
-        {"id": "", "message": "I am alright", "message_variations": [],  "description": "1 pull", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Stop", "message_variations": [],  "description": "1 pull, when the diver is descending", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16", "ERDI22"]},
 
-        {"id": "", "message": "Stop", "message_variations": ["I am on the bottom"],  "description": "1 pull, when the diver is descending", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Change direction", "message_variations": [],  "description": "2 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["ERDI22"]},
+        {"id": "", "premise": "", "message": "Take out more line", "message_variations": [],  "description": "2 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["ERDI22"]},
 
-        {"id": "", "message": "Lower", "message_variations": ["Give me slack"],  "description": "2 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Going down", "message_variations": [],  "description": "2 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
 
-        {"id": "", "message": "Take up my slack", "message_variations": [],  "description": "3 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Stand by to come up", "message_variations": ["Standby"],  "description": "3 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16", "ERDI22"]},
 
-        {"id": "", "message": "Haul me up", "message_variations": [],  "description": "4 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Come up", "message_variations": [],  "description": "4 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16", "ERDI22"]},
 
-        {"id": "", "message": "More air", "message_variations": [],  "description": "3-2 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "I understand", "message_variations": ["Answer the telephone", "Talk to me"],  "description": "2-1 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
 
-        {"id": "", "message": "Less air", "message_variations": [],  "description": "4-3 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Ventilate", "message_variations": [],  "description": "3-2 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["USND16"]},
+
+        {"id": "", "premise": "", "message": "Circulate", "message_variations": [],  "description": "4-3 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["USND16"]},
 
 
 
-        {"id": "", "message": "Go on (or off) searching signals", "message_variations": [],  "description": "Searching signal: 7 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
 
-        {"id": "", "message": "Stop and search where you are", "message_variations": [],  "description": "Searching signal: 1 pull", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "I am alright", "message_variations": ["I am okay", "I am OK", "Attention"],  "description": "1 pull", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16", "BJ06", "ERDI22"]},
 
-        {"id": "", "message": "Move away from the tender", "message_variations": [],  "description": "Searching signal: 2 pulls, if given slack", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "At the bottom", "message_variations": ["I am at the bottom", "I have arrived at the bottom"],  "description": "1 pull", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16", "BJ06"]},
 
-        {"id": "", "message": "Move towards the tender", "message_variations": [],  "description": "Searching signal: 2 pulls, if strain is taken on the line", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Left the bottom", "message_variations": ["I have left the bottom"],  "description": "1 pull", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["BJ06"]},
 
-        {"id": "", "message": "Go to your right", "message_variations": [],  "description": "Searching signal: 3 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+        {"id": "", "premise": "", "message": "Lower", "message_variations": ["Give me slack", "More line"],  "description": "2 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16", "ERDI22"]},
 
-        {"id": "", "message": "Go to your left", "message_variations": [],  "description": "Searching signal: 4 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]}
+        {"id": "", "premise": "", "message": "Take up my slack", "message_variations": [],  "description": "3 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+        {"id": "", "premise": "", "message": "Object found", "message_variations": [],  "description": "3 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["ERDI22"]},
+
+        {"id": "", "premise": "", "message": "Haul me up", "message_variations": ["May I come up?"],  "description": "4 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+        {"id": "", "premise": "", "message": "Help", "message_variations": ["Trouble"],  "description": "4 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["ERDI22"]},
+
+        {"id": "", "premise": "", "message": "More air", "message_variations": [],  "description": "3-2 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+        {"id": "", "premise": "", "message": "Less air", "message_variations": [],  "description": "4-3 pulls", "message_encoder": "diver", "message_decoder": "surface attendant", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+
+
+
+        {"id": "", "premise": "Searching", "message": "Go on (or off) searching signals", "message_variations": [],  "description": "7 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+        {"id": "", "premise": "Searching", "message": "Stop and search where you are", "message_variations": [],  "description": "1 pull", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+        {"id": "", "premise": "Searching", "message": "Move away from the tender", "message_variations": [],  "description": "2 pulls, if given slack", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+        {"id": "", "premise": "Searching", "message": "Move towards the tender", "message_variations": [],  "description": "2 pulls, if strain is taken on the line", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+        {"id": "", "premise": "Searching", "message": "Go to your right", "message_variations": [],  "description": "3 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+        {"id": "", "premise": "Searching", "message": "Go to your left", "message_variations": [],  "description": "4 pulls", "message_encoder": "surface attendant", "message_decoder": "diver", "spatial_context": "remote", "temporal_context": "synchronous", "type": "Line Pulling", "categories": [], "references": ["NOAA01", "USND16"]},
+
+
+        {"id": "", "premise": "", "message": "Out of breath", "message_variations": ["I am out of breath"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Hand Signal", "categories": [], "references": ["BJ06"]},
+
+
+        {"id": "", "premise": "", "message": "OK", "message_variations": ["I am OK", "I am okay"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Touch Contact", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Go", "message_variations": ["Go ahead"],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Touch Contact", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Stop", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Touch Contact", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Back up", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Touch Contact", "categories": [], "references": ["PG90"]},
+        {"id": "", "premise": "", "message": "Assistance", "message_variations": [],  "description": "", "message_encoder": "diver", "message_decoder": "diver", "spatial_context": "colocated", "temporal_context": "synchronous", "type": "Touch Contact", "categories": [], "references": ["PG90"]}
     ],
     "updated": "2023-05-14"
 }
