@@ -51,7 +51,7 @@ export default {
 
     kit: {
         outDir: "docs",
-        paths: {"base": "/uw_comms"},
+        // paths: {"base": "/uw_comms"},
         adapter: adapter({
             fallback: 'index.html' // may differ from host to host
         }),
