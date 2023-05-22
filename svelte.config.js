@@ -48,10 +48,16 @@ export default {
         //     strict: true
         // })
     // }
+
     kit: {
+        outDir: "docs",
+        paths: {"base": "/uw_comms"},
         adapter: adapter({
             fallback: 'index.html' // may differ from host to host
-        })
+        }),
+        alias: {
+            $lib: './src/lib/',
+		}
     }
 };
 
