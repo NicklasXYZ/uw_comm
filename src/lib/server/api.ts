@@ -1,16 +1,13 @@
-import { writable, get} from 'svelte/store';
 import type { Message } from '$lib/models/message';
 
-const MESSAGE_DATA = 'https://raw.githubusercontent.com/NicklasXYZ/uw_comms/main/data/data.json'
-
-export const messages = writable(new Map())
+const MESSAGE_DATA_URL = 'https://raw.githubusercontent.com/NicklasXYZ/uw_comms/main/data/data.json'
 
 // Fetch JSON data
 export const fetchMessages = async () => {
-	const res = await fetch(MESSAGE_DATA);
+	const res = await fetch(MESSAGE_DATA_URL);
 	if (res.ok) {
 		const data = await res.json();
-		let messageData = data["messages"].map((data) => (
+		let messages = data.messages.map((data) => (
 			[
 				data.id,
 				{
@@ -28,13 +25,14 @@ export const fetchMessages = async () => {
 					references: data.references,
 				}
 		]));
-		return new Map(messageData);
+		return new Map(messages);
 	}
-	throw new Error('Unable to fetch a list of countries');
+	throw new Error('Unable to fetch a list of messages!');
 };
 
 // Fetch JSON data based on message ID
 export const fetchMessageById = async (id: string) => {
 	const messages = await fetchMessages();
-	return messages.get(id)
+	const message: Message = messages.get(id)
+	return message
 };

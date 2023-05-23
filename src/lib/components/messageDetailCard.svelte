@@ -1,6 +1,10 @@
 <script lang="ts">
+	import MessageVariationList from '$lib/components/MessageVariationList.svelte';
+	import CategoryList from '$lib/components/CategoryList.svelte';
 	import type { Message } from '$lib/models/message';
-	export let message: Message;
+	export let messageObject: Message;
+	export let message_variations = messageObject.message_variations
+	export let categories = messageObject.categories
 
     const messageLoc = '../assets/message.svg';
 	const outgoingMailLoc = '../assets/outgoing_mail.svg';
@@ -16,10 +20,10 @@
 	<div class="relative w-full max-h-full">
         <div class="relative rounded-lg shadow bg-surface-500">
 			<div class="flex py-4 px-2 border-b rounded-t">
-                <img class="mx-2" src={messageLoc} width="24" height="24" alt="Message" />
+                <!-- <img class="mx-2" src={messageLoc} width="24" height="24" alt="Message" /> -->
                 <div class="pl-4">
                     <p class="text-xs text-surface-300">Message</p>
-                    <p class="text-sm font-medium">"{message.message.message}"</p>
+                    <p class="text-sm font-medium">"{messageObject.message}"</p>
                 </div>
             </div>
 			
@@ -27,70 +31,85 @@
 				<tbody>
 					<tr>
 						<div class="flex p-2">
-							<img class="mx-2" src={infoLoc} width="24" height="24" alt="Message" />
+							<!-- <img class="mx-2" src={infoLoc} width="24" height="24" alt="Message" /> -->
+							<div class="pl-4">
+								<p class="text-xs text-surface-300">Message Variations</p>
+								<!-- <p class="text-sm font-medium"> -->
+									<MessageVariationList {message_variations}/>
+								<!-- </p> -->
+							</div>
+						</div>
+					</tr>
+
+					<tr>
+						<div class="flex p-2">
+							<!-- <img class="mx-2" src={infoLoc} width="24" height="24" alt="Message" /> -->
 							<div class="pl-4">
 								<p class="text-xs text-surface-300">Description</p>
-								<p class="text-sm font-medium">{message.message.description}</p>
+								<p class="text-sm font-medium">{messageObject.description}</p>
 							</div>
 						</div>
 					</tr>
 
 					<tr>
 						<div class="flex p-2">
-							<img class="mx-2" src={outgoingMailLoc} width="24" height="24" alt="Message" />
+							<!-- <img class="mx-2" src={outgoingMailLoc} width="24" height="24" alt="Message" /> -->
 							<div class="pl-4">
 								<p class="text-xs text-surface-300">Message Decoder</p>
-								<p class="text-sm font-medium">{message.message.message_decoder}</p>
+								<p class="text-sm font-medium">{messageObject.message_decoder}</p>
 							</div>
 						</div>
 					</tr>
 
 					<tr>
 						<div class="flex p-2">
-							<img class="mx-2" src={incomingMailLoc} width="24" height="24" alt="Message" />
+							<!-- <img class="mx-2" src={incomingMailLoc} width="24" height="24" alt="Message" /> -->
 							<div class="pl-4">
 								<p class="text-xs text-surface-300">Message Encoder</p>
-								<p class="text-sm font-medium">{message.message.message_encoder}</p>
+								<p class="text-sm font-medium">{messageObject.message_encoder}</p>
 							</div>
 						</div>
 					</tr>
 
 					<tr>
 						<div class="flex p-2">
-							<img class="mx-2" src={mapLoc} width="24" height="24" alt="Message" />
+							<!-- <img class="mx-2" src={mapLoc} width="24" height="24" alt="Message" /> -->
 							<div class="pl-4">
 								<p class="text-xs text-surface-300">Spatial Context</p>
-								<p class="text-sm font-medium">{message.message.spatial_context}</p>
+								<p class="text-sm font-medium">{messageObject.spatial_context}</p>
 							</div>
 						</div>
 					</tr>
 
 					<tr>
 						<div class="flex p-2">
-							<img class="mx-2" src={timeLoc} width="24" height="24" alt="Message" />
+							<!-- <img class="mx-2" src={timeLoc} width="24" height="24" alt="Message" /> -->
 							<div class="pl-4">
 								<p class="text-xs text-surface-300">Temporal Context</p>
-								<p class="text-sm font-medium">{message.message.spatial_context}</p>
+								<p class="text-sm font-medium">{messageObject.temporal_context}</p>
 							</div>
 						</div>
 					</tr>
 
 					<tr>
 						<div class="flex p-2">
-							<img class="mx-2" src={typeLoc} width="24" height="24" alt="Message" />
+							<!-- <img class="mx-2" src={typeLoc} width="24" height="24" alt="Message" /> -->
 							<div class="pl-4">
 								<p class="text-xs text-surface-300">Communication Type</p>
-								<p class="text-sm font-medium">{message.message.spatial_context}</p>
+								<p class="text-sm font-medium">{messageObject.type}</p>
 							</div>
 						</div>
 					</tr>
 
 					<tr>
 						<div class="flex p-2">
-							<img class="mx-2" src={categoryLoc} width="24" height="24" alt="Message" />
+							<!-- <img class="mx-2" src={categoryLoc} width="24" height="24" alt="Message" /> -->
 							<div class="pl-4">
 								<p class="text-xs text-surface-300">Categorization</p>
-								<p class="text-sm font-medium">{message.message.categories}</p>
+								<!-- <p class="text-sm font-medium"> -->
+									<CategoryList {categories}/>
+								<!-- </p> -->
+
 							</div>
 						</div>
 					</tr>

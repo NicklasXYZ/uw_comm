@@ -1,13 +1,3 @@
-// const colors = require('tailwindcss/colors');
-// module.exports = {
-// 	mode: 'jit',
-// 	content: ['./index.html', './src/**/*.{svelte,js,ts}'],
-// 	darkMode: 'class',
-// 	theme: {
-// 		extend: {}
-// 	}
-// };
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	// 1. Apply the dark mode class setting:

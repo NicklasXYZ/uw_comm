@@ -3,14 +3,12 @@
 	// import { filterByName } from '$lib/utils/filters.svelte';
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
+	import type { MessageShort } from '$lib/models/message';
 
-	// import type { MessageShort } from '$lib/models/message';
-	// export let message: MessageShort;
-
-	export let data;
+	export let data: any;
 
 	// let searchTerm = '';
-	let filteredMessages = data.messages;
+	let filteredMessages = data.messageValues;
 
 	// $: lowerName = searchTerm?.toLowerCase();
 	// $: {
@@ -21,7 +19,7 @@
 	// 	}
 	// }
 	
-	let tabSet = 0;
+	let tabSet: number = 0;
 </script>
 
 <svelte:head>
@@ -119,8 +117,7 @@
 	</Accordion>
 </div>
 
-
-
+<!-- Data View Tabs -->
 <TabGroup 
 	hover="hover:bg-surface-600"
 	justify="justify-center"
@@ -135,8 +132,8 @@
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
 			<div class="px-4 grid gap-4 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1">
-				{#each filteredMessages as message, index (index)}
-					<MessageCard {message} />
+				{#each filteredMessages as messageObject, index (index)}
+					<MessageCard {messageObject} />
 				{/each}
 			</div>			
 		{:else if tabSet === 1}
@@ -144,7 +141,6 @@
 		{/if}
 	</svelte:fragment>
 </TabGroup>
-
 
 <!-- Bottom Vertical Space -->
 <div class="flex flex-col p-4 space-y-4"></div>

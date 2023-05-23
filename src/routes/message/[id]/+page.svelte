@@ -1,15 +1,16 @@
 <script lang="ts">
-	// import type { PageData } from './$types';
+	import type { PageData } from './$types';
+	import type { Message } from '$lib/models/message';
 	import MessageDetailCard from '$lib/components/messageDetailCard.svelte';
 
-	// export let data: PageData;
-	let message = data;
+	export let data: PageData;
+	let messageObject: Message = data.message;
 </script>
 
 <svelte:head>
-	<title>Details for message: "{message}"</title>
+	<title>Details for message: "{messageObject.message}"</title>
 </svelte:head>
 
 <div class="px-auto pt-2">
-	<MessageDetailCard {message} />
+	<MessageDetailCard {messageObject} />
 </div>

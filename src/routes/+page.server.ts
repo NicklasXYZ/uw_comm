@@ -2,17 +2,15 @@ import type { PageServerLoad } from './$types';
 import { error } from '@sveltejs/kit';
 import { fetchMessages } from '$lib/server/api';
 
-export const ssr = false;
-
 export const load: PageServerLoad = async ({setHeaders}) => {
 	try {
-		let m = await fetchMessages();
-		const messages = Array.from(m.values())	
+		let messageMap = await fetchMessages();
+		const messageValues = Array.from(messageMap.values())	
 		setHeaders({ 'cache-control': 'max-age=360' });
-		return { messages };
+		return { messageValues };
 	} catch (err) {
 		throw error(404, {
-			message: 'Message details not found'
+			message: 'Message details were not found!'
 		})
 	}
 }

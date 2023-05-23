@@ -1,0 +1,39 @@
+# version: "3.4"
+# services:
+#   violeta:
+#     image: node:20-alpine
+#     volumes:
+#       - type: bind
+#         source: ./
+#         target: /app
+#     working_dir: /app
+#     command: npm run dev
+#     ports:
+#       - "5173:5173"
+#     environment:
+#       - NODE_ENV=development
+#       - PORT=5173
+#       # - HOST=0.0.0.0
+version: "3.4"
+services:
+  # app-static:
+  #   image: svelte-docker-static
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #     target: deploy-static
+  #   ports:
+  #     - 3001:80
+
+  app-node:
+    image: uw_comms:latest
+    container_name: uw_comms
+    # image: svelte-docker-node
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # target: deploy-node
+    # ports:
+    #   - 3002:3000
+    ports:
+      - 5173:5173
