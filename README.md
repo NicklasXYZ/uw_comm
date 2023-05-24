@@ -19,3 +19,8 @@ sudo docker-compose build && sudo docker-compose up
 ## Deployment
 
 The website deploys to http://uwcomm.infonest.xyz/ via [Netlify](https://www.netlify.com/).
+
+
+## License
+
+[CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)

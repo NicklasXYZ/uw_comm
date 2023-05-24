@@ -12,6 +12,8 @@
 	import '../app.postcss';
 
 	const globeLoc = '../assets/underwater.svg';
+
+	var todayDate = new Date().toISOString().slice(0, 10);
 </script>
 
 <!-- AppShell -->
@@ -23,7 +25,10 @@
 				<a href="/">
 					<div class="flex mx-2">
 						<img class="mx-2" src={globeLoc} width="42" height="42" alt="Globe" />
-						<p class="h3 pt-1">Underwater Communication</p>
+						<div class="pl-4">
+							<p class="h3">Underwater Communication</p>
+							<p class="text-sm font-medium text-surface-300">v0.0.1 .::. {todayDate}</p>
+						</div>
 					</div>
 				</a>
 			</svelte:fragment>
@@ -31,16 +36,9 @@
 			<svelte:fragment slot="trail">
 				<a href="/about">
 					<div class="flex mx-2">
-						<p class="h3 pt-1">About</p>
+						<p class="h3">About</p>
 					</div>
 				</a>
-
-				<a href="https://github.com/NicklasXYZ/uw_comms">
-					<div class="flex mx-2">
-						<p class="h3 pt-1">Github</p>
-					</div>
-				</a>
-
 			</svelte:fragment>				
 		</AppBar>
 	</svelte:fragment>
@@ -49,5 +47,5 @@
 	<div class="max-w-6xl mx-auto">
 		<slot />
 	</div>
-
+	
 </AppShell>
