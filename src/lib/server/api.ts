@@ -1,6 +1,6 @@
 import type { Message } from '$lib/models/message';
 
-const MESSAGE_DATA_URL = 'https://raw.githubusercontent.com/NicklasXYZ/uw_comms/main/data/data.json'
+const MESSAGE_DATA_URL = 'https://raw.githubusercontent.com/NicklasXYZ/uw_comm/main/data/data.json'
 
 // Fetch JSON data
 export const fetchMessages = async () => {

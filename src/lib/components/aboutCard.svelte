@@ -1,15 +1,41 @@
 <script lang="ts">
+	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
+    import { CodeBlock } from '@skeletonlabs/skeleton';
+
     const figure1Loc = '../assets/figure1_v2.svg';
+
+	let tabSet: number = 0;
+    let citationAPA = [
+        'Andersen, N. S. (2023).',
+        ' Underwater Communication.',
+        ' URL: https://uwcomm.infonest.xyz/.',
+        ' DOI: https://doi.org/10.5281/zenodo.7966369',
+        '.',
+    ]
+    .map(line => line + '')
+    .join('');
+
+    let citationBibtex = [
+        '@misc{uwcomm2023,',
+        '   title        = {Underwater Communication},',
+        '   author       = {Andersen, N. S.},',
+        '   year         = {2023},',
+        '   month        = {6},',
+        '   howpublished = {URL:~\\url{https://uwcomm.infonest.xyz/}. DOI:~\\url{https://doi.org/10.5281/zenodo.7966369},',
+        '}',
+    ]    
+    .map(line => line + '\n')
+    .join('');
 </script>
 
 <main>
     <div class="flex flex-col p-4">
-        <div class="relative w-full max-h-full">
+        <div class="w-full max-h-full">
 
-            <div class="relative rounded-lg shadow bg-surface-500">
+            <div class="rounded-lg shadow bg-surface-100-800-token">
                 <div class="py-4 px-2 border-b rounded-t">
-                    <div class="pl-4">
-                        <p class="pb-1 text-xl font-medium leading-8 text-surface-300">
+                    <div class="pl-4 pr-4">
+                        <p class="pb-1 text-xl font-medium leading-8">
                             About
                         </p>
 
@@ -43,7 +69,7 @@
                 
                 <div class="py-4 px-2 border-b rounded-t">
                     <div class="pl-4">
-                        <p class="pb-1 text-xl font-medium leading-8 text-surface-300">
+                        <p class="pb-1 text-xl font-medium leading-8">
                             Spatial & Temporal Context
                         </p>
                         <p class="text-sm font-medium">
@@ -53,8 +79,8 @@
                 </div>
 
                 <div class="py-4 px-2 border-b rounded-t">
-                    <div class="pl-4">
-                        <p class="pb-1 text-xl font-medium leading-8 text-surface-300">
+                    <div class="pl-4 pr-4">
+                        <p class="pb-1 text-xl font-medium leading-8">
                             Communication Types
                         </p>
                         <p class="text-sm font-medium">
@@ -63,9 +89,10 @@
                     </div>
                 </div>
                 
-                <div class="py-4 px-2">
-                    <div class="pl-4">
-                        <p class="pb-1 text-xl font-medium leading-8 text-surface-300">
+                <!-- <div class="py-4 px-2"> -->
+                    <div class="py-4 px-2 border-b rounded-t">
+                        <div class="pl-4 pr-4">
+                        <p class="pb-1 text-xl font-medium leading-8">
                             Bibliography
                         </p>
 
@@ -133,6 +160,35 @@
                                 </td>
                             </tr>
                         </table>
+                    </div>
+                </div>
+
+                <div class="py-4 px-2">
+                    <div class="pl-4 pr-4">
+                        <p class="pb-1 text-xl font-medium leading-8">
+                            Citing the Website
+                        </p>
+    
+                        <!-- Citation styles View Tabs -->
+                        <TabGroup 
+                        hover="hover:bg-surface-600"
+                        justify="justify-left"
+                        regionPanel=""
+                        class="pb-2 rounded-lg"
+                        padding="px-4 py-2"
+                        >
+                            <Tab bind:group={tabSet} name="tab1" value={0}>APA</Tab>
+                            <Tab bind:group={tabSet} name="tab2" value={1}>BibTeX</Tab>
+
+                            <!-- Tab Panels --->
+                            <svelte:fragment slot="panel">
+                                {#if tabSet === 0}
+                                    <CodeBlock background="bg-surface-500" button="" language="plaintext" code={citationAPA}></CodeBlock>
+                                {:else if tabSet === 1}
+                                    <CodeBlock background="bg-surface-500" button="" language="bibtex" code={citationBibtex}></CodeBlock>
+                                {/if}
+                            </svelte:fragment>
+                        </TabGroup>
                     </div>
                 </div>
             </div>        
