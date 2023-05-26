@@ -4,6 +4,10 @@
 
     const figure1Loc = '../assets/figure1_v2.svg';
 
+    const diverLoc = '../assets/diver.svg'
+    const auvLoc = '../assets/auv.svg'
+    const surfaceLoc = '../assets/surface.svg'
+
     const writingSlateLoc = '../assets/writing_slate.svg';
     const linePullingLoc = '../assets/line_pulling.svg';
     const handSignalingLoc = '../assets/hand_signaling.svg';
@@ -15,8 +19,8 @@
     const voiceCommunicationLoc = '../assets/voice_comm.svg'
     const textCommunicationLoc = '../assets/text_comm.svg'
 
-    const incomingMailLoc = '../assets/incoming_mail.svg'
-    const outgoingMailLoc = '../assets/outgoing_mail.svg'
+    // const incomingMailLoc = '../assets/incoming_mail.svg'
+    // const outgoingMailLoc = '../assets/outgoing_mail.svg'
 
     const colocatedLoc = '../assets/colocated.svg'
     const remoteLoc = '../assets/remote.svg'
@@ -60,27 +64,14 @@
                         </p>
 
                         <p class="text-sm font-medium">
-                            This website aims to collect, organize and showcase documented information, in
-                            terms of the specific messages, that divers underwater and/or surface-supporting
-                            personnel exchange during a recreational or professional dive (Figure 1). The
-                            messages that need to or can be conveyed depend on the location and time of the
-                            person sending and/or receiving the message. Furthermore, the message can be
-                            exchanged through various communication methods such as body language, rope
-                            pulling, hand signals, light signals, sound signals, etc. In the following
-                            sections, we thus describe these aspects to introduce the various criteria by
-                            which we organize the messages exchanged by divers and/or surface-supporting
-                            personnel.                                                     
+                            This website collects, organizes, and showcases documented information, in terms of the specific messages, that various underwater and surface actors may need to exchange during a recreational or professional dive (Figure 1). The messages that need to or can be conveyed depend on the location and time of the specific actor sending and/or receiving the message. Furthermore, the messages can be exchanged through various communication methods such as body language, flags & buoys, hand signals, light signals, etc. In the following sections, we thus describe these aspects to introduce the various criteria by which we organize the messages exchanged by various actors.                                                     
                         </p>
 
                         <div class="pt-8 photo-wrapper">
                             <figure>
                                 <img class="rounded-lg" width=400px src={figure1Loc} alt="figure1"/>
                                 <figcaption class="text-sm font-medium">
-                                    Figure 1: An illustration of the different actors that may need to communicate
-                                    during a dive. Surface supporting personnel is typically located on a ship above
-                                    the surface, while divers operate below the surface. Professional dive missions
-                                    may also be supported by Geographical Information Systems (GPS), Autonomous
-                                    Surface Vehicles (ASVs), and Autonomous Underwater Vehicles (AUVs).
+                                    Figure 1: An illustration of the different actors that may need to communicate during a dive. Surface supporting personnel is typically located on a ship above the surface, while divers operate below the surface. Professional dive missions may also be supported by Geographical Information Systems (GPS), Autonomous Surface Vehicles (ASVs), and Autonomous Underwater Vehicles (AUVs).
                                 </figcaption>
                             </figure>
                         </div>
@@ -93,19 +84,28 @@
                             Message Encoders & Decoders
                         </p>
                         <p class="text-sm font-medium">
-                            Communication involves a sender who encodes a message (the message encoder) and a receiver who decodes that message (the message decoder). The sender must use a common language for the message to be understood by the receiver. In this context, the message is the information or meaning conveyed from the sender to the receiver. In the following, we describe the individuals that typically exchange messages, i.e., encode or decode messages when communication is between individuals underwater and/or on the surface.
+                            Communication involves a sender who encodes a message (the message encoder) and a receiver who decodes that message (the message decoder). In this context, the message is the information or meaning conveyed from the sender to the receiver. Thus the sender must use a common language for the message to be understood by the receiver. In the context of Figure 1, we can identify relevant actors that typically exchange messages, i.e., encode or decode messages. In the following, we describe the most relevant ones in more detail.
                         </p>
+
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
-                            <img class="mx-2" src={outgoingMailLoc} width="28" height="28" alt="Message" /> 
-                            Message Encoder (Sender)
+                            <img class="mx-2" src={diverLoc} width="28" height="28" alt="Message" /> 
+                            Divers
                         </p>
                         <p class="flex p-2 mx-2 text-sm font-medium">
                             TODO: ...
                         </p>
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
-                            <img class="mx-2" src={incomingMailLoc} width="28" height="28" alt="Message" /> 
-                            Message Decoder (Receiver)
+                            <img class="mx-2" src={auvLoc} width="28" height="28" alt="Message" /> 
+                            Autonomous Underwater Vehicles
+                        </p>
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            <img class="mx-2" src={surfaceLoc} width="28" height="28" alt="Message" /> 
+                            Surface-Supporting Personnel
                         </p>
                         <p class="flex p-2 mx-2 text-sm font-medium">                  
                             TODO: ...
@@ -119,18 +119,7 @@
                             Spatial & Temporal Context
                         </p>
                         <p class="text-sm font-medium">
-                            The spatial and temporal aspects of communication occurring between underwater
-                            and/or surface-supporting personnel can be described in terms of the Computer
-                            Supported Cooperative Work (CSCW) time-place matrix theory [JR88], which
-                            describes patterns of collaboration and coordination in work environments. The
-                            CSCW time-place matrix describes two dimensions: (i) The first dimension
-                            pertains to whether the exchange of information between individuals can occur at
-                            the same time (synchronous) or at different times (asynchronous). (ii) The
-                            second dimension pertains to whether colocated or remote individuals are
-                            considered. Conclusively, methods of communication can be categorized into four
-                            distinct categories: Colocated and synchronous, remote and synchronous,
-                            colocated and asynchronous, and remote and asynchronous. We will provide more
-                            details on the individual components of the two dimensions in the following.
+                            The spatial and temporal aspects of communication occurring between underwater and/or surface-supporting personnel can be described in terms of the Computer Supported Cooperative Work (CSCW) time-place matrix theory [JR88], which describes patterns of collaboration and coordination in work environments. The CSCW time-place matrix describes two dimensions: (i) The first dimension pertains to whether the exchange of information between individuals can occur at the same time (synchronous) or at different times (asynchronous). (ii) The second dimension pertains to whether colocated or remote individuals are considered. Conclusively, methods of communication can be categorized into four distinct categories: Colocated and synchronous, remote and synchronous, colocated and asynchronous, and remote and asynchronous. We will provide more details on the individual components of the two dimensions in the following.
                         </p>
 
                         <!-- Spatial Aspect -->
@@ -179,15 +168,21 @@
                             Various methods exist when communication between divers and/or surface personnel is necessary. In the following, we will give a comprehensive overview of possible communication methods and their characteristics and use. The methods we describe have a set of standard use cases and signals with agreed-upon meanings. However, many methods allow the definition of other signals with possibly new meanings. Agreeing on the signals and their meanings is typically established during dive planning to ensure clear communication and prompt responses.
                         </p>
 
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            <img class="mx-2" src={bodyLanguageLoc} width="28" height="28" alt="Message" />
+                            Body Language                           
+                        </p>           
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            Body language is an extension of hand signaling, allowing divers to convey messages and emotions through physical movements and positions involving or engaging body parts beyond just the hands. For example, body language gestures may include nodding to indicate agreement, shaking the head to convey disagreement, or shrugging to express uncertainty. Body language may also refer to how posture and orientation can indicate direction or how eye contact and gaze can be used to draw attention.                            
+                        </p>
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
-                            <img class="mx-2" src={writingSlateLoc} width="28" height="28" alt="Message" /> 
-                            Writing Slates
+                            <img class="mx-2" src={flagsBuoysLoc} width="28" height="28" alt="Message" /> 
+                            Flags & Buoys
                         </p>
-                        <p class="flex p-2 mx-2 text-sm font-medium">                  
-                            Underwater writing slates are compact and waterproof boards divers use for communication and note-taking underwater. They have a smooth surface for writing with specialized underwater pencils or markers and a clip or loop for attachment to dive gear. Divers hold the slate underwater with one hand while using the other to write or draw. They are commonly used to communicate with dive buddies, record dive plans, depth readings, and observations. In addition, writing slates can be easily wiped clean for reuse.
+                        <p class="flex p-2 mx-2 text-sm font-medium">
+                            Flags and buoys are visual tools used for communication in underwater and surface environments and are vital tools for divers to engage with surface-supporting personnel. They come in various colors, shapes, and patterns, each representing a specific message or indicating a particular situation. By deploying and holding a signaling device like a surface marker buoy, divers can signal their presence and the need for attention or assistance.               
                         </p>
-
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
                             <img class="mx-2" src={handSignalingLoc} width="28" height="28" alt="Message" /> 
@@ -198,48 +193,12 @@
                         </p>
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
-                            <img class="mx-2" src={bodyLanguageLoc} width="28" height="28" alt="Message" />
-                            Body Language                           
-                        </p>           
-                        <p class="flex p-2 mx-2 text-sm font-medium">                  
-                            Body language is an extension of hand signaling, allowing divers to convey messages and emotions through physical movements and positions involving or engaging body parts beyond just the hands. For example, body language gestures may include nodding to indicate agreement, shaking the head to convey disagreement, or shrugging to express uncertainty. Body language may also refer to how posture and orientation can indicate direction or how eye contact and gaze can be used to draw attention.                            
-                        </p>
-
-                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
-                            <img class="mx-2" src={linePullingLoc} width="28" height="28" alt="Message" /> 
-                            Line Pulling
-                        </p>
-                        <p class="flex p-2 mx-2 text-sm font-medium">
-                            Line or rope pulling is a (typically secondary) communication technique used in conditions of low visibility or when primary communication methods, such as voice communication, fail. It involves connecting a diver to another person, either another diver or a line tender on the surface. Divers can convey messages and coordinate actions through predetermined signals or tugs on the line providing a clear and consistent way to convey information. However, the range of possible messages is limited.
-                        </p>
-
-
-                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
-                            <img class="mx-2" src={flagsBuoysLoc} width="28" height="28" alt="Message" /> 
-                            Flags & Buoys
-                        </p>
-                        <p class="flex p-2 mx-2 text-sm font-medium">
-                            Flags and buoys are visual tools used for communication in underwater and surface environments and are vital tools for divers to engage with surface-supporting personnel. They come in various colors, shapes, and patterns, each representing a specific message or indicating a particular situation. By deploying and holding a signaling device like a surface marker buoy, divers can signal their presence and the need for attention or assistance.               
-                        </p>
-                            
-                            
-                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
                             <img class="mx-2" src={lightSignalingLoc} width="28" height="28" alt="Message" /> 
                             Light Signals
                         </p>               
                         <p class="flex p-2 mx-2 text-sm font-medium">
                             Light signaling is a technique that divers can use to communicate by turning them on and off, shining them in specific patterns, or directing the light toward a person or object. Essential light signals convey whether a diver is OK or needs attention. More advanced light signaling includes using Morse code which can also be adapted for underwater communication, with divers quickly turning the light on and off to represent dots and dashes.
                         </p>
-
-
-                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
-                            <img class="mx-2" src={soundSignalingLoc} width="28" height="28" alt="Message" /> 
-                            Sound Signals
-                        </p>               
-                        <p class="flex p-2 mx-2 text-sm font-medium">
-                            Sound signaling is a method of communication used in underwater and surface environments to convey messages through audible signals. For example, divers underwater can create sounds by tapping on tanks, while divers on the surface can use, e.g., whistles. These sounds alert others, indicate direction or emergencies, and facilitate coordination. Sound signaling is particularly valuable in low visibility conditions and when visual communication is limited.
-                        </p>
-
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
                             <img class="mx-2" src={lineMarkerLoc} width="28" height="28" alt="Message" /> 
@@ -249,6 +208,29 @@
                             Line markers are visual indicators used in underwater communication to enhance navigation, safety, and coordination. They are placed along underwater lines and consist of colored bands, knots, or distinctive shapes. These markers serve as reference points for divers, helping them maintain position, gauge distance, and navigate accurately. 
                         </p>
 
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            <img class="mx-2" src={linePullingLoc} width="28" height="28" alt="Message" /> 
+                            Line Pulling
+                        </p>
+                        <p class="flex p-2 mx-2 text-sm font-medium">
+                            Line or rope pulling is a (typically secondary) communication technique used in conditions of low visibility or when primary communication methods, such as voice communication, fail. It involves connecting a diver to another person, either another diver or a line tender on the surface. Divers can convey messages and coordinate actions through predetermined signals or tugs on the line providing a clear and consistent way to convey information. However, the range of possible messages is limited.
+                        </p>
+                
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            <img class="mx-2" src={soundSignalingLoc} width="28" height="28" alt="Message" /> 
+                            Sound Signals
+                        </p>               
+                        <p class="flex p-2 mx-2 text-sm font-medium">
+                            Sound signaling is a method of communication used in underwater and surface environments to convey messages through audible signals. For example, divers underwater can create sounds by tapping on tanks, while divers on the surface can use, e.g., whistles. These sounds alert others, indicate direction or emergencies, and facilitate coordination. Sound signaling is particularly valuable in low visibility conditions and when visual communication is limited.
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            <img class="mx-2" src={textCommunicationLoc} width="28" height="28" alt="Message" /> 
+                            Text Communication
+                        </p>
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            Text communication is a method of communication used in both underwater and surface environments to convey messages through written or typed text. Beyond underwater writing slates, specialized digital devices can be used in text-based underwater communication. Digital devices include dive computers or underwater tablets equipped with text messaging capabilities, allowing divers to send and receive text messages underwater. Underwater text messaging can be enabled through wireless acoustic or optical communication systems. In this context, text communication provides a written record, ensures clarity, and allows communication in situations where other methods may not be feasible or desirable.
+                        </p>    
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
                             <img class="mx-2" src={voiceCommunicationLoc} width="28" height="28" alt="Message" /> 
@@ -258,14 +240,13 @@
                             Voice communication is a direct method of communication used in both underwater and surface environments to convey messages through spoken words. In underwater communication, specialized diving masks or full-face masks with integrated communication systems allow divers and/or surface personnel to talk and hear each other. These systems use wired or wireless technology to transmit and receive voice data.
                         </p>
 
-
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
-                            <img class="mx-2" src={textCommunicationLoc} width="28" height="28" alt="Message" /> 
-                            Text Communication
+                            <img class="mx-2" src={writingSlateLoc} width="28" height="28" alt="Message" /> 
+                            Writing Slates
                         </p>
                         <p class="flex p-2 mx-2 text-sm font-medium">                  
-                            Text communication is a method of communication used in both underwater and surface environments to convey messages through written or typed text. Beyond underwater writing slates, specialized digital devices can be used in text-based underwater communication. Digital devices include dive computers or underwater tablets equipped with text messaging capabilities, allowing divers to send and receive text messages underwater. Underwater text messaging can be enabled through wireless acoustic or optical communication systems. In this context, text communication provides a written record, ensures clarity, and allows communication in situations where other methods may not be feasible or desirable.
-                        </p>                           
+                            Underwater writing slates are compact and waterproof boards divers use for communication and note-taking underwater. They have a smooth surface for writing with specialized underwater pencils or markers and a clip or loop for attachment to dive gear. Divers hold the slate underwater with one hand while using the other to write or draw. They are commonly used to communicate with dive buddies, record dive plans, depth readings, and observations. In addition, writing slates can be easily wiped clean for reuse.
+                        </p>
                     </div>
                 </div>
                 
