@@ -92,7 +92,7 @@
                             Divers
                         </p>
                         <p class="flex p-2 mx-2 text-sm font-medium">
-                            TODO: ...
+                            Divers are underwater personnel trained in diving techniques and equipped with diving gear making them capable of working in an aquatic environment. Diver's activities span from recreational to professional activities that may involve conducting scientific research, underwater inspections, maintenance, and search and rescue operations. In these various activities, divers may want to communicate with each other to ensure safety and enable task coordination. Additionally, they might want to exchange information about the environment they are exploring.
                         </p>
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
@@ -100,7 +100,7 @@
                             Autonomous Underwater Vehicles
                         </p>
                         <p class="flex p-2 mx-2 text-sm font-medium">                  
-                            TODO: ...
+                            Autonomous Underwater Vehicles (AUVs) are unmanned robotic vehicles designed for underwater operations and can work alongside professional divers carrying out specific tasks. AUVs are equipped with various sensors, instruments, and propulsion systems and perform various tasks like collecting data or mapping the seafloor. Divers may need to communicate with AUVs to perform cooperative tasks by providing instructions, setting waypoints, or modifying parameters. The communication and interaction between divers and AUVs can facilitate underwater exploration, data acquisition, and access to challenging or hazardous areas.
                         </p>
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
@@ -108,7 +108,7 @@
                             Surface-Supporting Personnel
                         </p>
                         <p class="flex p-2 mx-2 text-sm font-medium">                  
-                            TODO: ...
+                            Surface-supporting personnel oversee and assist divers' activities. Their tasks involve monitoring divers' safety, providing logistical support, and coordinating operations from the surface. In this context, divers need to communicate with surface-supporting personnel for monitoring and support purposes. They report progress, provide updates on their condition, and request assistance when necessary. Communication is essential for surface personnel to ensure divers' well-being, respond promptly to emergencies, and maintain effective operational support.
                         </p>
                     </div>
                 </div>
