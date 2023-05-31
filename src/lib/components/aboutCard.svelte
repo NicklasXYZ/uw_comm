@@ -18,6 +18,7 @@
     const bodyLanguageLoc = '../assets/body_language.svg';
     const voiceCommunicationLoc = '../assets/voice_comm.svg'
     const textCommunicationLoc = '../assets/text_comm.svg'
+    const touchContactLoc = '../assets/touch_contact.svg'
 
     // const incomingMailLoc = '../assets/incoming_mail.svg'
     // const outgoingMailLoc = '../assets/outgoing_mail.svg'
@@ -233,6 +234,14 @@
                         </p>    
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            <img class="mx-2" src={touchContactLoc} width="28" height="28" alt="Message" /> 
+                            Touch Contact
+                        </p>
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>    
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
                             <img class="mx-2" src={voiceCommunicationLoc} width="28" height="28" alt="Message" /> 
                             Voice Communication
                         </p>               
@@ -297,6 +306,13 @@
                                 <td>[RD04]</td>
                                 <td class="pl-4">
                                     <p> Richardson, Drew et al. <cite>PADI Adventures in Diving</cite>, Version 2.4, (2004). Published by: Rancho Santa Margarita, California: PADI.</p> 
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>[PADI16]</td>
+                                <td class="pl-4">
+                                    <p> PADI. <cite>PADI Advanced Open Water Diver Manual</cite>, Version 1.0, (2016). Published by: Rancho Santa Margarita, California: PADI.</p> 
                                 </td>
                             </tr>
 
