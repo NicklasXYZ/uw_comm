@@ -238,7 +238,7 @@
                             Touch Contact
                         </p>
                         <p class="flex p-2 mx-2 text-sm font-medium">                  
-                            TODO: ...
+                            Touch contract is a method divers use to communicate underwater through tactile signals. It involves establishing physical contact with another diver and conveying messages through touches, such as taps, nudges, or squeezes. Since the messages that can be conveyed are often limited, the signals typically indicate important information like the need to stop, go up or down, point out something of interest, or signal a problem or emergency.
                         </p>    
 
                         <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
