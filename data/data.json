@@ -87,7 +87,7 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -163,7 +163,7 @@
             "message": "Yes",
             "message_variations": [],
             "description": "Making the signal involves forming a circle with the thumb and index finger while extending the other three fingers upward.",
-            "meaning": "The signal is similar to the OK hand signal, which can also be used to simply convey a positive response.",
+            "meaning": "The signal is similar to the OK hand signal, which in this case, can also be used to simply convey a positive response.",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -198,7 +198,7 @@
             "message_variations": [
                 "I do not understand"
             ],
-            "description": "Making the signal involves shrugging the shoulders, i.e., raising both shoulders, bringing them upward toward the ears, and then releases them in a relaxed manner, indicating uncertainty or lack of knowledge.",
+            "description": "Making the signal involves shrugging the shoulders, i.e., raising both shoulders, bringing them upward toward the ears, and then releasing them in a relaxed manner, indicating uncertainty or lack of knowledge.",
             "meaning": "The signal communicated by a diver indicates that the information being sought is not available to the diver or that they are unsure about the situation.",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
@@ -217,7 +217,8 @@
             "premise": "",
             "message": "Do not",
             "message_variations": [],
-            "description": "",
+            "description": "Making the signal involves pointing the index finger upwards and moving it side to side.",
+            "meaning": "The signal indicates that a particular action should be avoided or halted.",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -237,13 +238,14 @@
                 "Going down",
                 "I am going down"
             ],
-            "description": "",
+            "description": "Making the signal involves clenching the hand into a fist while extending the thumb and pointing it downwards.",
+            "meaning": "The signal indicates the intention to descend underwater or to initiate the dive.",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -264,7 +266,7 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -279,13 +281,14 @@
                 "I am going up",
                 "Surface"
             ],
-            "description": "",
+            "description": "Making the signal involves clenching the hand into a fist while extending the thumb and pointing it upwards.",
+            "meaning": "The signal indicates the intention to ascend underwater.",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -302,12 +305,13 @@
             "message": "Ascend to level",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -320,12 +324,13 @@
                 "Come closer"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RSTC05",
@@ -342,6 +347,7 @@
                 "Look at"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -362,6 +368,7 @@
                 "Watch me"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -382,6 +389,7 @@
             "message": "You",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -402,12 +410,13 @@
                 "What is the depth"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -424,12 +433,13 @@
                 "Which direction?"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -447,12 +457,13 @@
                 "Go that way"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -471,12 +482,13 @@
                 "Go above"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -494,12 +506,13 @@
                 "Go below"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -514,12 +527,13 @@
             "message": "Turn around",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "PG90",
@@ -535,6 +549,7 @@
                 "Slow down"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -558,6 +573,7 @@
                 "Hold hands"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -580,6 +596,7 @@
                 "Speed up"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -599,12 +616,13 @@
                 "You lead. I will follow"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -622,6 +640,7 @@
                 "Think"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -639,12 +658,13 @@
             "message": "Boat",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23",
                 "RSTC05"
@@ -656,12 +676,13 @@
             "message": "Wreck",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -672,12 +693,13 @@
             "message": "Navigate",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -688,6 +710,7 @@
             "message": "This (there)",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -706,12 +729,13 @@
                 "Direction to surface"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "PG90"
@@ -723,28 +747,13 @@
             "message": "Safety stop",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
-            "references": [
-                "BL23"
-            ]
-        },
-        {
-            "id": "f83355e3-033e-446d-bc95-d99aed4a5bd0",
-            "premise": "",
-            "message": "Safety stop",
-            "message_variations": [],
-            "description": "",
-            "message_encoder": "Diver",
-            "message_decoder": "Diver",
-            "spatial_context": "Colocated",
-            "temporal_context": "Synchronous",
-            "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -755,12 +764,13 @@
             "message": "Ceiling",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "PG90"
@@ -772,6 +782,7 @@
             "message": "Pick me up",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "Colocated",
@@ -790,6 +801,7 @@
                 "Write down message"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -811,6 +823,7 @@
                 "Bad"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -837,6 +850,7 @@
                 "Emergency"
             ],
             "description": "The signals for 'Emergency' and 'Attention' are performed by vigorous flashing movements of a diver's light beam in a horizontal or vertical direction.",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -866,6 +880,7 @@
                 "I am in trouble"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "Colocated",
@@ -887,6 +902,7 @@
             "message": "Lost my buddy",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -905,6 +921,7 @@
                 "I am low on air"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -928,6 +945,7 @@
                 "I have no more air"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -952,6 +970,7 @@
                 "Let us share air"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -972,12 +991,13 @@
             "message": "Visible danger",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "RD07",
@@ -990,6 +1010,7 @@
             "message": "Danger",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1008,6 +1029,7 @@
             "message": "Safe",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1026,6 +1048,7 @@
                 "I have ear trouble"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1047,6 +1070,7 @@
                 "I am cold"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1067,6 +1091,7 @@
             "message": "Sick",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1083,6 +1108,7 @@
             "message": "Bitten",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1099,6 +1125,7 @@
             "message": "Stung",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1115,6 +1142,7 @@
             "message": "Venomous",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1131,6 +1159,7 @@
             "message": "Bleeding",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1147,6 +1176,7 @@
             "message": "Rescue",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1163,6 +1193,7 @@
             "message": "Fear",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1179,6 +1210,7 @@
             "message": "Stuck",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1196,6 +1228,7 @@
             "message": "Entanglement",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1213,6 +1246,7 @@
             "message": "Exhaustion",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1229,6 +1263,7 @@
             "message": "Dizziness",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1242,9 +1277,10 @@
         {
             "id": "c7d299c2-e84e-45e3-bc1f-fd6a230fa02a",
             "premise": "",
-            "message": "Nitrogen marcosis",
+            "message": "Nitrogen narcosis",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1261,6 +1297,7 @@
             "message": "Big bubbles",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1277,6 +1314,7 @@
             "message": "Tiny bubbles",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1294,6 +1332,7 @@
             "message": "Mask leaking",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1310,6 +1349,7 @@
             "message": "Mask foggy",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1326,6 +1366,7 @@
             "message": "Poor visibility",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1344,6 +1385,7 @@
                 "Muscle cramp"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1361,6 +1403,7 @@
             "message": "I will get help",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1377,12 +1420,13 @@
             "message": "I am lost",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -1393,6 +1437,7 @@
             "message": "Gather",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1409,6 +1454,7 @@
             "message": "On your knees",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1425,6 +1471,7 @@
             "message": "Breathe",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1441,6 +1488,7 @@
             "message": "Attention",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1457,6 +1505,7 @@
             "message": "Exercise begins",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1473,6 +1522,7 @@
             "message": "Exercise ends",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1489,6 +1539,7 @@
             "message": "Again (Repeat)",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1505,6 +1556,7 @@
             "message": "Buddy",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1522,6 +1574,7 @@
             "message": "Get with your buddy",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1541,6 +1594,7 @@
             "message": "Move apart",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1557,12 +1611,13 @@
             "message": "Descend slowly",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -1573,12 +1628,13 @@
             "message": "Ascend slowly",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -1589,12 +1645,13 @@
             "message": "Ascend a little",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -1605,6 +1662,7 @@
             "message": "Do not stir up sediment",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1621,6 +1679,7 @@
             "message": "Lay down / hover",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1637,6 +1696,7 @@
             "message": "How much air?",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1653,6 +1713,7 @@
             "message": "Air pressure",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1669,6 +1730,7 @@
             "message": "Zero",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1688,6 +1750,7 @@
             "message": "One",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1707,6 +1770,7 @@
             "message": "Two",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1726,6 +1790,7 @@
             "message": "Three",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1745,6 +1810,7 @@
             "message": "Four",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1764,6 +1830,7 @@
             "message": "Five",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1783,6 +1850,7 @@
             "message": "Six",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1802,6 +1870,7 @@
             "message": "Seven",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1821,6 +1890,7 @@
             "message": "Eight",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1840,6 +1910,7 @@
             "message": "Nine",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -1859,12 +1930,13 @@
             "message": "Kelp (seaweed)",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -1875,12 +1947,13 @@
             "message": "Sponge",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -1891,12 +1964,13 @@
             "message": "Jellyfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -1907,12 +1981,13 @@
             "message": "Coral or anemone",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -1923,12 +1998,13 @@
             "message": "Clam",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -1939,12 +2015,13 @@
             "message": "Giant clam",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -1955,12 +2032,13 @@
             "message": "Sea slug",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -1971,12 +2049,13 @@
             "message": "Sea snail",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -1987,12 +2066,13 @@
             "message": "Cowry",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2003,12 +2083,13 @@
             "message": "Octopus",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2019,12 +2100,13 @@
             "message": "Squid",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2035,12 +2117,13 @@
             "message": "Christmas tree worm",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2051,12 +2134,13 @@
             "message": "Shrimp",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2067,12 +2151,13 @@
             "message": "Cleaner shrimp",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2083,12 +2168,13 @@
             "message": "Crab",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2099,12 +2185,13 @@
             "message": "Hermit Crab",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2115,12 +2202,13 @@
             "message": "Sea urchin",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2131,12 +2219,13 @@
             "message": "Starfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2147,12 +2236,13 @@
             "message": "Stingray",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2163,12 +2253,13 @@
             "message": "Bluespotted stringray",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2179,12 +2270,13 @@
             "message": "Electric ray",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2195,12 +2287,13 @@
             "message": "Eagle ray",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2211,12 +2304,13 @@
             "message": "Manta ray",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2232,7 +2326,7 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2243,12 +2337,13 @@
             "message": "Reef shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2259,12 +2354,13 @@
             "message": "Hammerhead shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2275,12 +2371,13 @@
             "message": "Leopard shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2291,12 +2388,13 @@
             "message": "Bull shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2307,12 +2405,13 @@
             "message": "Thresher shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2323,12 +2422,13 @@
             "message": "Angel shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2339,12 +2439,13 @@
             "message": "Wobbegong",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2355,12 +2456,13 @@
             "message": "Cat shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2371,12 +2473,13 @@
             "message": "Tiger shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2387,12 +2490,13 @@
             "message": "Sandtiger shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2403,12 +2507,13 @@
             "message": "Blue shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2419,12 +2524,13 @@
             "message": "Whale shark",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2435,12 +2541,13 @@
             "message": "Baracuda",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2451,12 +2558,13 @@
             "message": "Moray eel",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2467,12 +2575,13 @@
             "message": "Garden eel",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2483,12 +2592,13 @@
             "message": "Angelfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2499,12 +2609,13 @@
             "message": "Grouper",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2515,12 +2626,13 @@
             "message": "Pufferfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2531,12 +2643,13 @@
             "message": "Boxfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2547,12 +2660,13 @@
             "message": "Longhorn cowfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2563,12 +2677,13 @@
             "message": "Ocean sunfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2579,12 +2694,13 @@
             "message": "Butterfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2595,12 +2711,13 @@
             "message": "Cardinalfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2611,12 +2728,13 @@
             "message": "Drumfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2627,12 +2745,13 @@
             "message": "Goatfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2643,12 +2762,13 @@
             "message": "Clownfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2659,12 +2779,13 @@
             "message": "Flathead",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2675,12 +2796,13 @@
             "message": "Flatfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2691,12 +2813,13 @@
             "message": "Cornetfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2707,12 +2830,13 @@
             "message": "Hawkfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2723,12 +2847,13 @@
             "message": "Jawfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2739,12 +2864,13 @@
             "message": "Rabbitfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2755,12 +2881,13 @@
             "message": "Batfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2771,12 +2898,13 @@
             "message": "Butterflyfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2787,12 +2915,13 @@
             "message": "Bannerfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2803,12 +2932,13 @@
             "message": "Masked bannerfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2819,12 +2949,13 @@
             "message": "Moorish idol",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2835,12 +2966,13 @@
             "message": "Parrotfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2851,12 +2983,13 @@
             "message": "Sweetlip",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2867,12 +3000,13 @@
             "message": "Pipefish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2883,12 +3017,13 @@
             "message": "Seahorse",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2899,12 +3034,13 @@
             "message": "Lionfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2920,7 +3056,7 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2931,12 +3067,13 @@
             "message": "Stonefish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2947,12 +3084,13 @@
             "message": "Triggerfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2963,12 +3101,13 @@
             "message": "Surgeonfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2979,12 +3118,13 @@
             "message": "Unicornfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -2995,12 +3135,13 @@
             "message": "Frogfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3011,12 +3152,13 @@
             "message": "Monkfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3027,12 +3169,13 @@
             "message": "Trumpetfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3043,12 +3186,13 @@
             "message": "Soldierfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3059,12 +3203,13 @@
             "message": "Napoleonfish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3075,12 +3220,13 @@
             "message": "Tuna or mackerel",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3091,12 +3237,13 @@
             "message": "Whale",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3107,12 +3254,13 @@
             "message": "Dolphin",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3123,12 +3271,13 @@
             "message": "Sea turtle",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3139,12 +3288,13 @@
             "message": "Sea snake",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["WS"],
             "references": [
                 "BL23"
             ]
@@ -3155,12 +3305,13 @@
             "message": "Temperature",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3171,12 +3322,13 @@
             "message": "Temperature rising",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3187,12 +3339,13 @@
             "message": "Temperature falling",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3203,12 +3356,13 @@
             "message": "Thermocline",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3219,12 +3373,13 @@
             "message": "Current",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23",
                 "PG90"
@@ -3236,12 +3391,13 @@
             "message": "Shallow",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3252,12 +3408,13 @@
             "message": "Deep",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3270,12 +3427,13 @@
                 "Silt"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23",
                 "PG90"
@@ -3287,12 +3445,13 @@
             "message": "Cave or arc",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3303,28 +3462,13 @@
             "message": "Drop-off",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
-            "references": [
-                "BL23"
-            ]
-        },
-        {
-            "id": "d7ddb9ba-8ee6-4f80-99f1-e1f04b7fafa7",
-            "premise": "",
-            "message": "Drop-off",
-            "message_variations": [],
-            "description": "",
-            "message_encoder": "Diver",
-            "message_decoder": "Diver",
-            "spatial_context": "Colocated",
-            "temporal_context": "Synchronous",
-            "type": "Body Language",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3335,12 +3479,13 @@
             "message": "Bridge or jetty",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3351,12 +3496,13 @@
             "message": "Coral reef",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3367,12 +3513,13 @@
             "message": "Cleaning station",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3383,12 +3530,13 @@
             "message": "Plastic waste",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC"],
             "references": [
                 "BL23"
             ]
@@ -3399,6 +3547,7 @@
             "message": "Love",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3415,6 +3564,7 @@
             "message": "Aggressive",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3431,6 +3581,7 @@
             "message": "Laughing out loud",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3447,6 +3598,7 @@
             "message": "Happy",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3463,6 +3615,7 @@
             "message": "Sad",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3479,6 +3632,7 @@
             "message": "Too cool",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3495,6 +3649,7 @@
             "message": "Boring",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3513,6 +3668,7 @@
                 "I do not care"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3529,6 +3685,7 @@
             "message": "Fish",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3545,6 +3702,7 @@
             "message": "Big",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3562,6 +3720,7 @@
             "message": "Small",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3579,6 +3738,7 @@
             "message": "Male",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3595,6 +3755,7 @@
             "message": "Female",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3611,6 +3772,7 @@
             "message": "Mating",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3627,6 +3789,7 @@
             "message": "Sleeping",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3643,6 +3806,7 @@
             "message": "Dead",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3659,6 +3823,7 @@
             "message": "Lightweight",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3675,6 +3840,7 @@
             "message": "Heavyweight",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3691,6 +3857,7 @@
             "message": "Search for...",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3707,6 +3874,7 @@
             "message": "No decompression limit",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3723,6 +3891,7 @@
             "message": "Decompression stop",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3744,6 +3913,7 @@
                 "What is the remaining bottom time?"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3766,12 +3936,13 @@
                 "What is the depth?"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "BJ06"
@@ -3783,12 +3954,13 @@
             "message": "Return",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -3799,6 +3971,7 @@
             "message": "Abort",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3815,6 +3988,7 @@
             "message": "In charge",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3834,12 +4008,13 @@
                 "Swimmer"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23",
                 "PG90"
@@ -3851,12 +4026,13 @@
             "message": "Swim through",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BL23"
             ]
@@ -3867,6 +4043,7 @@
             "message": "Anchor",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3883,6 +4060,7 @@
             "message": "Line",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3900,6 +4078,7 @@
             "message": "Cut",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3919,6 +4098,7 @@
                 "Fix"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3935,6 +4115,7 @@
             "message": "Deploy surface marker buoy",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3951,6 +4132,7 @@
             "message": "Reel",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3968,6 +4150,7 @@
             "message": "Deploy reef hook",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -3986,6 +4169,7 @@
                 "Hang on"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4003,6 +4187,7 @@
             "message": "Knife",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4020,6 +4205,7 @@
             "message": "Touch",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4036,6 +4222,7 @@
             "message": "Do not touch",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4052,6 +4239,7 @@
             "message": "Drop",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4070,6 +4258,7 @@
                 "Take picture"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4087,6 +4276,7 @@
             "message": "Battery full?",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4103,6 +4293,7 @@
             "message": "Battery full",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4119,6 +4310,7 @@
             "message": "Battery half-full",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4135,6 +4327,7 @@
             "message": "Battery low",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4151,6 +4344,7 @@
             "message": "Light torch",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4167,6 +4361,7 @@
             "message": "Speargun",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4183,6 +4378,7 @@
             "message": "Broken",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4199,6 +4395,7 @@
             "message": "Restriction",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4215,12 +4412,13 @@
             "message": "Tunnel",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC", "NP"],
             "references": [
                 "PG90"
             ]
@@ -4231,12 +4429,13 @@
             "message": "Room",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC", "NP"],
             "references": [
                 "PG90"
             ]
@@ -4247,12 +4446,13 @@
             "message": "Wall",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["EC", "NP"],
             "references": [
                 "PG90"
             ]
@@ -4263,12 +4463,13 @@
             "message": "Swap places",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "PG90"
             ]
@@ -4279,12 +4480,13 @@
             "message": "Go around",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "PG90",
                 "USND16"
@@ -4296,6 +4498,7 @@
             "message": "Tie off",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4312,6 +4515,7 @@
             "message": "Turn on",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4328,6 +4532,7 @@
             "message": "Bent",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4344,12 +4549,13 @@
             "message": "Exit",
             "message_variations": [],
             "description": "A plastic line arrow always points towards an exit with surface with breathable air.",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Asynchronous",
             "type": "Line Marker",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "PG90"
             ]
@@ -4360,12 +4566,13 @@
             "message": "Midpoint between enterences",
             "message_variations": [],
             "description": "Two plastic line arrows placed back to back mark the spot as the midway distance between two entrances.",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Asynchronous",
             "type": "Line Marker",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "PG90"
             ]
@@ -4373,9 +4580,10 @@
         {
             "id": "d2980f08-b807-4fb9-af12-65f8d8240e70",
             "premise": "Emergency",
-            "message": "I am fouled and need the assistance of anohter diver",
+            "message": "I am fouled and need the assistance of another diver",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4393,6 +4601,7 @@
             "message": "I am fouled but can clear myself",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4410,6 +4619,7 @@
             "message": "Haul me up immediately",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4432,6 +4642,7 @@
                 "Attention"
             ],
             "description": "1 pull",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
@@ -4450,6 +4661,7 @@
             "message": "Stop",
             "message_variations": [],
             "description": "1 pull, when the diver is descending",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
@@ -4468,12 +4680,13 @@
             "message": "Change direction",
             "message_variations": [],
             "description": "2 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "ERDI22"
             ]
@@ -4484,6 +4697,7 @@
             "message": "Take out more line",
             "message_variations": [],
             "description": "2 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
@@ -4500,12 +4714,13 @@
             "message": "Going down",
             "message_variations": [],
             "description": "2 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -4519,6 +4734,7 @@
                 "Standby"
             ],
             "description": "3 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
@@ -4537,12 +4753,13 @@
             "message": "Come up",
             "message_variations": [],
             "description": "4 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16",
@@ -4558,6 +4775,7 @@
                 "Talk to me"
             ],
             "description": "2-1 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
@@ -4575,6 +4793,7 @@
             "message": "Ventilate",
             "message_variations": [],
             "description": "3-2 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
@@ -4591,6 +4810,7 @@
             "message": "Circulate",
             "message_variations": [],
             "description": "4-3 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
@@ -4611,6 +4831,7 @@
                 "Attention"
             ],
             "description": "1 pull",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4633,12 +4854,13 @@
                 "I have arrived at the bottom"
             ],
             "description": "1 pull",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16",
@@ -4653,12 +4875,13 @@
                 "I have left the bottom"
             ],
             "description": "1 pull",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "BJ06"
             ]
@@ -4672,12 +4895,13 @@
                 "More line"
             ],
             "description": "2 pulls",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16",
@@ -4690,6 +4914,7 @@
             "message": "Take up my slack",
             "message_variations": [],
             "description": "3 pulls",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4707,6 +4932,7 @@
             "message": "Object found",
             "message_variations": [],
             "description": "3 pulls",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4725,6 +4951,7 @@
                 "May I come up?"
             ],
             "description": "4 pulls",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4744,6 +4971,7 @@
                 "Trouble"
             ],
             "description": "4 pulls",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4760,6 +4988,7 @@
             "message": "More air",
             "message_variations": [],
             "description": "3-2 pulls",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4777,6 +5006,7 @@
             "message": "Less air",
             "message_variations": [],
             "description": "4-3 pulls",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
             "spatial_context": "remote",
@@ -4794,6 +5024,7 @@
             "message": "Go on (or off) searching signals",
             "message_variations": [],
             "description": "7 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
@@ -4811,12 +5042,13 @@
             "message": "Stop and search where you are",
             "message_variations": [],
             "description": "1 pull",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -4828,12 +5060,13 @@
             "message": "Move away from the tender",
             "message_variations": [],
             "description": "2 pulls, if given slack",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -4845,12 +5078,13 @@
             "message": "Move towards the tender",
             "message_variations": [],
             "description": "2 pulls, if strain is taken on the line",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -4862,12 +5096,13 @@
             "message": "Go to your right",
             "message_variations": [],
             "description": "3 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -4879,15 +5114,101 @@
             "message": "Go to your left",
             "message_variations": [],
             "description": "4 pulls",
+            "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
             "spatial_context": "remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "NOAA01",
                 "USND16"
+            ]
+        },
+        {
+            "id": "5cf0fb97-e082-477f-bd25-382f69029087",
+            "premise": "Searching",
+            "message": "Attention",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [],
+            "references": [
+                "PADI16"
+            ]
+        },
+        {
+            "id": "b0f014a9-db43-48d6-bd23-607f8ae1cc89",
+            "premise": "Searching",
+            "message": "Stop",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": ["NP"],
+            "references": [
+                "PADI16"
+            ]
+        },
+        {
+            "id": "192d73f1-f113-428b-84cd-71db1955cf50",
+            "premise": "Searching",
+            "message": "I have finished the leg",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": ["NP"],
+            "references": [
+                "PADI16"
+            ]
+        },
+        {
+            "id": "1576dfca-4e55-476f-bcd9-00daf91c6acd",
+            "premise": "Searching",
+            "message": "Come towards me",
+            "message_variations": ["Let us unite"],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": ["NP"],
+            "references": [
+                "PADI16"
+            ]
+        },
+        {
+            "id": "4077fb6b-cfb1-48a1-814b-23c49ff41c93",
+            "premise": "Searching",
+            "message": "Emergency",
+            "message_variations": ["Come to me immediately"],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [],
+            "references": [
+                "PADI16"
             ]
         },
         {
@@ -4898,6 +5219,7 @@
                 "I am out of breath"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4917,6 +5239,7 @@
                 "I am okay"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4935,12 +5258,13 @@
                 "Go ahead"
             ],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Touch Contact",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "PG90"
             ]
@@ -4951,12 +5275,13 @@
             "message": "Stop",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Touch Contact",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "PG90"
             ]
@@ -4967,12 +5292,13 @@
             "message": "Back up",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Touch Contact",
-            "categories": [],
+            "categories": ["NP"],
             "references": [
                 "PG90"
             ]
@@ -4983,6 +5309,7 @@
             "message": "Assistance",
             "message_variations": [],
             "description": "",
+            "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
@@ -4994,5 +5321,5 @@
             ]
         }
     ],
-    "updated": "2023-05-14"
+    "updated": "2023-06-05"
 }
