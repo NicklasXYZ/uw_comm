@@ -16,6 +16,7 @@ export const fetchMessages = async () => {
 					message: data.message,
 					message_variations: data.message_variations,
 					description: data.description,
+					meaning: data.meaning,
 					message_encoder: data.message_encoder,
 					message_decoder: data.message_decoder,
 					spatial_context: data.spatial_context,

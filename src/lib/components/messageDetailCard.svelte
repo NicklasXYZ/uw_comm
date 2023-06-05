@@ -53,6 +53,16 @@
 
 					<tr>
 						<div class="flex p-2">
+							<!-- <img class="mx-2" src={infoLoc} width="24" height="24" alt="Message" /> -->
+							<div class="pl-4">
+								<p class="text-xs text-surface-300">Meaning</p>
+								<p class="text-sm font-medium">{messageObject.meaning}</p>
+							</div>
+						</div>
+					</tr>
+
+					<tr>
+						<div class="flex p-2">
 							<!-- <img class="mx-2" src={outgoingMailLoc} width="24" height="24" alt="Message" /> -->
 							<div class="pl-4">
 								<p class="text-xs text-surface-300">Message Decoder</p>

@@ -258,7 +258,69 @@
                         </p>
                     </div>
                 </div>
-                
+
+                <div class="py-4 px-2 border-b rounded-t">
+                    <div class="pl-4 pr-4">
+                        <p class="pb-1 text-xl font-medium leading-8">
+                            Message Categories
+                        </p>
+                        <p class="text-sm font-medium">                          
+                            TODO: ...
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            Emotions & Expressions (EE)
+                        </p>           
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            Environmental Conditions (EC)
+                        </p>           
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            Equipment & Communication (ECM)
+                        </p>           
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            Navigation & Positioning (NP)
+                        </p>           
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            Safety & Emergency (SE)
+                        </p>           
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            Wildlife Sightings (WS)
+                        </p>           
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>
+
+                        <p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+                            Quantitative Information (QI)
+                        </p>           
+                        <p class="flex p-2 mx-2 text-sm font-medium">                  
+                            TODO: ...
+                        </p>
+                    </div>
+                </div>
+
+
+
                 <div class="py-4 px-2 border-b rounded-t">
                     <div class="pl-4 pr-4">
                         <p class="pb-1 text-xl font-medium leading-8">
