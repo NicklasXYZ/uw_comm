@@ -5319,7 +5319,78 @@
             "references": [
                 "PG90"
             ]
+        },
+
+
+        {
+            "id": "",
+            "premise": "",
+            "message": "No",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "AUV",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Light Signal",
+            "categories": [],
+            "references": [
+                "DJ14"
+            ]
+        },
+        {
+            "id": "",
+            "premise": "",
+            "message": "Yes",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "AUV",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Light Signal",
+            "categories": [],
+            "references": [
+                "DJ14"
+            ]
+        },
+        {
+            "id": "",
+            "premise": "",
+            "message": "Task Complete",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "AUV",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Light Signal",
+            "categories": [],
+            "references": [
+                "DJ14"
+            ]
+        },
+        {
+            "id": "",
+            "premise": "",
+            "message": "Attention",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "AUV",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Light Signal",
+            "categories": [],
+            "references": [
+                "DJ14"
+            ]
         }
+        
     ],
     "updated": "2023-06-05"
 }

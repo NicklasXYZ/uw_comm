@@ -399,6 +399,13 @@
                                 </td>
                             </tr>
 
+                            <tr>
+                                <td>[DJ14]</td>
+                                <td class="pl-4">
+                                    <p> DeMarco, K. J. and West, M. E. and Howard, A. M. <cite> Underwater Human-Robot Communication: A Case Study with Human Divers </cite> 2014 IEEE International Conference on Systems, Man, and Cybernetics (SMC), San Diego, CA, USA, 2014, pp. 3738-3743, doi: 10.1109/SMC.2014.6974512.</p>                
+                                </td>
+                            </tr>
+
                             <!-- Supporting Material -->
                             <tr>
                                 <td>[JR88]</td>
