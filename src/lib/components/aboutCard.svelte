@@ -402,7 +402,14 @@
                             <tr>
                                 <td>[DJ14]</td>
                                 <td class="pl-4">
-                                    <p> DeMarco, K. J. and West, M. E. and Howard, A. M. <cite> Underwater Human-Robot Communication: A Case Study with Human Divers </cite> 2014 IEEE International Conference on Systems, Man, and Cybernetics (SMC), San Diego, CA, USA, 2014, pp. 3738-3743, doi: 10.1109/SMC.2014.6974512.</p>                
+                                    <p> DeMarco, K. J. and West, M. E. and Howard, A. M. <cite>Underwater Human-Robot Communication: A Case Study with Human Divers </cite> 2014 IEEE International Conference on Systems, Man, and Cybernetics (SMC), San Diego, CA, USA, 2014, pp. 3738-3743, doi: 10.1109/SMC.2014.6974512.</p>                
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>[ND21]</td>
+                                <td class="pl-4">
+                                    <p> Nađ, Ð. et al. <cite>Diver-Robot communication using wearable sensing diver glove</cite> OCEANS 2021: San Diego - Porto, San Diego, CA, USA, 2021, pp. 1-6, doi: 10.23919/OCEANS44145.2021.9706117.</p>                
                                 </td>
                             </tr>
 

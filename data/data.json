@@ -430,7 +430,8 @@
             "premise": "",
             "message": "Which way?",
             "message_variations": [
-                "Which direction?"
+                "Which direction?",
+                "What direction?"
             ],
             "description": "",
             "meaning": "",
@@ -5323,7 +5324,7 @@
 
 
         {
-            "id": "",
+            "id": "0e198d02-3d01-458d-b2e7-285ef3cc60ce",
             "premise": "",
             "message": "No",
             "message_variations": [],
@@ -5340,7 +5341,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "cb254799-f4ee-4fc0-bdda-39727abecc48",
             "premise": "",
             "message": "Yes",
             "message_variations": [],
@@ -5357,7 +5358,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "418ab83e-a05d-4692-b764-83a4f7f8a88e",
             "premise": "",
             "message": "Task Complete",
             "message_variations": [],
@@ -5374,7 +5375,7 @@
             ]
         },
         {
-            "id": "",
+            "id": "ea69aa9e-3343-4270-87d9-f5d67990d873",
             "premise": "",
             "message": "Attention",
             "message_variations": [],
@@ -5389,8 +5390,555 @@
             "references": [
                 "DJ14"
             ]
+        },
+
+        {
+            "id": "d907a7d2-cc25-4a02-b1a7-8071d49b7bef",
+            "premise": "Haptic Glove",
+            "message": "Start transmission",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "7a961557-0124-4cab-8912-f6f1683eb685",
+            "premise": "Haptic Glove",
+            "message": "End transmission",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "4169e182-829e-4afb-9836-a592dda9c127",
+            "premise": "Haptic Glove",
+            "message": "OK",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "8985fc5b-ea94-4370-84c3-5d91ded24728",
+            "premise": "Haptic Glove",
+            "message": "Yes",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "1b73f934-aff1-4bac-861f-cf8f43440c44",
+            "premise": "Haptic Glove",
+            "message": "Follow",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "79f765d7-f883-467c-b50b-e658955c4996",
+            "premise": "Haptic Glove",
+            "message": "Follow",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "29cb1ef6-3fef-446c-bdaa-ba783901614f",
+            "premise": "Haptic Glove",
+            "message": "End mission",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "dc9dbc4d-8f56-42ab-90e9-5ef7b2d64cbb",
+            "premise": "Haptic Glove",
+            "message": "Stop",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "435bc948-2232-43bb-9c3b-7ed3230127fe",
+            "premise": "Haptic Glove",
+            "message": "Panic stop",
+            "message_variations": ["Distress"],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "adaf00d2-45ba-4e26-afdb-ee42dbfe388c",
+            "premise": "Haptic Glove",
+            "message": "Level off (at this depth)",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "ac198756-a9ed-4605-896a-e26f490782e4",
+            "premise": "Haptic Glove",
+            "message": "Problem",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "eeeabcf6-189a-47df-9be9-f220250b03ad",
+            "premise": "Haptic Glove",
+            "message": "Question",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "85c0221c-737b-4bf3-b1c0-b64dd13ed6fe",
+            "premise": "Haptic Glove",
+            "message": "Which way?",
+            "message_variations": [
+                "Which direction?",
+                "What direction?"
+            ],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "955a12ce-f212-4063-9f5d-161d26f3528b",
+            "premise": "Haptic Glove",
+            "message": "What is your depth?",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "5d6571e5-28be-4992-ba65-99fbf84c8d56",
+            "premise": "Haptic Glove",
+            "message": "How much air?",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "0f61c7af-7b02-4f50-8e41-e37b2b96f924",
+            "premise": "Haptic Glove",
+            "message": "Do you see me?",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "2f59ebcd-437e-4f39-be07-b383498cc8f6",
+            "premise": "Haptic Glove",
+            "message": "Zero",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "506efd0c-1dab-4293-aa4f-1163524842ca",
+            "premise": "Haptic Glove",
+            "message": "One",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "71dfe0f0-73cd-4f21-ac15-9c835349b430",
+            "premise": "Haptic Glove",
+            "message": "Two",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "d722585e-5ea0-4ba6-8c40-5072b9bb5ecb",
+            "premise": "Haptic Glove",
+            "message": "Three",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "bbd267a4-e418-4e36-8931-9384790ee3ac",
+            "premise": "Haptic Glove",
+            "message": "Four",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "ab27ea8a-7064-440d-a4fd-fe65ca86052e",
+            "premise": "Haptic Glove",
+            "message": "Ten",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "a25cad76-93c9-493f-bd09-641f11830eb7",
+            "premise": "Haptic Glove",
+            "message": "Mode",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "46d463b2-4661-470d-8609-62cfb480c425",
+            "premise": "Haptic Glove",
+            "message": "Monitor",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "1afd7e04-0837-4b8f-9ee2-65cce78238a3",
+            "premise": "Haptic Glove",
+            "message": "Monitor",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "5d2c37f9-55e4-44f3-b210-e2f7e30bc4de",
+            "premise": "Haptic Glove",
+            "message": "Scooter",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "7c0aa854-85f9-4ff3-91ff-2ea97de638af",
+            "premise": "Haptic Glove",
+            "message": "Stand by",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "8524fe53-f900-4f25-a8c4-34ca346f36e5",
+            "premise": "Haptic Glove",
+            "message": "Record",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "48167d21-8cda-4607-89a0-3b71c87a7122",
+            "premise": "Haptic Glove",
+            "message": "Picture",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "b051801b-0a73-4efe-a349-a65cf5b029fb",
+            "premise": "Haptic Glove",
+            "message": "Video",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "c9978137-001f-4da8-b834-dccc73f8efb5",
+            "premise": "Haptic Glove",
+            "message": "Stop recording",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
+        },
+        {
+            "id": "0940a71e-e4a6-4bcf-aa52-f6f23d07339b",
+            "premise": "Haptic Glove",
+            "message": "Keep distance",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "AUV",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signal",
+            "categories": [],
+            "references": [
+                "ND21"
+            ]
         }
-        
     ],
     "updated": "2023-06-05"
 }
