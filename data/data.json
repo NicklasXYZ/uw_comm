@@ -18,7 +18,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -41,7 +43,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -62,11 +66,14 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Light Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "PG90",
-                "USND16"
+                "USND16",
+                "PADI16"
             ]
         },
         {
@@ -87,7 +94,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -109,7 +118,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -130,7 +141,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "NOAA01"
@@ -151,7 +164,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "NOAA01"
@@ -169,7 +184,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["Yes"],
+            "categories": [
+                "Yes"
+            ],
             "references": [
                 "PG90"
             ]
@@ -186,7 +203,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "PG90"
             ]
@@ -245,7 +264,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -266,7 +287,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -288,7 +311,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -311,7 +336,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -330,7 +357,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RSTC05",
@@ -353,7 +382,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RSTC05",
@@ -374,7 +405,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -395,7 +428,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BJ06"
             ]
@@ -416,7 +451,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -440,7 +477,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -464,7 +503,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -489,7 +530,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -513,7 +556,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -534,7 +579,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -556,7 +603,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -580,7 +629,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -603,7 +654,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -623,7 +676,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -647,7 +702,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RSTC05"
@@ -665,7 +722,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23",
                 "RSTC05"
@@ -683,7 +742,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -700,7 +761,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -736,7 +799,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -754,7 +819,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -771,7 +838,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -808,7 +877,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -830,7 +901,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -857,13 +930,16 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Light Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RD04",
                 "PG90",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "PADI16"
             ]
         },
         {
@@ -887,7 +963,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -909,7 +987,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -928,7 +1008,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -952,7 +1034,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -977,7 +1061,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RSTC05",
@@ -998,7 +1084,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -1017,7 +1105,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RSTC05",
@@ -1036,7 +1126,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1055,7 +1147,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -1077,7 +1171,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -1098,7 +1194,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1115,7 +1213,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1132,7 +1232,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1149,7 +1251,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1166,7 +1270,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1183,7 +1289,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1200,7 +1308,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1217,7 +1327,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -1235,7 +1347,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -1253,7 +1367,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1270,7 +1386,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1287,7 +1405,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1304,7 +1424,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1321,7 +1443,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -1339,7 +1463,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1356,7 +1482,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1373,7 +1501,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1392,7 +1522,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -1410,7 +1542,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1427,7 +1561,10 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["NP", "SE"],
+            "categories": [
+                "NP",
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1444,7 +1581,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1461,7 +1600,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1495,7 +1636,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1512,7 +1655,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1529,7 +1674,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1546,7 +1693,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1563,7 +1712,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -1581,7 +1732,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23",
                 "RD07",
@@ -1601,7 +1754,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1618,7 +1773,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1635,7 +1792,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1652,7 +1811,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1669,7 +1830,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1703,7 +1866,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1720,7 +1885,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1737,7 +1904,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1757,7 +1926,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1777,7 +1948,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1797,7 +1970,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1817,7 +1992,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1837,7 +2014,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1857,7 +2036,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1877,7 +2058,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1897,7 +2080,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1917,7 +2102,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90",
@@ -1937,7 +2124,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1954,7 +2143,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1971,7 +2162,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -1988,7 +2181,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2005,7 +2200,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2022,7 +2219,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2039,7 +2238,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2056,7 +2257,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2073,7 +2276,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2090,7 +2295,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2107,7 +2314,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2124,7 +2333,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2141,7 +2352,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2158,7 +2371,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2175,7 +2390,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2192,7 +2409,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2209,7 +2428,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2226,7 +2447,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2243,7 +2466,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2260,7 +2485,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2277,7 +2504,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2294,7 +2523,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2311,7 +2542,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2327,7 +2560,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2344,7 +2579,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2361,7 +2598,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2378,7 +2617,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2395,7 +2636,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2412,7 +2655,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2429,7 +2674,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2446,7 +2693,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2463,7 +2712,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2480,7 +2731,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2497,7 +2750,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2514,7 +2769,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2531,7 +2788,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2548,7 +2807,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2565,7 +2826,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2582,7 +2845,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2599,7 +2864,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2616,7 +2883,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2633,7 +2902,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2650,7 +2921,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2667,7 +2940,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2684,7 +2959,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2701,7 +2978,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2718,7 +2997,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2735,7 +3016,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2752,7 +3035,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2769,7 +3054,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2786,7 +3073,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2803,7 +3092,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2820,7 +3111,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2837,7 +3130,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2854,7 +3149,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2871,7 +3168,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2888,7 +3187,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2905,7 +3206,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2922,7 +3225,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2939,7 +3244,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2956,7 +3263,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2973,7 +3282,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -2990,7 +3301,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3007,7 +3320,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3024,7 +3339,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3041,7 +3358,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3057,7 +3376,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3074,7 +3395,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3091,7 +3414,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3108,7 +3433,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3125,7 +3452,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3142,7 +3471,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3159,7 +3490,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3176,7 +3509,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3193,7 +3528,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3210,7 +3547,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3227,7 +3566,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3244,7 +3585,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3261,7 +3604,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3278,7 +3623,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3295,7 +3642,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3312,7 +3661,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3329,7 +3680,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3346,7 +3699,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3363,7 +3718,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3380,7 +3737,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -3398,7 +3757,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3415,7 +3776,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3434,7 +3797,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -3452,7 +3817,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3469,7 +3836,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3486,7 +3855,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3503,7 +3874,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3520,7 +3893,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3537,7 +3912,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC"],
+            "categories": [
+                "EC"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3571,7 +3948,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EE"],
+            "categories": [
+                "EE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3588,7 +3967,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EE"],
+            "categories": [
+                "EE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3605,7 +3986,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EE"],
+            "categories": [
+                "EE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3622,7 +4005,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EE"],
+            "categories": [
+                "EE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3639,7 +4024,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EE"],
+            "categories": [
+                "EE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3656,7 +4043,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["EE"],
+            "categories": [
+                "EE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3675,7 +4064,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EE"],
+            "categories": [
+                "EE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3692,7 +4083,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3709,7 +4102,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -3727,7 +4122,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -3745,7 +4142,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3762,7 +4161,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3779,7 +4180,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3796,7 +4199,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3813,7 +4218,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["WS"],
+            "categories": [
+                "WS"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3830,7 +4237,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3847,7 +4256,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["QI"],
+            "categories": [
+                "QI"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3864,7 +4275,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3881,7 +4294,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3898,7 +4313,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -3920,7 +4337,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "NOAA01",
@@ -3943,7 +4362,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "BJ06"
@@ -3961,7 +4382,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3978,7 +4401,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "BL23"
             ]
@@ -3995,7 +4420,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4015,7 +4442,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -4033,7 +4462,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4067,7 +4498,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -4085,7 +4518,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -4105,7 +4540,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4122,7 +4559,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4139,7 +4578,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -4157,7 +4598,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4176,7 +4619,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -4194,7 +4639,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -4212,7 +4659,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4265,7 +4714,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Body Language",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23",
                 "PG90"
@@ -4283,7 +4734,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4300,7 +4753,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4317,7 +4772,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4334,7 +4791,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4351,7 +4810,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4368,7 +4829,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["ECM"],
+            "categories": [
+                "ECM"
+            ],
             "references": [
                 "BL23"
             ]
@@ -4402,7 +4865,10 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC", "NP"],
+            "categories": [
+                "EC",
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -4419,7 +4885,10 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC", "NP"],
+            "categories": [
+                "EC",
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -4436,7 +4905,10 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC", "NP"],
+            "categories": [
+                "EC",
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -4453,7 +4925,10 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["EC", "NP"],
+            "categories": [
+                "EC",
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -4470,7 +4945,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "PG90"
             ]
@@ -4487,7 +4964,11 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Hand Signal",
-            "categories": ["NP", "SE", "CO"],
+            "categories": [
+                "NP",
+                "SE",
+                "CO"
+            ],
             "references": [
                 "PG90",
                 "USND16"
@@ -4556,7 +5037,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Asynchronous",
             "type": "Line Marker",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -4573,7 +5056,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Asynchronous",
             "type": "Line Marker",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -4582,18 +5067,23 @@
             "id": "d2980f08-b807-4fb9-af12-65f8d8240e70",
             "premise": "Emergency",
             "message": "I am fouled and need the assistance of another diver",
-            "message_variations": [],
-            "description": "",
+            "message_variations": [
+                "I am fouled and need diver assistance"
+            ],
+            "description": "The signal is given by pulling in the line in a 2-2-2 pattern.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
@@ -4601,17 +5091,20 @@
             "premise": "Emergency",
             "message": "I am fouled but can clear myself",
             "message_variations": [],
-            "description": "",
+            "description": "The signal is given by pulling in the line in a 3-3-3 pattern.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
@@ -4619,17 +5112,20 @@
             "premise": "Emergency",
             "message": "Haul me up immediately",
             "message_variations": [],
-            "description": "",
+            "description": "The signal is given by pulling in the line in a 4-4-4 pattern.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
@@ -4642,18 +5138,21 @@
                 "Are you OK?",
                 "Attention"
             ],
-            "description": "1 pull",
+            "description": "The signal is given by pulling on the line 1 time.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "NOAA01",
                 "USND16",
-                "ERDI22"
+                "ERDI22",
+                "BJ06"
             ]
         },
         {
@@ -4661,18 +5160,21 @@
             "premise": "",
             "message": "Stop",
             "message_variations": [],
-            "description": "1 pull, when the diver is descending",
+            "description": "The signal is given by pulling on the line 1 time when the diver is descending.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "NOAA01",
                 "USND16",
-                "ERDI22"
+                "ERDI22",
+                "BJ06"
             ]
         },
         {
@@ -4684,27 +5186,12 @@
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
-            "references": [
-                "ERDI22"
-            ]
-        },
-        {
-            "id": "0ba43091-97ce-4d95-95c6-c672605de086",
-            "premise": "",
-            "message": "Take out more line",
-            "message_variations": [],
-            "description": "2 pulls",
-            "meaning": "",
-            "message_encoder": "Surface Attendant",
-            "message_decoder": "Diver",
-            "spatial_context": "remote",
-            "temporal_context": "Synchronous",
-            "type": "Line Pulling",
-            "categories": ["ECM"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "ERDI22"
             ]
@@ -4713,18 +5200,107 @@
             "id": "5fe8d0de-b867-470f-9d63-f37d5d89763f",
             "premise": "",
             "message": "Going down",
-            "message_variations": [],
-            "description": "2 pulls",
+            "message_variations": [
+                "Am going down"
+            ],
+            "description": "The signal is given by pulling on the line 2 times.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "BJ06"
+            ]
+        },
+        {
+            "id": "d2359a76-9c33-4804-9407-1658cbb55adb",
+            "premise": "",
+            "message": "Am sending down a rope",
+            "message_variations": [
+                "I am sending down a rope"
+            ],
+            "description": "The signal is given by pulling on the line 2 times.",
+            "meaning": "",
+            "message_encoder": "Surface Attendant",
+            "message_decoder": "Diver",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "BJ06"
+            ]
+        },
+        {
+            "id": "c1347f02-0f47-42d3-8814-a9fd291f8175",
+            "premise": "",
+            "message": "I am going down",
+            "message_variations": [],
+            "description": "The signal is given by pulling on the line 3 times.",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Surface Attendant",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "BJ06"
+            ]
+        },
+        {
+            "id": "826c4a84-6bed-4554-b4dc-1b0f3195a8a9",
+            "premise": "",
+            "message": "Send down a rope",
+            "message_variations": [],
+            "description": "The signal is given by pulling on the line 2 times.",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Surface Attendant",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "BJ06"
+            ]
+        },
+        {
+            "id": "8e2e28df-033c-41b6-9b6b-39456ee49b24",
+            "premise": "",
+            "message": "You have come up too far; go back down until we stop you",
+            "message_variations": [
+                "Stop; change direction; take out more line",
+                "You have come too far. Go down till I stop you"
+            ],
+            "description": "The signal is given by pulling on the line 2 times [NOAA01, USND16, ERDI22] during diver ascent or 3 times [BJ06]. ",
+            "meaning": "",
+            "message_encoder": "Surface Attendant",
+            "message_decoder": "Diver",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "NOAA01",
+                "USND16",
+                "ERDI22",
+                "BJ06"
             ]
         },
         {
@@ -4732,19 +5308,23 @@
             "premise": "",
             "message": "Stand by to come up",
             "message_variations": [
-                "Standby"
+                "Standby",
+                "Standby to ascend"
             ],
-            "description": "3 pulls",
+            "description": "The signal is given by pulling on the line 3 times [NOAA01, USND16, BJ06] or 4 times [ERDI22].",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["SE"],
+            "categories": [
+                "SE"
+            ],
             "references": [
                 "NOAA01",
                 "USND16",
+                "BJ06",
                 "ERDI22"
             ]
         },
@@ -4753,17 +5333,21 @@
             "premise": "",
             "message": "Come up",
             "message_variations": [],
-            "description": "4 pulls",
+            "description": "The signal is given by pulling on the line 4 times [NOAA01, USND16, BJ06] or 3 times [ERDI22].",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["SE", "NP"],
+            "categories": [
+                "SE",
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "USND16",
+                "BJ06",
                 "ERDI22"
             ]
         },
@@ -4775,17 +5359,20 @@
                 "Answer the telephone",
                 "Talk to me"
             ],
-            "description": "2-1 pulls",
+            "description": "The signal is given by pulling on the line in a 2-1 pattern.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["CO"],
+            "categories": [
+                "CO"
+            ],
             "references": [
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
@@ -4793,16 +5380,17 @@
             "premise": "",
             "message": "Ventilate",
             "message_variations": [],
-            "description": "3-2 pulls",
+            "description": "The signal is given by pulling on the line in a 3-2 pattern.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
             "references": [
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
@@ -4810,16 +5398,17 @@
             "premise": "",
             "message": "Circulate",
             "message_variations": [],
-            "description": "4-3 pulls",
+            "description": "The signal is given by pulling in the line in a 4-3 pattern.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
             "references": [
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
@@ -4831,11 +5420,11 @@
                 "I am OK",
                 "Attention"
             ],
-            "description": "1 pull",
+            "description": "The signal is given by pulling on the line 1 time.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
@@ -4851,17 +5440,20 @@
             "premise": "",
             "message": "At the bottom",
             "message_variations": [
-                "I am at the bottom",
-                "I have arrived at the bottom"
+                "I am on the bottom",
+                "I have arrived at the bottom",
+                "Stop"
             ],
-            "description": "1 pull",
+            "description": "The signal is given by pulling on the line 1 time when descending.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "USND16",
@@ -4879,10 +5471,12 @@
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "BJ06"
             ]
@@ -4895,14 +5489,16 @@
                 "Give me slack",
                 "More line"
             ],
-            "description": "2 pulls",
+            "description": "The signal is given by pulling the line 2 times.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "USND16",
@@ -4914,17 +5510,18 @@
             "premise": "",
             "message": "Take up my slack",
             "message_variations": [],
-            "description": "3 pulls",
+            "description": "The signal is given by pulling on the line 3 times.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
             "references": [
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
@@ -4932,11 +5529,11 @@
             "premise": "",
             "message": "Object found",
             "message_variations": [],
-            "description": "3 pulls",
+            "description": "The signal is given by pulling on the line 3 times.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
@@ -4951,17 +5548,18 @@
             "message_variations": [
                 "May I come up?"
             ],
-            "description": "4 pulls",
+            "description": "The signal is given by pulling on the line 4 times.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
             "references": [
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
@@ -4971,11 +5569,11 @@
             "message_variations": [
                 "Trouble"
             ],
-            "description": "4 pulls",
+            "description": "The signal is given by pulling on the line 4 times.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
@@ -4987,35 +5585,94 @@
             "id": "2e52c384-954d-4f08-ac78-e8f02cb2850c",
             "premise": "",
             "message": "More air",
-            "message_variations": [],
-            "description": "3-2 pulls",
+            "message_variations": [
+                "Give me more air"
+            ],
+            "description": "The signal is given by pulling in the line in a 3-2 pattern.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
             "references": [
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "BJ06"
             ]
         },
         {
             "id": "c8656bf8-0978-46f5-986d-4d0565efcde8",
             "premise": "",
             "message": "Less air",
-            "message_variations": [],
-            "description": "4-3 pulls",
+            "message_variations": [
+                "Give me less air"
+            ],
+            "description": "The signal is given by pulling in the line in a 4-3 pattern.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Surface Attendant",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
             "references": [
                 "NOAA01",
+                "USND16",
+                "BJ06"
+            ]
+        },
+        {
+            "id": "7925d1ab-6af4-4036-b37f-d39164d4c860",
+            "premise": "",
+            "message": "Send me a square mark",
+            "message_variations": [],
+            "description": "The signal is given by pulling in the line in a 1-2-3 pattern.",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Surface Attendant",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [],
+            "references": [
+                "USND16"
+            ]
+        },
+        {
+            "id": "8f39aa7a-af8e-412a-97ba-e3d00b919bd2",
+            "premise": "",
+            "message": "Send me a line",
+            "message_variations": [],
+            "description": "The signal is given by pulling in the line 5 times.",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Surface Attendant",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [],
+            "references": [
+                "USND16"
+            ]
+        },
+        {
+            "id": "e461c61a-681c-4662-9059-f6f0106b4d48",
+            "premise": "",
+            "message": "Send me a slate",
+            "message_variations": [
+                "Send me a writing slate"
+            ],
+            "description": "The signal is given by pulling in the line in a 2-1-2 pattern.",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Surface Attendant",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [],
+            "references": [
                 "USND16"
             ]
         },
@@ -5024,11 +5681,11 @@
             "premise": "Searching",
             "message": "Go on (or off) searching signals",
             "message_variations": [],
-            "description": "7 pulls",
+            "description": "When searching without a circling line, the signal is given by pulling in the line 7 times.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
             "categories": [],
@@ -5042,14 +5699,16 @@
             "premise": "Searching",
             "message": "Stop and search where you are",
             "message_variations": [],
-            "description": "1 pull",
+            "description": "When searching without a circling line, the signal is given by pulling in the line 1 time.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -5059,15 +5718,19 @@
             "id": "5d0af1d2-d3a0-4cff-827d-2795dc962b52",
             "premise": "Searching",
             "message": "Move away from the tender",
-            "message_variations": [],
-            "description": "2 pulls, if given slack",
+            "message_variations": [
+                ""
+            ],
+            "description": "When searching without a circling line, the signal is given by pulling in the line 2 times, if given slack.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -5078,14 +5741,16 @@
             "premise": "Searching",
             "message": "Move towards the tender",
             "message_variations": [],
-            "description": "2 pulls, if strain is taken on the line",
+            "description": "When searching without a circling line, the signal is given by pulling in the line 2 times, if strain is taken on the line.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -5095,15 +5760,19 @@
             "id": "23b7919a-e0f8-4bda-933d-e528c76450c8",
             "premise": "Searching",
             "message": "Go to your right",
-            "message_variations": [],
-            "description": "3 pulls",
+            "message_variations": [
+                "Move right"
+            ],
+            "description": "When searching without a circling line, the signal is given by pulling in the line 3 times.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -5113,15 +5782,19 @@
             "id": "3b6492c1-39ac-496f-8887-5d9952e4bef6",
             "premise": "Searching",
             "message": "Go to your left",
-            "message_variations": [],
-            "description": "4 pulls",
+            "message_variations": [
+                "Move left"
+            ],
+            "description": "When searching without a circling line, the signal is given by pulling in the line 4 times.",
             "meaning": "",
             "message_encoder": "Surface Attendant",
             "message_decoder": "Diver",
-            "spatial_context": "remote",
+            "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "NOAA01",
                 "USND16"
@@ -5132,7 +5805,7 @@
             "premise": "Searching",
             "message": "Attention",
             "message_variations": [],
-            "description": "",
+            "description": "The signal is given by pulling in the line 1 time.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
@@ -5149,14 +5822,35 @@
             "premise": "Searching",
             "message": "Stop",
             "message_variations": [],
-            "description": "",
+            "description": "The signal is given by pulling in the line 1 time.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "PADI16"
+            ]
+        },
+        {
+            "id": "e461c61a-681c-4662-9059-f6f0106b4d48",
+            "premise": "Searching",
+            "message": "OK",
+            "message_variations": [],
+            "description": "The signal is given by pulling in the line 2 times.",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Remote",
+            "temporal_context": "Synchronous",
+            "type": "Line Pulling",
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "PADI16"
             ]
@@ -5166,14 +5860,16 @@
             "premise": "Searching",
             "message": "I have finished the leg",
             "message_variations": [],
-            "description": "",
+            "description": "The signal is given by pulling in the line 3 times.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "PADI16"
             ]
@@ -5182,15 +5878,20 @@
             "id": "1576dfca-4e55-476f-bcd9-00daf91c6acd",
             "premise": "Searching",
             "message": "Come towards me",
-            "message_variations": ["Let us unite"],
-            "description": "",
+            "message_variations": [
+                "Let us unite",
+                "Let's unite"
+            ],
+            "description": "The signal is given by pulling in the line 4 times.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Remote",
             "temporal_context": "Synchronous",
             "type": "Line Pulling",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "PADI16"
             ]
@@ -5199,8 +5900,10 @@
             "id": "4077fb6b-cfb1-48a1-814b-23c49ff41c93",
             "premise": "Searching",
             "message": "Emergency",
-            "message_variations": ["Come to me immediately"],
-            "description": "",
+            "message_variations": [
+                "Come to me immediately"
+            ],
+            "description": "The signal is given by continuously pulling in the line.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
@@ -5265,7 +5968,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Touch Contact",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -5282,7 +5987,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Touch Contact",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -5299,7 +6006,9 @@
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
             "type": "Touch Contact",
-            "categories": ["NP"],
+            "categories": [
+                "NP"
+            ],
             "references": [
                 "PG90"
             ]
@@ -5321,8 +6030,6 @@
                 "PG90"
             ]
         },
-
-
         {
             "id": "0e198d02-3d01-458d-b2e7-285ef3cc60ce",
             "premise": "",
@@ -5391,7 +6098,6 @@
                 "DJ14"
             ]
         },
-
         {
             "id": "d907a7d2-cc25-4a02-b1a7-8071d49b7bef",
             "premise": "Haptic Glove",
@@ -5532,7 +6238,9 @@
             "id": "435bc948-2232-43bb-9c3b-7ed3230127fe",
             "premise": "Haptic Glove",
             "message": "Panic stop",
-            "message_variations": ["Distress"],
+            "message_variations": [
+                "Distress"
+            ],
             "description": "",
             "meaning": "",
             "message_encoder": "Diver",
