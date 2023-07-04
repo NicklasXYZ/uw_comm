@@ -3,7 +3,7 @@
 
   export let node
   // export let filteredMessages
-  export let state
+  // export let state
 
   const { getCyInstance } = getContext('graphSharedState')
   const [renderer, refElement, cyInstance] = getCyInstance()

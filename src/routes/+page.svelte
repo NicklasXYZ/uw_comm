@@ -1,6 +1,8 @@
 <script lang="ts">
 	import SigmaGraph from '$lib/components/SigmaGraph.svelte';
-	import GraphNode from '$lib/components/GraphNode.svelte';
+	// import GraphNode from '$lib/components/GraphNode.svelte';
+	import GraphNodeAdd from '$lib/components/GraphNodeAdd.svelte';
+	import GraphNodeRemove from '$lib/components/GraphNodeRemove.svelte';
 	import GraphEdge from '$lib/components/GraphEdge.svelte';
 
 	import { onMount, getContext } from 'svelte'
@@ -79,6 +81,7 @@
 
 	// let searchTerm = '';
 	let filteredMessages = data.messageValues;
+	let messagesToRemove = []
 	
 	let allMessageIDs = data.messageValues.map(
 		(dataIn) => (dataIn["id"])
@@ -180,6 +183,7 @@
 			)
 			state.selectedMessageIDs = new Set(selectedMessageIDs)
 			state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
+			messagesToRemove = Array.from(state.messagesToRemove)
 
 			// console.log("Option 1")
 			// console.log(state.messagesToRemove?.size)
@@ -197,6 +201,12 @@
 		} else {
 			// console.log("Option 2")
 			filteredMessages = data.messageValues;
+			let selectedMessageIDs = filteredMessages.map(
+				(dataIn) => (dataIn["id"])
+			)
+			state.selectedMessageIDs = new Set(selectedMessageIDs)
+			state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
+			messagesToRemove = Array.from(state.messagesToRemove)
 			// if (refElement) {
 				// renderer = createGraph(refElement, filteredMessages)
 				// cyInstance = createGraph(refElement, filteredMessages)
@@ -347,9 +357,14 @@
 			<!-- <Graph {filteredMessages}/> -->
 			<SigmaGraph state={state}>
 				{#each filteredMessages as node}
-					<GraphNode node={node} state={state}/>
+					<!-- <GraphNode node={node} state={state}/> -->
+					<GraphNodeAdd node={node}/>
 			  	{/each}
-				<!-- <GraphNode {filteredMessages}/> -->
+				{#each messagesToRemove as node}
+				  <!-- <GraphNode node={node} state={state}/> -->
+				  <GraphNodeRemove node={node}/>
+				{/each}
+			  <!-- <GraphNode {filteredMessages}/> -->
 				<!-- {#each edges as edge} -->
 				  <!-- <GraphEdge edge={edge}/> -->
 				<!-- {/each} -->
