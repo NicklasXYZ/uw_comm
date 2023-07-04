@@ -400,6 +400,13 @@
                             </tr>
 
                             <tr>
+                                <td>[SD09]</td>
+                                <td class="pl-4">
+                                    <p> van Stijn, Dave and Harterink, Mike. <cite>Scubasigns: The Guide to All Diving Hand Signals</cite>, (2009). Published by: Scubasigns Foundation.</p>                
+                                </td>
+                            </tr>
+
+                            <tr>
                                 <td>[DJ14]</td>
                                 <td class="pl-4">
                                     <p> DeMarco, K. J. and West, M. E. and Howard, A. M. <cite>Underwater Human-Robot Communication: A Case Study with Human Divers </cite> 2014 IEEE International Conference on Systems, Man, and Cybernetics (SMC), San Diego, CA, USA, 2014, pp. 3738-3743, doi: 10.1109/SMC.2014.6974512.</p>                
@@ -409,7 +416,7 @@
                             <tr>
                                 <td>[ND21]</td>
                                 <td class="pl-4">
-                                    <p> Nađ, Ð. et al. <cite>Diver-Robot communication using wearable sensing diver glove</cite> OCEANS 2021: San Diego - Porto, San Diego, CA, USA, 2021, pp. 1-6, doi: 10.23919/OCEANS44145.2021.9706117.</p>                
+                                    <p> Nađ, Ð. et al. <cite>Diver-Robot Communication Using Earable Sensing Diver Glove</cite> OCEANS 2021: San Diego - Porto, San Diego, CA, USA, 2021, pp. 1-6, doi: 10.23919/OCEANS44145.2021.9706117.</p>                
                                 </td>
                             </tr>
 
@@ -417,7 +424,7 @@
                             <tr>
                                 <td>[JR88]</td>
                                 <td class="pl-4">
-                                    <p>  Johansen, Robert. <cite>Groupware: Computer support for business teams</cite>, (2022). Published by: The Free Press.</p>                
+                                    <p>  Johansen, Robert. <cite>Groupware: Computer Support for Business Teams</cite>, (2022). Published by: The Free Press.</p>                
                                 </td>
                             </tr>
 

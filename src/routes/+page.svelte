@@ -1,20 +1,83 @@
 <script lang="ts">
+	import SigmaGraph from '$lib/components/SigmaGraph.svelte';
+	import GraphNode from '$lib/components/GraphNode.svelte';
+	import GraphEdge from '$lib/components/GraphEdge.svelte';
+
+	import { onMount, getContext } from 'svelte'
+	import { random } from 'graphology-layout';
+
+
 	import MessageCard from '$lib/components/messageCard.svelte';
 	import { filterDimensions } from '$lib/utils/filters.svelte'
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
 	import type { MessageShort } from '$lib/models/message';
 
+	import Sigma from 'sigma';
+  	import Graph from 'graphology';
+
+	// const { getCyInstance } = getContext('graphSharedState')
+  	// const [renderer, refElement, cyInstance] = getCyInstance()
+
 	export let data: any;	
-	
+
+	// let refElement: HTMLElement = null
+	// let cyInstance = null
+	// 	const nodes = [
+		//     { id: 'N1', label: 'Start' },
+		//     { id: 'N2', label: '4' },
+		//     { id: 'N4', label: '8' },
+		//     { id: 'N5', label: '15' },
+		//     { id: 'N3', label: '16' },
+		//     { id: 'N6', label: '23' },
+		//     { id: 'N7', label: '42' },
+		//     { id: 'N8', label: 'End' }
+		//   ]
+		
+		//   const edges = [
+			//     { id: 'E1', source: 'N1', target: 'N2' },
+			//     { id: 'E2', source: 'N2', target: 'N3' },
+//     { id: 'E3', source: 'N3', target: 'N6' },
+//     { id: 'E4', source: 'N2', target: 'N4' },
+//     { id: 'E5', source: 'N4', target: 'N5' },
+//     { id: 'E6', source: 'N5', target: 'N4', label: '2' },
+//     { id: 'E7', source: 'N5', target: 'N6' },
+//     { id: 'E8', source: 'N6', target: 'N7' },
+//     { id: 'E9', source: 'N7', target: 'N7', label: '3' },
+//     { id: 'E10', source: 'N7', target: 'N8' }
+//   ]
+
+	function createGraph(referenceElement, dataIn) {
+		let graphInstance = new Graph();
+		for (let i = 0; i < dataIn.length; i++) {
+			graphInstance.addNode(
+				dataIn[i].id,
+				{
+					x: 0,
+					y: 0,
+					size: 20,
+					color: "red",
+					label: dataIn[i].id,
+				}
+				) 
+			}
+			return graphInstance
+			// return new Sigma(graphInstance, referenceElement);
+	}
+		
 	// let searchTerm = '';
 	let filteredMessages = data.messageValues;
 	
+	// cyInstance = createGraph(refElement, filteredMessages)
+	// const renderer =  new Sigma(cyInstance, refElement);
+	let renderer;
+
 	$: spatialContextColocated = true;
 	$: spatialContextRemote = true;
 	$: temporalContextSync = true;
 	$: temporalContextAsync = true ;
 	$: {
+		console.log("Update!")
 		if (!spatialContextColocated || !spatialContextRemote || !temporalContextSync || !temporalContextAsync) {
 			filteredMessages = filterDimensions(
 				data.messageValues,
@@ -23,12 +86,39 @@
 				temporalContextSync,
 				temporalContextAsync,
 			);
+			// if (refElement) {
+				// renderer = createGraph(refElement, filteredMessages)
+				// cyInstance = createGraph(refElement, filteredMessages)
+				// if (!renderer){
+					// renderer = new Sigma(cyInstance, refElement);
+				// }
+				// renderer.refesh()
+				// const positions = random(cyInstance);
+				// random.assign(cyInstance);
+			// }
+
 		} else {
 			filteredMessages = data.messageValues;
+			// if (refElement) {
+				// renderer = createGraph(refElement, filteredMessages)
+				// cyInstance = createGraph(refElement, filteredMessages)
+				// if (!renderer){
+				// 	renderer = new Sigma(cyInstance, refElement);					
+				// }
+				// renderer.refesh()
+				// const positions = random(cyInstance);
+				// random.assign(cyInstance);
+			// }
 		}
 	}
 	
 	let tabSet: number = 0;
+
+
+	// onMount(() => {
+	// 	cyInstance = new Graph();
+	// 	const renderer = new Sigma(cyInstance, refElement);
+	// })
 </script>
 
 <svelte:head>
@@ -129,6 +219,7 @@
 </div>
 
 <!-- Data View Tabs -->
+
 <TabGroup 
 	hover="hover:bg-surface-600"
 	justify="justify-center"
@@ -139,7 +230,7 @@
 	<Tab bind:group={tabSet} name="tab1" value={0}>List View</Tab>
 	<Tab bind:group={tabSet} name="tab2" value={1}>Network View</Tab>
 
-	<!-- Tab Panels --->
+	<!-- Tab Panels -->
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
 			<div class="px-4 grid gap-4 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1">
@@ -148,7 +239,22 @@
 				{/each}
 			</div>			
 		{:else if tabSet === 1}
-			TODO...
+			{filteredMessages.length}
+			<!-- <div style="height: calc(100vh - 215px)" bind:this={refElement} class="container"> -->
+				<!-- {#if cyInstance} -->
+				<!-- {/if} -->
+			<!-- </div> -->
+
+			<!-- <Graph {filteredMessages}/> -->
+			<SigmaGraph>
+				{#each filteredMessages as node}
+					<GraphNode {node}/>
+			  	{/each}
+				<!-- <GraphNode {filteredMessages}/> -->
+				<!-- {#each edges as edge} -->
+				  <!-- <GraphEdge edge={edge}/> -->
+				<!-- {/each} -->
+			</SigmaGraph>
 		{/if}
 	</svelte:fragment>
 </TabGroup>

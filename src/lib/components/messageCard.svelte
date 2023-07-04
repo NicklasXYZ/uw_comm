@@ -33,21 +33,21 @@
                 </div>
             </div>
 
-            <!-- <div class="flex p-2">
-                <img class="mx-2" src={outgoingMailLoc} width="24" height="24" alt="Message" />
+            <div class="flex p-2">
+                <!-- <img class="mx-2" src={outgoingMailLoc} width="24" height="24" alt="Message" /> -->
                 <div class="pl-4">
                     <p class="text-xs text-surface-300">Message Encoder</p>
                     <p class="text-sm font-medium">{messageObject.message_encoder}</p>
                 </div>
-            </div> -->
+            </div>
 
-            <!-- <div class="flex p-2">
-                <img class="mx-2" src={incomingMailLoc} width="24" height="24" alt="Message" />
+            <div class="flex p-2">
+                <!-- <img class="mx-2" src={incomingMailLoc} width="24" height="24" alt="Message" /> -->
                 <div class="pl-4">
                     <p class="text-xs text-surface-300">Message Decoder</p>
                     <p class="text-sm font-medium">{messageObject.message_decoder}</p>
                 </div>
-            </div> -->
+            </div>
 
             <div class="flex p-2 pt-4">
                 <!-- <img class="mx-2" src={mapLoc} width="24" height="24" alt="Message" /> -->
