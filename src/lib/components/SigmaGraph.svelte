@@ -2,6 +2,7 @@
   import { onMount, setContext } from 'svelte'
   import Sigma from 'sigma';
   import Graph from 'graphology';
+  import { Coordinates, EdgeDisplayData, NodeDisplayData } from "sigma/types";
   // import cytoscape from 'cytoscape'
   // import dagre from 'cytoscape-dagre'
   // import GraphStyles from './GraphStyles.js'
@@ -16,6 +17,7 @@
 
   // export let filteredMessages;
 
+  export let state;
 
   
   let refElement: HTMLElement = null
@@ -54,6 +56,10 @@
 
     cyInstance = new Graph();
 
+    cyInstance.on('nodeDropped', function({key}) {
+      console.log(key);
+    })
+
     // graph.addNode("John", { x: 0, y: 10, size: 15, label: "John", color: "blue" });
     // graph.addNode("Mary", { x: 10, y: 0, size: 10, label: "Mary", color: "green" });
     // graph.addNode("Thomas", { x: 7, y: 9, size: 20, label: "Thomas", color: "red" });
@@ -90,6 +96,23 @@
   // const renderer = new Sigma(cyInstance, refElement);
   if (!renderer){
     renderer = new Sigma(cyInstance, refElement);
+  //   renderer.setSetting("nodeReducer", (node, data) => {
+  //   const res: Partial<NodeDisplayData> = { ...data };
+
+  //   if (state.hoveredNeighbors && !state.hoveredNeighbors.has(node) && state.hoveredNode !== node) {
+  //     res.label = "";
+  //     res.color = "#f6f6f6";
+  //   }
+
+  //   if (state.selectedNode === node) {
+  //     res.highlighted = true;
+  //   } else if (state.suggestions && !state.suggestions.has(node)) {
+  //     res.label = "";
+  //     res.color = "#f6f6f6";
+  //   }
+
+  //   return res;
+  // });
   }
 
   
@@ -112,12 +135,18 @@
 
   })
 
+
+  
+
+
+
 </script>
 
 <h1> Sigma graph exemple</h1>
 <!-- <div id="sigma-container" /> -->
-<div style="height: calc(100vh - 215px)" bind:this={refElement} class="container">
-<!-- <div style="height: 100px" bind:this={container} class="container" /> -->
+<!-- <div style="height: calc(100vh - 215px)" bind:this={refElement}> -->
+<div style="height: calc(100vh - 215px); position: relative" bind:this={refElement}>
+    <!-- <div style="height: 100px" bind:this={container} class="container" /> -->
   {#if cyInstance}
     <!-- <p> -->
       <!-- Hello {filteredMessages.length} -->

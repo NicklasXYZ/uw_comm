@@ -16,9 +16,6 @@
 	import Sigma from 'sigma';
   	import Graph from 'graphology';
 
-	// const { getCyInstance } = getContext('graphSharedState')
-  	// const [renderer, refElement, cyInstance] = getCyInstance()
-
 	export let data: any;	
 
 	// let refElement: HTMLElement = null
@@ -47,45 +44,145 @@
 //     { id: 'E10', source: 'N7', target: 'N8' }
 //   ]
 
-	function createGraph(referenceElement, dataIn) {
-		let graphInstance = new Graph();
-		for (let i = 0; i < dataIn.length; i++) {
-			graphInstance.addNode(
-				dataIn[i].id,
-				{
-					x: 0,
-					y: 0,
-					size: 20,
-					color: "red",
-					label: dataIn[i].id,
-				}
-				) 
-			}
-			return graphInstance
-			// return new Sigma(graphInstance, referenceElement);
-	}
-		
+	// function createGraph(referenceElement, dataIn) {
+	// 	let graphInstance = new Graph();
+	// 	for (let i = 0; i < dataIn.length; i++) {
+	// 		graphInstance.addNode(
+	// 			dataIn[i].id,
+	// 			{
+	// 				x: 0,
+	// 				y: 0,
+	// 				size: 20,
+	// 				color: "red",
+	// 				label: dataIn[i].id,
+	// 			}
+	// 			) 
+	// 		}
+	// 		return graphInstance
+	// 		// return new Sigma(graphInstance, referenceElement);
+	// }
+    
+	function *setMinus(A, B) {
+      const setA = new Set(A);
+      const setB = new Set(B);
+
+      for (const v of setB.values()) {
+        if (!setA.delete(v)) {
+            yield v;
+        }
+      }
+
+      for (const v of setA.values()) {
+        yield v;
+      }
+    }
+
 	// let searchTerm = '';
 	let filteredMessages = data.messageValues;
 	
+	let allMessageIDs = data.messageValues.map(
+		(dataIn) => (dataIn["id"])
+	)
+	// console.log(allMessageIDs)
+
 	// cyInstance = createGraph(refElement, filteredMessages)
 	// const renderer =  new Sigma(cyInstance, refElement);
-	let renderer;
+	// let renderer;
 
-	$: spatialContextColocated = true;
-	$: spatialContextRemote = true;
-	$: temporalContextSync = true;
-	$: temporalContextAsync = true ;
+	// Type and declare internal state:
+	interface State {
+		// hoveredNode?: string;
+		// searchQuery: string;
+		// State derived from query:
+		selectedMessageIDs ?: Set<string>;
+		allMessageIDs ?: Set<string>;
+		messagesToRemove ?: Set<string>;
+		// suggestions?: Set<string>;
+		// State derived from hovered node:
+		// hoveredNeighbors?: Set<string>;
+		spatialContextColocated?: boolean;
+		spatialContextRemote?: boolean;
+		temporalContextSync?: boolean;
+		temporalContextAsync?: boolean;
+		
+	}
+	// console.log("Filtered Messages: ")
+	// console.log(filteredMessages)
+	// console.log()
+
+	const state: State = {
+		spatialContextColocated: true, 
+		spatialContextRemote: true,
+		temporalContextSync: true,
+		temporalContextAsync: true,
+		selectedMessageIDs: new Set(allMessageIDs),
+		allMessageIDs: new Set(allMessageIDs),
+		messagesToRemove: new Set([])
+	};
+
+
+	// $: spatialContextColocated = true;
+	// $: spatialContextRemote = true;
+	// $: temporalContextSync = true;
+	// $: temporalContextAsync = true;
+	// $: {
+	// 	console.log("Update!")
+	// 	if (!spatialContextColocated || !spatialContextRemote || !temporalContextSync || !temporalContextAsync) {
+	// 		filteredMessages = filterDimensions(
+	// 			data.messageValues,
+	// 			spatialContextColocated,
+	// 			spatialContextRemote,
+	// 			temporalContextSync,
+	// 			temporalContextAsync,
+	// 		);
+	// 		// if (refElement) {
+	// 			// renderer = createGraph(refElement, filteredMessages)
+	// 			// cyInstance = createGraph(refElement, filteredMessages)
+	// 			// if (!renderer){
+	// 				// renderer = new Sigma(cyInstance, refElement);
+	// 			// }
+	// 			// renderer.refesh()
+	// 			// const positions = random(cyInstance);
+	// 			// random.assign(cyInstance);
+	// 		// }
+
+	// 	} else {
+	// 		filteredMessages = data.messageValues;
+	// 		// if (refElement) {
+	// 			// renderer = createGraph(refElement, filteredMessages)
+	// 			// cyInstance = createGraph(refElement, filteredMessages)
+	// 			// if (!renderer){
+	// 			// 	renderer = new Sigma(cyInstance, refElement);					
+	// 			// }
+	// 			// renderer.refesh()
+	// 			// const positions = random(cyInstance);
+	// 			// random.assign(cyInstance);
+	// 		// }
+	// 	}
+	// }
+	
+
+	$: state.spatialContextColocated = true;
+	$: state.spatialContextRemote = true;
+	$: state.temporalContextSync = true;
+	$: state.temporalContextAsync = true;
 	$: {
-		console.log("Update!")
-		if (!spatialContextColocated || !spatialContextRemote || !temporalContextSync || !temporalContextAsync) {
+		if (!state.spatialContextColocated || !state.spatialContextRemote || !state.temporalContextSync || !state.temporalContextAsync) {
 			filteredMessages = filterDimensions(
 				data.messageValues,
-				spatialContextColocated,
-				spatialContextRemote,
-				temporalContextSync,
-				temporalContextAsync,
+				state.spatialContextColocated,
+				state.spatialContextRemote,
+				state.temporalContextSync,
+				state.temporalContextAsync,
 			);
+			let selectedMessageIDs = filteredMessages.map(
+				(dataIn) => (dataIn["id"])
+			)
+			state.selectedMessageIDs = new Set(selectedMessageIDs)
+			state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
+
+			// console.log("Option 1")
+			// console.log(state.messagesToRemove?.size)
 			// if (refElement) {
 				// renderer = createGraph(refElement, filteredMessages)
 				// cyInstance = createGraph(refElement, filteredMessages)
@@ -98,6 +195,7 @@
 			// }
 
 		} else {
+			// console.log("Option 2")
 			filteredMessages = data.messageValues;
 			// if (refElement) {
 				// renderer = createGraph(refElement, filteredMessages)
@@ -111,7 +209,7 @@
 			// }
 		}
 	}
-	
+
 	let tabSet: number = 0;
 
 
@@ -182,13 +280,13 @@
 					<ul class="text-surface-300 rounded-lg sm:flex bg-surface-500">
 						<li class="w-full border-white sm:border-b-0 sm:border-r">
 							<div class="flex items-center pl-3">
-								<input id="checkbox-list-5" type="checkbox" bind:checked={spatialContextColocated} class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
+								<input id="checkbox-list-5" type="checkbox" bind:checked={state.spatialContextColocated} class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
 								<label for="checkbox-list-5" class="w-full py-3 ml-2 text-sm font-medium text-white">Colocated</label>
 							</div>
 						</li>
 						<li class="w-full">
 							<div class="flex items-center pl-3">
-								<input id="checkbox-list-6" type="checkbox" bind:checked={spatialContextRemote} class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
+								<input id="checkbox-list-6" type="checkbox" bind:checked={state.spatialContextRemote} class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
 								<label for="checkbox-list-6" class="w-full py-3 ml-2 text-sm font-medium text-white">Remote</label>
 							</div>
 						</li>
@@ -198,13 +296,13 @@
 					<ul class="text-surface-300 rounded-lg sm:flex bg-surface-500">
 						<li class="w-full border-white sm:border-b-0 sm:border-r">
 							<div class="flex items-center pl-3">
-								<input id="checkbox-list-7" type="checkbox" bind:checked={temporalContextSync} class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
+								<input id="checkbox-list-7" type="checkbox" bind:checked={state.temporalContextSync} class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
 								<label for="checkbox-list-7" class="w-full py-3 ml-2 text-sm font-medium text-white">Synchronous</label>
 							</div>
 						</li>
 						<li class="w-full">
 							<div class="flex items-center pl-3">
-								<input id="checkbox-list-8" type="checkbox" bind:checked={temporalContextAsync} class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
+								<input id="checkbox-list-8" type="checkbox" bind:checked={state.temporalContextAsync} class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
 								<label for="checkbox-list-8" class="w-full py-3 ml-2 text-sm font-medium text-white">Asynchronous</label>
 							</div>
 						</li>
@@ -234,6 +332,7 @@
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
 			<div class="px-4 grid gap-4 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1">
+				<!-- {#each filteredMessages as messageObject, index (index)} -->
 				{#each filteredMessages as messageObject, index (index)}
 					<MessageCard {messageObject} />
 				{/each}
@@ -246,9 +345,9 @@
 			<!-- </div> -->
 
 			<!-- <Graph {filteredMessages}/> -->
-			<SigmaGraph>
+			<SigmaGraph state={state}>
 				{#each filteredMessages as node}
-					<GraphNode {node}/>
+					<GraphNode node={node} state={state}/>
 			  	{/each}
 				<!-- <GraphNode {filteredMessages}/> -->
 				<!-- {#each edges as edge} -->
