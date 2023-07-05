@@ -2,6 +2,7 @@
 	import SigmaGraph from '$lib/components/SigmaGraph.svelte';
 	// import GraphNode from '$lib/components/GraphNode.svelte';
 	import GraphNodeAdd from '$lib/components/GraphNodeAdd.svelte';
+	import GraphNodes from '$lib/components/GraphNodes.svelte';
 	import GraphNodeRemove from '$lib/components/GraphNodeRemove.svelte';
 	import GraphEdge from '$lib/components/GraphEdge.svelte';
 
@@ -82,7 +83,7 @@
 	// let searchTerm = '';
 	let filteredMessages = data.messageValues;
 	let messagesToRemove = []
-	
+	let selectedMessageIDs = []
 	let allMessageIDs = data.messageValues.map(
 		(dataIn) => (dataIn["id"])
 	)
@@ -178,35 +179,22 @@
 				state.temporalContextSync,
 				state.temporalContextAsync,
 			);
-			let selectedMessageIDs = filteredMessages.map(
-				(dataIn) => (dataIn["id"])
-			)
-			state.selectedMessageIDs = new Set(selectedMessageIDs)
-			state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
-			messagesToRemove = Array.from(state.messagesToRemove)
-
-			// console.log("Option 1")
-			// console.log(state.messagesToRemove?.size)
-			// if (refElement) {
-				// renderer = createGraph(refElement, filteredMessages)
-				// cyInstance = createGraph(refElement, filteredMessages)
-				// if (!renderer){
-					// renderer = new Sigma(cyInstance, refElement);
-				// }
-				// renderer.refesh()
-				// const positions = random(cyInstance);
-				// random.assign(cyInstance);
-			// }
-
 		} else {
 			// console.log("Option 2")
 			filteredMessages = data.messageValues;
-			let selectedMessageIDs = filteredMessages.map(
-				(dataIn) => (dataIn["id"])
-			)
-			state.selectedMessageIDs = new Set(selectedMessageIDs)
-			state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
-			messagesToRemove = Array.from(state.messagesToRemove)
+			
+
+			// state.selectedMessageIDs = new Set(selectedMessageIDs)
+			// state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
+			// // console.log("Selected messages: " + state.selectedMessageIDs.size + " All messages: " + state.allMessageIDs.size)
+			// messagesToRemove = Array.from(state.messagesToRemove)
+			// console.log("2 --")
+			// console.log("Selected messages: " + state.selectedMessageIDs.size)
+			// console.log("All messages     : " + state.allMessageIDs.size)
+			// console.log("Remove messages  : " + state.messagesToRemove.size)
+			// console.log(state.messagesToRemove)
+			// console.log("\n")
+
 			// if (refElement) {
 				// renderer = createGraph(refElement, filteredMessages)
 				// cyInstance = createGraph(refElement, filteredMessages)
@@ -218,6 +206,18 @@
 				// random.assign(cyInstance);
 			// }
 		}
+		selectedMessageIDs = filteredMessages.map(
+				(dataIn) => (dataIn["id"])
+			)
+		state.selectedMessageIDs = new Set(selectedMessageIDs)
+		state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
+		messagesToRemove = Array.from(state.messagesToRemove)
+		console.log("1 --")
+		console.log("Selected messages: " + state.selectedMessageIDs.size)
+		console.log("All messages     : " + state.allMessageIDs.size)
+		console.log("Remove messages  : " + state.messagesToRemove.size)
+		console.log(state.messagesToRemove)
+		console.log("\n")
 	}
 
 	let tabSet: number = 0;
@@ -355,20 +355,31 @@
 			<!-- </div> -->
 
 			<!-- <Graph {filteredMessages}/> -->
-			<SigmaGraph state={state}>
-				{#each filteredMessages as node}
+			<!-- <SigmaGraph state={state}> -->
+			<SigmaGraph>
+				<GraphNodes toAdd={filteredMessages}/>
+				 <!-- toRemove={messagesToRemove}/> -->
+
+				<!-- {#if messagesToRemove.length != 0} -->
+					<!-- {#each messagesToRemove as node} -->
+						<!-- <GraphNodeRemove node={node}/> -->
+						<!-- {/each} -->
+				<!-- {/if} -->
+				<!-- {#if filteredMessages.length != 0} -->
+					<!-- {#each filteredMessages as node} -->
+						<!-- <GraphNodeAdd node={node}/> -->
+					<!-- {/each} -->
+				<!-- {/if} -->
+			</SigmaGraph>
+				<!-- {#if messagesToRemove.length != 0} -->
+
 					<!-- <GraphNode node={node} state={state}/> -->
-					<GraphNodeAdd node={node}/>
-			  	{/each}
-				{#each messagesToRemove as node}
-				  <!-- <GraphNode node={node} state={state}/> -->
-				  <GraphNodeRemove node={node}/>
-				{/each}
-			  <!-- <GraphNode {filteredMessages}/> -->
+					<!-- {/each} -->
+				<!-- {/if} -->
+					<!-- <GraphNode {filteredMessages}/> -->
 				<!-- {#each edges as edge} -->
 				  <!-- <GraphEdge edge={edge}/> -->
 				<!-- {/each} -->
-			</SigmaGraph>
 		{/if}
 	</svelte:fragment>
 </TabGroup>

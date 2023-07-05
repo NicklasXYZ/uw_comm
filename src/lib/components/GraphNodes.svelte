@@ -1,13 +1,16 @@
 <script>
   import { onMount, getContext } from 'svelte'
 
-  export let node
+  export let toAdd
+  // export let toRemove
   // export let filteredMessages
   // export let state
 
   const { getCyInstance } = getContext('graphSharedState')
   const [renderer, refElement, cyInstance] = getCyInstance()
   import { random } from 'graphology-layout';
+
+  $: toAdd
 
   // cyInstance.add({
   //   group: 'nodes',
@@ -61,18 +64,39 @@
     // console.log("Adding:")
     // console.log(cyInstance._nodes.has(node.id))
     // console.log(node.id)
-    if (!cyInstance._nodes.has(node.id)) {
-      cyInstance.addNode(
-        node.id,
+    for (let index = 0; index < toAdd.length; index++) {
+      if (!cyInstance._nodes.has(toAdd[index].id)) {
+        cyInstance.addNode(
+          toAdd[index].id,
         {
             x: 0,
             y: 0,
             size: 20,
             color: "red",
-            label: node.message,
+            label: toAdd[index].message,
           }
       )
     }
+  }
+
+  //   for (let index = 0; index < toRemove.length; index++) {
+  //     if (cyInstance._nodes.has(toRemove[index])) {
+  //       cyInstance.dropNode(toRemove[index])
+  //   }
+  // }
+
+    // if (!cyInstance._nodes.has(node.id)) {
+    //   cyInstance.addNode(
+    //     node.id,
+    //     {
+    //         x: 0,
+    //         y: 0,
+    //         size: 20,
+    //         color: "red",
+    //         label: node.message,
+    //       }
+    //   )
+    // }
   }
 
   // console.log(cyInstance)

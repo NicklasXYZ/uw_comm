@@ -17,7 +17,7 @@
 
   // export let filteredMessages;
 
-  export let state;
+  // export let state;
 
   
   let refElement: HTMLElement = null
@@ -56,9 +56,9 @@
 
     cyInstance = new Graph();
 
-    cyInstance.on('nodeDropped', function({key}) {
-      console.log(key);
-    })
+    // cyInstance.on('nodeDropped', function({key}) {
+    //   console.log("" + key + " was removed from the graph!");
+    // })
 
     // graph.addNode("John", { x: 0, y: 10, size: 15, label: "John", color: "blue" });
     // graph.addNode("Mary", { x: 10, y: 0, size: 10, label: "Mary", color: "green" });
@@ -134,6 +134,8 @@
   //   })
 
   })
+
+  console.log("Can i run some other things here????")
 
 
   

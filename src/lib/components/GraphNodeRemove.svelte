@@ -57,23 +57,33 @@
 
   // https://codesandbox.io/s/sigma-example-use-reducers-p85ez?file=/index.ts 
 
+  console.log(node)
+
   if (cyInstance) {
-    // console.log(cyInstance._nodes.has(node.id))
-    if (!cyInstance._nodes.has(node)) {
+    // console.log("Removing:")
+    // console.log(cyInstance._nodes.has(node))
+    // console.log(node)
+    // console.log(cyInstance._nodes)
+    if (cyInstance._nodes.has(node)) {
+      console.log("Node is dropped from the graph: " + node )
       cyInstance.dropNode(node)
       // cyInstance.addNode(
-      //   node.id,
-      //   {
-      //       x: 0,
-      //       y: 0,
-      //       size: 20,
-      //       color: "red",
-      //       label: node.id,
-      //     }
-      // )
+        //   node.id,
+        //   {
+          //       x: 0,
+          //       y: 0,
+          //       size: 20,
+          //       color: "red",
+          //       label: node.id,
+          //     }
+          // )
+        }
+    else {
+      console.log("Node is not in graph          : " + node)
     }
   }
-
+  cyInstance.clear()
+  
   // console.log(cyInstance)
   // console.log("--------")
   // if (cyInstance) {
@@ -104,6 +114,9 @@
   
   const positions = random(cyInstance);
 	random.assign(cyInstance);
+  // cyInstance.refesh()
+  console.log("Nodes in graph after REMOVAL!")
+  console.log(cyInstance._nodes)
 
   // console.log("Hello world!")
   // console.log(renderer)
