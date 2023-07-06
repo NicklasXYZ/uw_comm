@@ -20,50 +20,6 @@
   	import Graph from 'graphology';
 
 	export let data: any;	
-
-	// let refElement: HTMLElement = null
-	// let cyInstance = null
-	// 	const nodes = [
-		//     { id: 'N1', label: 'Start' },
-		//     { id: 'N2', label: '4' },
-		//     { id: 'N4', label: '8' },
-		//     { id: 'N5', label: '15' },
-		//     { id: 'N3', label: '16' },
-		//     { id: 'N6', label: '23' },
-		//     { id: 'N7', label: '42' },
-		//     { id: 'N8', label: 'End' }
-		//   ]
-		
-		//   const edges = [
-			//     { id: 'E1', source: 'N1', target: 'N2' },
-			//     { id: 'E2', source: 'N2', target: 'N3' },
-//     { id: 'E3', source: 'N3', target: 'N6' },
-//     { id: 'E4', source: 'N2', target: 'N4' },
-//     { id: 'E5', source: 'N4', target: 'N5' },
-//     { id: 'E6', source: 'N5', target: 'N4', label: '2' },
-//     { id: 'E7', source: 'N5', target: 'N6' },
-//     { id: 'E8', source: 'N6', target: 'N7' },
-//     { id: 'E9', source: 'N7', target: 'N7', label: '3' },
-//     { id: 'E10', source: 'N7', target: 'N8' }
-//   ]
-
-	// function createGraph(referenceElement, dataIn) {
-	// 	let graphInstance = new Graph();
-	// 	for (let i = 0; i < dataIn.length; i++) {
-	// 		graphInstance.addNode(
-	// 			dataIn[i].id,
-	// 			{
-	// 				x: 0,
-	// 				y: 0,
-	// 				size: 20,
-	// 				color: "red",
-	// 				label: dataIn[i].id,
-	// 			}
-	// 			) 
-	// 		}
-	// 		return graphInstance
-	// 		// return new Sigma(graphInstance, referenceElement);
-	// }
     
 	function *setMinus(A, B) {
       const setA = new Set(A);
@@ -80,27 +36,15 @@
       }
     }
 
-	// let searchTerm = '';
 	let filteredMessages = data.messageValues;
-	let messagesToRemove = []
-	let selectedMessageIDs = []
-	let allMessageIDs = data.messageValues.map(
-		(dataIn) => (dataIn["id"])
-	)
-	// console.log(allMessageIDs)
 
-	// cyInstance = createGraph(refElement, filteredMessages)
-	// const renderer =  new Sigma(cyInstance, refElement);
-	// let renderer;
-
-	// Type and declare internal state:
 	interface State {
 		// hoveredNode?: string;
 		// searchQuery: string;
 		// State derived from query:
-		selectedMessageIDs ?: Set<string>;
-		allMessageIDs ?: Set<string>;
-		messagesToRemove ?: Set<string>;
+		// selectedMessageIDs ?: Set<string>;
+		// allMessageIDs ?: Set<string>;
+		// messagesToRemove ?: Set<string>;
 		// suggestions?: Set<string>;
 		// State derived from hovered node:
 		// hoveredNeighbors?: Set<string>;
@@ -110,18 +54,14 @@
 		temporalContextAsync?: boolean;
 		
 	}
-	// console.log("Filtered Messages: ")
-	// console.log(filteredMessages)
-	// console.log()
-
 	const state: State = {
 		spatialContextColocated: true, 
 		spatialContextRemote: true,
 		temporalContextSync: true,
 		temporalContextAsync: true,
-		selectedMessageIDs: new Set(allMessageIDs),
-		allMessageIDs: new Set(allMessageIDs),
-		messagesToRemove: new Set([])
+		// selectedMessageIDs: new Set(allMessageIDs),
+		// allMessageIDs: new Set(allMessageIDs),
+		// messagesToRemove: new Set([])
 	};
 
 
@@ -180,7 +120,6 @@
 				state.temporalContextAsync,
 			);
 		} else {
-			// console.log("Option 2")
 			filteredMessages = data.messageValues;
 			
 
@@ -206,18 +145,18 @@
 				// random.assign(cyInstance);
 			// }
 		}
-		selectedMessageIDs = filteredMessages.map(
-				(dataIn) => (dataIn["id"])
-			)
-		state.selectedMessageIDs = new Set(selectedMessageIDs)
-		state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
-		messagesToRemove = Array.from(state.messagesToRemove)
-		console.log("1 --")
-		console.log("Selected messages: " + state.selectedMessageIDs.size)
-		console.log("All messages     : " + state.allMessageIDs.size)
-		console.log("Remove messages  : " + state.messagesToRemove.size)
-		console.log(state.messagesToRemove)
-		console.log("\n")
+		// selectedMessageIDs = filteredMessages.map(
+		// 		(dataIn) => (dataIn["id"])
+		// 	)
+		// state.selectedMessageIDs = new Set(selectedMessageIDs)
+		// state.messagesToRemove = new Set(setMinus(state.selectedMessageIDs, state.allMessageIDs))
+		// messagesToRemove = Array.from(state.messagesToRemove)
+		// console.log("1 --")
+		// console.log("Selected messages: " + state.selectedMessageIDs.size)
+		// console.log("All messages     : " + state.allMessageIDs.size)
+		// console.log("Remove messages  : " + state.messagesToRemove.size)
+		// console.log(state.messagesToRemove)
+		// console.log("\n")
 	}
 
 	let tabSet: number = 0;
@@ -327,7 +266,6 @@
 </div>
 
 <!-- Data View Tabs -->
-
 <TabGroup 
 	hover="hover:bg-surface-600"
 	justify="justify-center"
@@ -342,44 +280,15 @@
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
 			<div class="px-4 grid gap-4 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1">
-				<!-- {#each filteredMessages as messageObject, index (index)} -->
 				{#each filteredMessages as messageObject, index (index)}
 					<MessageCard {messageObject} />
 				{/each}
 			</div>			
 		{:else if tabSet === 1}
 			{filteredMessages.length}
-			<!-- <div style="height: calc(100vh - 215px)" bind:this={refElement} class="container"> -->
-				<!-- {#if cyInstance} -->
-				<!-- {/if} -->
-			<!-- </div> -->
-
-			<!-- <Graph {filteredMessages}/> -->
-			<!-- <SigmaGraph state={state}> -->
 			<SigmaGraph>
-				<GraphNodes toAdd={filteredMessages}/>
-				 <!-- toRemove={messagesToRemove}/> -->
-
-				<!-- {#if messagesToRemove.length != 0} -->
-					<!-- {#each messagesToRemove as node} -->
-						<!-- <GraphNodeRemove node={node}/> -->
-						<!-- {/each} -->
-				<!-- {/if} -->
-				<!-- {#if filteredMessages.length != 0} -->
-					<!-- {#each filteredMessages as node} -->
-						<!-- <GraphNodeAdd node={node}/> -->
-					<!-- {/each} -->
-				<!-- {/if} -->
+				<GraphNodes bind:nodes={filteredMessages}/>
 			</SigmaGraph>
-				<!-- {#if messagesToRemove.length != 0} -->
-
-					<!-- <GraphNode node={node} state={state}/> -->
-					<!-- {/each} -->
-				<!-- {/if} -->
-					<!-- <GraphNode {filteredMessages}/> -->
-				<!-- {#each edges as edge} -->
-				  <!-- <GraphEdge edge={edge}/> -->
-				<!-- {/each} -->
 		{/if}
 	</svelte:fragment>
 </TabGroup>
