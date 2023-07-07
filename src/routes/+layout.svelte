@@ -27,7 +27,7 @@
 						<img class="mx-2" src={globeLoc} width="42" height="42" alt="Globe" />
 						<div class="pl-4">
 							<p class="h3">Underwater Communication</p>
-							<p class="text-sm font-medium text-surface-300">v0.0.1 .::. {todayDate}</p>
+							<p class="text-sm font-medium text-surface-300">v0.0.2 .::. {todayDate}</p>
 						</div>
 					</div>
 				</a>

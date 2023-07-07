@@ -5,6 +5,7 @@
 	import GraphNodes from '$lib/components/GraphNodes.svelte';
 	import GraphNodeRemove from '$lib/components/GraphNodeRemove.svelte';
 	import GraphEdge from '$lib/components/GraphEdge.svelte';
+	import InfoDisplay from '$lib/components/InfoDisplay.svelte';
 
 	import { onMount, getContext } from 'svelte'
 	import { random } from 'graphology-layout';
@@ -39,21 +40,40 @@
 	let filteredMessages = data.messageValues;
 
 	interface State {
-		// hoveredNode?: string;
+		hoveredNode?: string;
 		// searchQuery: string;
 		// State derived from query:
 		// selectedMessageIDs ?: Set<string>;
 		// allMessageIDs ?: Set<string>;
 		// messagesToRemove ?: Set<string>;
 		// suggestions?: Set<string>;
+		selectedNode?: string;
 		// State derived from hovered node:
-		// hoveredNeighbors?: Set<string>;
+		hoveredNeighbors?: Set<string>;
 		spatialContextColocated?: boolean;
 		spatialContextRemote?: boolean;
 		temporalContextSync?: boolean;
 		temporalContextAsync?: boolean;
 		
 	}
+
+	interface GraphState {
+		hoveredNode?: string;
+		hoveredNodeColor?: string;
+		// searchQuery: string;
+		// State derived from query:
+		// selectedMessageIDs ?: Set<string>;
+		// allMessageIDs ?: Set<string>;
+		// messagesToRemove ?: Set<string>;
+		// suggestions?: Set<string>;
+		selectedNode?: string;
+		// State derived from hovered node:
+		hoveredNeighbors?: Set<string>;		
+	}
+
+	let graphState: State = {};
+
+
 	const state: State = {
 		spatialContextColocated: true, 
 		spatialContextRemote: true,
@@ -285,8 +305,8 @@
 				{/each}
 			</div>			
 		{:else if tabSet === 1}
-			{filteredMessages.length}
-			<SigmaGraph>
+			<!-- {filteredMessages.length} -->
+			<SigmaGraph bind:state={graphState}>
 				<GraphNodes bind:nodes={filteredMessages}/>
 			</SigmaGraph>
 		{/if}
