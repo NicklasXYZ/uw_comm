@@ -46,6 +46,8 @@
     "graphology-layout-noverlap": "^0.4.2",
     "install": "^0.13.0",
     "npm": "^9.8.0",
+    "svelte-collapsible": "^0.2.2",
+    "svelte-fullscreen": "^2.0.0",
     "svelte-modals": "^1.2.1",
     "svelte-select": "^5.6.0"
   }

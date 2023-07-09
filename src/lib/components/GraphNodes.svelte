@@ -69,6 +69,8 @@
     }
   }
 
+
+
     for (let index = 0; index < categories.length; index++) {
       if (!graphInstance._nodes.has(categories[index].id)) {
         // console.log(categories[index])
@@ -99,6 +101,11 @@
     }
   }
 
+  graphInstance.nodes().forEach((node, i) => {
+    const angle = (i * 2 * Math.PI) / graphInstance.order;
+    graphInstance.setNodeAttribute(node, "x", 100 * Math.cos(angle));
+    graphInstance.setNodeAttribute(node, "y", 100 * Math.sin(angle));
+  });
 
 
   // const positions = random(graphInstance);
@@ -106,11 +113,7 @@
   
   // const positions = circular(graphInstance);
   // circular.assign(graphInstance);
-  graphInstance.nodes().forEach((node, i) => {
-    const angle = (i * 2 * Math.PI) / graphInstance.order;
-    graphInstance.setNodeAttribute(node, "x", 50 * Math.cos(angle));
-    graphInstance.setNodeAttribute(node, "y", 50 * Math.sin(angle));
-  });
+
 
   // Create the spring layout and start it
   // const layout = new ForceSupervisor(graphInstance);
@@ -138,8 +141,8 @@ const layout = new FA2Layout(graphInstance, {
     barnesHutOptimize: true,
     linLogMode: false,
     outboundAttractionDistribution: true,
-    slowDown: 50,
-    scalingRatio: 50
+    slowDown: 25,
+    scalingRatio: 50,
   }
 });
 
@@ -147,11 +150,12 @@ const layout = new FA2Layout(graphInstance, {
 layout.start();
 
 function stopWW(){
-        console.log('TERMINATE');
-        layout.stop();
+  // console.log(graphInstance.order)
+ 
+  layout.stop();
 }
 
-setTimeout(stopWW, 500) ;
+setTimeout(stopWW, 2 * graphInstance.order) ;
 
 }
 
@@ -170,4 +174,4 @@ setTimeout(stopWW, 500) ;
 
 
 <!-- Display Some info about a selected node -->
-<InfoDisplay/>					
+<!-- <InfoDisplay/>					 -->

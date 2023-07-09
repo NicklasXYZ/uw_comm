@@ -1,24 +1,15 @@
 <script lang="ts">
 	import SigmaGraph from '$lib/components/SigmaGraph.svelte';
-	// import GraphNode from '$lib/components/GraphNode.svelte';
-	import GraphNodeAdd from '$lib/components/GraphNodeAdd.svelte';
 	import GraphNodes from '$lib/components/GraphNodes.svelte';
-	import GraphNodeRemove from '$lib/components/GraphNodeRemove.svelte';
-	import GraphEdge from '$lib/components/GraphEdge.svelte';
 	import InfoDisplay from '$lib/components/InfoDisplay.svelte';
 
-	import { onMount, getContext } from 'svelte'
-	import { random } from 'graphology-layout';
+	import Fullscreen from "svelte-fullscreen";
 
 
 	import MessageCard from '$lib/components/messageCard.svelte';
 	import { filterDimensions } from '$lib/utils/filters.svelte'
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
-	import type { MessageShort } from '$lib/models/message';
-
-	import Sigma from 'sigma';
-  	import Graph from 'graphology';
 
 	export let data: any;	
     
@@ -85,47 +76,6 @@
 	};
 
 
-	// $: spatialContextColocated = true;
-	// $: spatialContextRemote = true;
-	// $: temporalContextSync = true;
-	// $: temporalContextAsync = true;
-	// $: {
-	// 	console.log("Update!")
-	// 	if (!spatialContextColocated || !spatialContextRemote || !temporalContextSync || !temporalContextAsync) {
-	// 		filteredMessages = filterDimensions(
-	// 			data.messageValues,
-	// 			spatialContextColocated,
-	// 			spatialContextRemote,
-	// 			temporalContextSync,
-	// 			temporalContextAsync,
-	// 		);
-	// 		// if (refElement) {
-	// 			// renderer = createGraph(refElement, filteredMessages)
-	// 			// cyInstance = createGraph(refElement, filteredMessages)
-	// 			// if (!renderer){
-	// 				// renderer = new Sigma(cyInstance, refElement);
-	// 			// }
-	// 			// renderer.refesh()
-	// 			// const positions = random(cyInstance);
-	// 			// random.assign(cyInstance);
-	// 		// }
-
-	// 	} else {
-	// 		filteredMessages = data.messageValues;
-	// 		// if (refElement) {
-	// 			// renderer = createGraph(refElement, filteredMessages)
-	// 			// cyInstance = createGraph(refElement, filteredMessages)
-	// 			// if (!renderer){
-	// 			// 	renderer = new Sigma(cyInstance, refElement);					
-	// 			// }
-	// 			// renderer.refesh()
-	// 			// const positions = random(cyInstance);
-	// 			// random.assign(cyInstance);
-	// 		// }
-	// 	}
-	// }
-	
-
 	$: state.spatialContextColocated = true;
 	$: state.spatialContextRemote = true;
 	$: state.temporalContextSync = true;
@@ -182,10 +132,6 @@
 	let tabSet: number = 0;
 
 
-	// onMount(() => {
-	// 	cyInstance = new Graph();
-	// 	const renderer = new Sigma(cyInstance, refElement);
-	// })
 </script>
 
 <svelte:head>
@@ -305,10 +251,20 @@
 				{/each}
 			</div>			
 		{:else if tabSet === 1}
+		<Fullscreen let:onRequest let:onExit>
 			<!-- {filteredMessages.length} -->
+
 			<SigmaGraph bind:state={graphState}>
-				<GraphNodes bind:nodes={filteredMessages}/>
+				<!-- Display Some info about a selected node -->
+				
+				<button style="position: relative; left: 0px; top: 0; z-index: 1;" on:click={() => onRequest()}>FullScreen</button>
+				<button style="position: relative; left: 0px; top: 0; z-index: 1;" on:click={() => onExit()}>Screen</button>
+
+				<InfoDisplay state={graphState} filteredMessages={filteredMessages}/>					
+				<GraphNodes bind:nodes={filteredMessages}/>				
 			</SigmaGraph>
+		  </Fullscreen>
+
 		{/if}
 	</svelte:fragment>
 </TabGroup>
