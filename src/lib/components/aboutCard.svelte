@@ -330,7 +330,7 @@
                         <table class="text-sm font-medium border-separate border-spacing-2">
                             <!-- Communication Methods and Messages -->
                             <tr>
-                                <td>[LB23]</td>
+                                <td>[BL23]</td>
                                 <td class="pl-4">
                                     <p> Behnke, Lars. <cite>Scuba Diving Hand Signals</cite>, 2nd Black & White Edition, (2023). Published by: Independent publication. </p>
                                 </td>

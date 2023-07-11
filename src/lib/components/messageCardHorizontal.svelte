@@ -28,7 +28,7 @@
     }
 </script>
 
-<!-- <a href={`/message/${messageObject.id}`} target="_blank"> -->
+<a href={`/message/${messageObject.id}`} target="_blank">
     <!-- <div class="relative w-full max-w-2xl max-h-full">
         <div class="relative rounded-lg shadow bg-surface-500 hover:bg-surface-600"> -->
     <!-- <div class="w-full max-w-2xl max-h-full"> -->
@@ -36,7 +36,9 @@
         
         <!-- <div class="w-full max-w max-h-full"> -->
             <div class="rounded-lg shadow bg-surface-500 hover:bg-surface-600">
-                
+                <!-- <div class="rounded-lg shadow"> -->
+                    <!-- bg-primary-500 hover:bg-primary-600"> -->
+
                 <!-- <div class="flex py-4 px-6 border-b rounded-t"> -->
                     <!-- <div class="flex py-4 px-6 border-b rounded-t">
                         <img class="mx-0" src={messageLoc} width="24" height="24" alt="Message" />
@@ -48,7 +50,7 @@
                     
                     
             <!-- <CollapsibleCard open={true} duration={0.25} easing={"linear"}> -->
-            <div class="header flex py-4 px-6 border-b rounded-t">
+            <div class="flex py-4 px-6 border-b rounded-t">
                     <!-- <div class="flex py-4 px-6 border-b rounded-t"> -->
                 <img class="mx-0" src={messageLoc} width="24" height="24" alt="Message" />
                 <div class="pl-4 overflow-hidden">
@@ -97,7 +99,5 @@
                 </div>
             </div>
         </div>
-            
     <!-- </div> -->
-
-<!-- </a> -->
+</a>

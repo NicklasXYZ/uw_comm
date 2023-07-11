@@ -33,8 +33,9 @@
                 </div>
             </div>
 
-            <div class="flex p-2">
-                <!-- <img class="mx-2" src={outgoingMailLoc} width="24" height="24" alt="Message" /> -->
+            <!-- <div class="flex p-2"> -->
+            <div class="flex p-2 pt-4">
+                    <!-- <img class="mx-2" src={outgoingMailLoc} width="24" height="24" alt="Message" /> -->
                 <div class="pl-4">
                     <p class="text-xs text-surface-300">Message Encoder</p>
                     <p class="text-sm font-medium">{messageObject.message_encoder}</p>
@@ -49,8 +50,9 @@
                 </div>
             </div>
 
-            <div class="flex p-2 pt-4">
-                <!-- <img class="mx-2" src={mapLoc} width="24" height="24" alt="Message" /> -->
+            <!-- <div class="flex p-2 pt-4"> -->
+                <div class="flex p-2">
+                    <!-- <img class="mx-2" src={mapLoc} width="24" height="24" alt="Message" /> -->
                 <div class="pl-4">
                     <p class="text-xs text-surface-300">Spatial Context</p>
                     <p class="text-sm font-medium">{messageObject.spatial_context}</p>

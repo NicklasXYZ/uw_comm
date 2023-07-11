@@ -17,7 +17,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -28,7 +28,8 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -51,7 +52,8 @@
                 "RD07",
                 "RSTC05",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -65,7 +67,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Light Signal",
+            "type": "Light Signals",
             "categories": [
                 "CO"
             ],
@@ -81,11 +83,13 @@
             "premise": "",
             "message": "Stop",
             "message_variations": [
+                "Hold",
                 "Hold it",
                 "Halt",
                 "Pause",
                 "Stay there",
-                "Stay where you are"
+                "Stay where you are",
+                "Wait"
             ],
             "description": "Making the signal involves extending the arm fully with the palm of the hand vertical and facing another diver.",
             "meaning": "The signal is used to communicate to another diver that they must pause and cease any ongoing activity.",
@@ -93,7 +97,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -103,7 +107,8 @@
                 "PG90",
                 "RSTC05",
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "SD09"
             ]
         },
         {
@@ -117,13 +122,14 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
             ]
         },
         {
@@ -146,7 +152,8 @@
             ],
             "references": [
                 "BL23",
-                "NOAA01"
+                "NOAA01",
+                "SD09"
             ]
         },
         {
@@ -169,7 +176,8 @@
             ],
             "references": [
                 "BL23",
-                "NOAA01"
+                "NOAA01",
+                "SD09"
             ]
         },
         {
@@ -183,7 +191,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "Yes"
             ],
@@ -202,7 +210,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -228,7 +236,8 @@
             "references": [
                 "BL23",
                 "RSTC05",
-                "NOAA01"
+                "NOAA01",
+                "SD09"
             ]
         },
         {
@@ -242,10 +251,11 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -263,7 +273,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -273,25 +283,29 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
             "id": "533394a8-69af-4d6e-bfb4-77990da20f55",
             "premise": "",
             "message": "Descend to level",
-            "message_variations": [],
+            "message_variations": [
+                "Descend to a certain level"
+            ],
             "description": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -310,7 +324,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -335,12 +349,33 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
             "references": [
                 "BL23"
+            ]
+        },
+        {
+            "id": "c9b815c1-82f1-4d0a-9e48-b7882e803b71",
+            "premise": "",
+            "message": "Do not touch the bottom",
+            "message_variations": [
+                "Don't touch the bottom"
+            ],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -356,7 +391,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -364,7 +399,8 @@
                 "BL23",
                 "RSTC05",
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "SD09"
             ]
         },
         {
@@ -388,7 +424,8 @@
             "references": [
                 "BL23",
                 "RSTC05",
-                "NOAA01"
+                "NOAA01",
+                "SD09"
             ]
         },
         {
@@ -404,7 +441,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -413,7 +450,8 @@
                 "RD07",
                 "RSTC05",
                 "NOAA01",
-                "USND16"
+                "USND16",
+                "SD09"
             ]
         },
         {
@@ -427,12 +465,13 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
             "references": [
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -450,7 +489,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -459,7 +498,8 @@
                 "RD07",
                 "RSTC05",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -476,7 +516,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -502,7 +542,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -529,7 +569,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -538,7 +578,8 @@
                 "RD07",
                 "PG90",
                 "RSTC05",
-                "USND16"
+                "USND16",
+                "SD09"
             ]
         },
         {
@@ -555,7 +596,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -564,7 +605,8 @@
                 "RD07",
                 "PG90",
                 "RSTC05",
-                "USND16"
+                "USND16",
+                "SD09"
             ]
         },
         {
@@ -578,7 +620,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -602,7 +644,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -628,7 +670,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -636,7 +678,8 @@
                 "BL23",
                 "RD07",
                 "RSTC05",
-                "NOAA01"
+                "NOAA01",
+                "SD09"
             ]
         },
         {
@@ -653,7 +696,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -667,7 +710,8 @@
             "premise": "",
             "message": "Lead-follow",
             "message_variations": [
-                "You lead. I will follow"
+                "You lead. I will follow",
+                "Follow"
             ],
             "description": "",
             "meaning": "",
@@ -675,7 +719,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -685,7 +729,8 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -701,13 +746,47 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
             "references": [
                 "BL23",
                 "RSTC05"
+            ]
+        },
+        {
+            "id": "05acacaf-3ea6-42c0-8850-62554bd5802c",
+            "premise": "",
+            "message": "I forgot",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "2cf0be6c-4e97-474c-afe2-8d55a125407b",
+            "premise": "",
+            "message": "Drop",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -721,7 +800,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -741,7 +820,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -760,7 +839,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -779,7 +858,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "BL23"
@@ -798,7 +877,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -818,7 +897,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -860,7 +939,25 @@
             "type": "Body Language",
             "categories": [],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
+            ]
+        },
+        {
+            "id": "18a822b4-778a-428b-90aa-504cedce300c",
+            "premise": "",
+            "message": "Pick up",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -876,7 +973,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -900,7 +997,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -911,7 +1008,8 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -929,7 +1027,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Light Signal",
+            "type": "Light Signals",
             "categories": [
                 "SE"
             ],
@@ -972,7 +1070,8 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -991,7 +1090,8 @@
                 "SE"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -1212,7 +1312,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -1231,7 +1331,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -1250,7 +1350,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -1269,7 +1369,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -1288,7 +1388,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -1326,7 +1426,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -1346,7 +1446,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -1385,7 +1485,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -1423,7 +1523,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -1442,7 +1542,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -1521,7 +1621,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -1599,7 +1699,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -1635,7 +1735,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -1654,7 +1754,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -1692,7 +1792,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -1711,7 +1811,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -1731,7 +1831,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -1753,7 +1853,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -1810,7 +1910,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -1829,7 +1929,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -1865,7 +1965,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -1884,7 +1984,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -1903,7 +2003,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -1925,7 +2025,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -1947,7 +2047,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -1969,7 +2069,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -1991,7 +2091,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -2013,7 +2113,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -2035,7 +2135,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -2057,7 +2157,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -2079,7 +2179,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -2101,7 +2201,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
@@ -2142,7 +2242,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2161,7 +2261,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2180,7 +2280,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2199,7 +2299,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2218,7 +2318,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2237,7 +2337,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2256,7 +2356,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2275,7 +2375,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2313,7 +2413,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2332,7 +2432,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2389,7 +2489,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2408,7 +2508,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2427,7 +2527,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2446,7 +2546,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2465,7 +2565,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2484,7 +2584,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2503,7 +2603,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2825,7 +2925,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2844,7 +2944,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2901,7 +3001,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2920,7 +3020,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2939,7 +3039,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2958,7 +3058,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -2977,7 +3077,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3015,7 +3115,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3072,7 +3172,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3091,7 +3191,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3186,7 +3286,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3205,7 +3305,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3319,7 +3419,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3338,7 +3438,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3357,7 +3457,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3413,7 +3513,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3489,7 +3589,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3565,7 +3665,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3584,7 +3684,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3603,7 +3703,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3622,7 +3722,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3641,7 +3741,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -3660,7 +3760,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3679,7 +3779,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3698,7 +3798,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3717,7 +3817,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3736,7 +3836,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3775,7 +3875,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3796,7 +3896,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3816,7 +3916,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3835,7 +3935,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3911,7 +4011,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC"
             ],
@@ -3930,7 +4030,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "BL23"
@@ -4023,7 +4123,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EE"
             ],
@@ -4063,7 +4163,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EE"
             ],
@@ -4082,7 +4182,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -4107,27 +4207,31 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
             ]
         },
         {
             "id": "0d766e72-e82f-4719-acff-56a56e2efff4",
             "premise": "",
             "message": "Small",
-            "message_variations": [],
+            "message_variations": [
+                "Little"
+            ],
             "description": "",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "QI"
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
             ]
         },
         {
@@ -4179,7 +4283,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -4217,7 +4321,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "WS"
             ],
@@ -4267,8 +4371,10 @@
             "id": "9ea1846b-963c-48bc-b485-1cd1a88c35ad",
             "premise": "",
             "message": "Search for...",
-            "message_variations": [],
-            "description": "",
+            "message_variations": [
+                "Look for..."
+            ],
+            "description": "The signal is given by first signaling 'Look' followed by signaling the number four.",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
@@ -4279,7 +4385,29 @@
                 "SE"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
+            ]
+        },
+        {
+            "id": "9ea1846b-963c-48bc-b485-1cd1a88c35ad",
+            "premise": "",
+            "message": "Look around",
+            "message_variations": [
+                "Look for..."
+            ],
+            "description": "The signal is given by first signaling 'Look' followed by drawing a horizontal circle with the index finger.",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Body Language",
+            "categories": [
+                "SE"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -4293,7 +4421,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -4312,7 +4440,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "SE"
             ],
@@ -4336,7 +4464,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -4361,7 +4489,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -4381,7 +4509,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -4441,7 +4569,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
@@ -4454,19 +4582,22 @@
             "id": "0a666ca3-5d41-4fb9-a96e-d6e2328a8eba",
             "premise": "",
             "message": "Swim through",
-            "message_variations": [],
+            "message_variations": [
+                "Go through"
+            ],
             "description": "",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -4480,7 +4611,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "BL23"
@@ -4497,7 +4628,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4517,7 +4648,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4539,7 +4670,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4558,7 +4689,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4577,7 +4708,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4597,7 +4728,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4618,7 +4749,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4638,7 +4769,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4658,7 +4789,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4677,7 +4808,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "BL23"
@@ -4694,7 +4825,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "BL23"
@@ -4705,7 +4836,8 @@
             "premise": "",
             "message": "Take photo",
             "message_variations": [
-                "Take picture"
+                "Take picture",
+                "Take a picture"
             ],
             "description": "",
             "meaning": "",
@@ -4719,26 +4851,30 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
             ]
         },
         {
             "id": "d839937e-7470-45cc-939b-487638754107",
             "premise": "",
             "message": "Battery full?",
-            "message_variations": [],
+            "message_variations": [
+                "What is your battery status?"
+            ],
             "description": "",
             "meaning": "",
             "message_encoder": "Diver",
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -4752,12 +4888,13 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -4771,12 +4908,13 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -4790,12 +4928,13 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -4809,7 +4948,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4828,7 +4967,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "ECM"
             ],
@@ -4847,7 +4986,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "BL23"
@@ -4864,7 +5003,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC",
                 "NP"
@@ -4884,7 +5023,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC",
                 "NP"
@@ -4904,7 +5043,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC",
                 "NP"
@@ -4924,7 +5063,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "EC",
                 "NP"
@@ -4944,7 +5083,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "CO"
             ],
@@ -4963,7 +5102,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [
                 "NP",
                 "SE",
@@ -4971,7 +5110,8 @@
             ],
             "references": [
                 "PG90",
-                "USND16"
+                "USND16",
+                "SD09"
             ]
         },
         {
@@ -4985,7 +5125,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "PG90"
@@ -5002,7 +5142,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "PG90"
@@ -5019,7 +5159,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "PG90"
@@ -5036,7 +5176,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Asynchronous",
-            "type": "Line Marker",
+            "type": "Line Markers",
             "categories": [
                 "NP"
             ],
@@ -5055,7 +5195,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Asynchronous",
-            "type": "Line Marker",
+            "type": "Line Markers",
             "categories": [
                 "NP"
             ],
@@ -5928,7 +6068,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "BJ06"
@@ -6041,7 +6181,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Light Signal",
+            "type": "Light Signals",
             "categories": [],
             "references": [
                 "DJ14"
@@ -6058,7 +6198,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Light Signal",
+            "type": "Light Signals",
             "categories": [],
             "references": [
                 "DJ14"
@@ -6075,7 +6215,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Light Signal",
+            "type": "Light Signals",
             "categories": [],
             "references": [
                 "DJ14"
@@ -6092,7 +6232,7 @@
             "message_decoder": "Diver",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Light Signal",
+            "type": "Light Signals",
             "categories": [],
             "references": [
                 "DJ14"
@@ -6109,7 +6249,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6126,7 +6266,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6143,7 +6283,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6160,7 +6300,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6177,7 +6317,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6194,7 +6334,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6211,7 +6351,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6228,7 +6368,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6247,7 +6387,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6264,7 +6404,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6281,7 +6421,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6298,7 +6438,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6318,7 +6458,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6335,7 +6475,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6352,7 +6492,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6369,7 +6509,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6386,7 +6526,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6403,7 +6543,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6420,7 +6560,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6437,7 +6577,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6454,7 +6594,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6471,7 +6611,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6488,7 +6628,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6505,7 +6645,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6522,7 +6662,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6539,7 +6679,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6556,7 +6696,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6573,7 +6713,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6590,7 +6730,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6607,7 +6747,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6624,7 +6764,7 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
@@ -6641,10 +6781,146 @@
             "message_decoder": "AUV",
             "spatial_context": "Colocated",
             "temporal_context": "Synchronous",
-            "type": "Hand Signal",
+            "type": "Hand Signals",
             "categories": [],
             "references": [
                 "ND21"
+            ]
+        },
+        {
+            "id": "8a1301f4-4687-4dba-bfa7-74c1136cea63",
+            "premise": "",
+            "message": "Diver down",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Surface Attendant",
+            "spatial_context": "Colocated",
+            "temporal_context": "Asynchronous",
+            "type": "Flags & Buoys",
+            "categories": [],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "e50bcb40-bd42-42df-a2c5-a7551282f3a2",
+            "premise": "",
+            "message": "Attention",
+            "message_variations": [],
+            "description": "The signal is given by deploying a surface marker bouy.",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Surface Attendant",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Flags & Buoys",
+            "categories": [],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "41b37c24-1a26-4c89-9761-27e40fba63d8",
+            "premise": "",
+            "message": "Collect rubbish",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "e0b29905-1760-4071-9123-451625acab23",
+            "premise": "",
+            "message": "I am sorry",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "51749b51-ce71-40ca-ae15-6c8ccbef38d0",
+            "premise": "",
+            "message": "Hold on",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "d3ebabd4-1685-43b9-9be0-d676d681d7b1",
+            "premise": "",
+            "message": "Your turn to lead",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "bee6a457-e772-41b4-9cfe-d6d5173d0b14",
+            "premise": "",
+            "message": "Hide",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Body Language",
+            "categories": [],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "9252a8f3-d956-4917-a9f6-fd236b9abaea",
+            "premise": "",
+            "message": "Closer",
+            "message_variations": [],
+            "description": "",
+            "meaning": "",
+            "message_encoder": "Diver",
+            "message_decoder": "Diver",
+            "spatial_context": "Colocated",
+            "temporal_context": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [],
+            "references": [
+                "SD09"
             ]
         }
     ],

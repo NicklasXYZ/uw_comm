@@ -1,6 +1,13 @@
 <script lang="ts" context="module">
 	import type { Message } from '$lib/models/message';
 
+	export interface FilteringState {
+		spatialContextColocated?: boolean;
+		spatialContextRemote?: boolean;
+		temporalContextSync?: boolean;
+		temporalContextAsync?: boolean;
+	}
+
 	function checkSpatialContext(message: Message, includeSpatialContextColocated: boolean, includeSpatialContextRemote: boolean): boolean {
 		return (includeSpatialContextColocated == true && message.spatial_context.trim().toLowerCase() == "colocated") ||
 		(includeSpatialContextRemote == true && message.spatial_context.trim().toLowerCase() == "remote")
