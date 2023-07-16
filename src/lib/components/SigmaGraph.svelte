@@ -2,10 +2,10 @@
 	import Sigma from 'sigma';
 	import Graph from 'graphology';
 	import { onMount, setContext } from 'svelte';
-	import { drawHover, drawLabel } from '$lib/utils/utils.svelte';
+	import { drawHover, drawLabel } from '$lib/utils/graph-utils.svelte';
 	import type { NodeDisplayData } from 'sigma/types';
 	import type { Settings } from 'sigma/settings';
-  import type { GraphState } from '$lib/utils/utils.svelte'
+	import type { GraphState } from '$lib/utils/utils.svelte';
 
 	export let state: GraphState;
 
@@ -96,7 +96,6 @@
 		// 3. If there is a hovered node, all non-neighbor nodes are greyed
 		renderer.setSetting('nodeReducer', (node, data) => {
 			const res: Partial<NodeDisplayData> = { ...data };
-
 			if (state.hoveredNeighbors && state.hoveredNeighbors.has(node)) {
 				if (res.color) {
 					res.color = '#D41976';
@@ -108,7 +107,7 @@
 </script>
 
 <div
-	style="height: calc(105vh - 300px); position: relative; left: 0; top: 0; z-index: 0; background-color: #2c3656"
+	style="height: calc(110vh - 300px); position: relative; left: 0; top: 0; z-index: 0; background-color: #2c3656"
 	bind:this={refElement}
 >
 	{#if graphInstance}

@@ -1,17 +1,19 @@
 <script lang="ts">
-	import Fullscreen from 'svelte-fullscreen';
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
+	import { filterDimensions } from '$lib/utils/filters.svelte';
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
-
+	import Fullscreen from 'svelte-fullscreen';
 	import SigmaGraph from '$lib/components/SigmaGraph.svelte';
 	import GraphNodes from '$lib/components/GraphNodes.svelte';
 	import InfoDisplay from '$lib/components/InfoDisplay.svelte';
 	import MessageCard from '$lib/components/messageCard.svelte';
-	import { filterDimensions } from '$lib/utils/filters.svelte';
 	import type { FilteringState } from '$lib/utils/filters.svelte';
-	import type { GraphState } from '$lib/utils/utils.svelte';
+	import type { GraphState } from '$lib/utils/graph-utils.svelte';
 
 	export let data: any;
+
+	const fullscreenLoc = '../assets/fullscreen.svg';
+	const fullscreenExitLoc = '../assets/fullscreen_exit.svg';
 
 	let filteredMessages = data.messageValues;
 
@@ -182,41 +184,43 @@
 	<!-- Tab Panels -->
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
-			<div class="px-4 grid gap-4 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1">
+			<div class="px-4 py-0 grid gap-4 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1">
 				{#each filteredMessages as messageObject, index (index)}
 					<MessageCard {messageObject} />
 				{/each}
 			</div>
 		{:else if tabSet === 1}
-			<!-- <div style="background-color: #2c3656"> -->
-			<!-- <div style="background-color: "> -->
 			<Fullscreen let:onRequest let:onExit>
-				<!-- {filteredMessages.length} -->
-
 				<SigmaGraph bind:state={graphState}>
 					<!-- Display Some info about a selected node -->
-					<!-- <div id="wrapper"> -->
-					<!-- <div id="button-wrapper"> -->
-					<!-- id="fullscreen-button" -->
-					<div class="grid gap-4 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1">
-						<div class="px-4">
-							<div style="position: absolute; bottom: 0;" class="btn-group-vertical variant-filled">
-								<!-- class="btn btn-lg variant-filled" -->
-								<!-- style="position: relative; z-index: 1;" -->
-								<button type="button" on:click={() => onRequest()}>Fullscreen</button>
-
-								<!-- id="fullscreen-button" -->
-								<!-- class="btn btn-lg variant-filled" -->
-								<!-- style="position: relative; left: 0px; top: 0; z-index: 1;" -->
-								<button type="button" on:click={() => onExit()}>Exit</button>
-							</div>
+					<div class="px-4">
+						<div style="position: absolute; bottom: 0; width: 250px" class="py-14">
+							<InfoDisplay state={graphState} {filteredMessages} />
 						</div>
 
-						<!-- <div class="overflow-hidden" style="right:0; bottom: 0"> -->
-							<InfoDisplay state={graphState} {filteredMessages} />
-						<!-- </div> -->
-					</div>
+						<div
+							style="position: absolute; bottom: 0; width: 250px; color: white"
+							class="btn-group flex rounded-md shadow-sm variant-filled-tertiary"
+						>
+							<button
+								type="button"
+								on:click={() => onRequest()}
+								style="color: white;"
+								class="py-0 px-4 w-1/2"
+							>
+								<img src={fullscreenLoc} width="24" height="24" alt="Fullscreen" />
+							</button>
 
+							<button
+								type="button"
+								on:click={() => onExit()}
+								style="color: white;"
+								class="py-0 px-4 w-1/2"
+							>
+								<img src={fullscreenExitLoc} width="24" height="24" alt="Fullscreen exit" />
+							</button>
+						</div>
+					</div>
 					<GraphNodes bind:nodes={filteredMessages} />
 				</SigmaGraph>
 			</Fullscreen>
@@ -226,26 +230,3 @@
 
 <!-- Bottom Vertical Space -->
 <div class="flex flex-col p-4 space-y-4" />
-
-<style>
-	/* Write your CSS here */
-	#wrapper {
-		position: relative;
-		border: 1px solid #ffffff;
-		width: 578px;
-		height: 200px;
-	}
-
-	#button-wrapper {
-		position: absolute;
-		width: 30px;
-		top: 2px;
-		right: 2px;
-	}
-
-	#fullscreen-button {
-		padding: 5px;
-		width: 30px;
-		margin: 0px 0px 2px 0px;
-	}
-</style>

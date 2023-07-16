@@ -1,102 +1,87 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
 	import FA2Layout from 'graphology-layout-forceatlas2/worker';
+	import {
+		COLOR_BG_SURFACE_600,
+		COLOR_TERTIARY_500,
+		messageCategories
+	} from '$lib/utils/constants.svelte';
 
-  const { getGraphInstance } = getContext('graphSharedState');
+	const { getGraphInstance } = getContext('graphSharedState');
 	const [graphInstance] = getGraphInstance();
+
+	const HUB_SIZE: number = 15.0;
+	const NODE_SIZE: number = 7.5;
+	const EDGE_SIZE: number = 1.75;
 
 	export let nodes;
 
-	let categories = [
-		{
-			id: 'cat0',
-			name: 'Emotions & Expressions',
-			abbreviation: 'EE',
-			size: 15
-		},
-		{
-			id: 'cat1',
-			name: 'Environmental Conditions',
-			abbreviation: 'EC',
-			size: 15
-		},
-		{
-			id: 'cat2',
-			name: 'Navigation & Positioning',
-			abbreviation: 'NP',
-			size: 15
-		},
-		{
-			id: 'cat3',
-			name: 'Safety & Emergency',
-			abbreviation: 'SE',
-			size: 15
-		},
-		{
-			id: 'cat4',
-			name: 'Wildlife Sightings',
-			abbreviation: 'WS',
-			size: 15
-		},
-		{
-			id: 'cat5',
-			name: 'Quantitative Information',
-			abbreviation: 'QI',
-			size: 15
-		}
-	];
-
 	$: if (graphInstance) {
+		/*
+		 * Clear the graph.
+		 */
 		graphInstance.clear();
+
+		/*
+		 * Add nodes to the graph.
+		 */
 		for (let index = 0; index < nodes.length; index++) {
 			if (!graphInstance._nodes.has(nodes[index].id)) {
 				graphInstance.addNode(nodes[index].id, {
 					x: 0,
 					y: 0,
-					size: 7.5,
+					size: NODE_SIZE,
 					label: nodes[index].message,
-					color: '#495a8fff'
+					color: COLOR_BG_SURFACE_600
 				});
 			}
 		}
 
-		for (let index = 0; index < categories.length; index++) {
-			if (!graphInstance._nodes.has(categories[index].id)) {
-				// console.log(categories[index])
-				graphInstance.addNode(categories[index].id, {
+		/*
+		 * Add hubs to the graph.
+		 */
+		 for (let index = 0; index < messageCategories.length; index++) {
+			if (!graphInstance._nodes.has(messageCategories[index].id)) {
+				graphInstance.addNode(messageCategories[index].id, {
 					x: 0,
 					y: 0,
-					size: categories[index].size,
-					label: categories[index].name,
-					color: '#0075ffff'
+					size: HUB_SIZE,
+					label: messageCategories[index].name,
+					color: COLOR_TERTIARY_500
 				});
 			}
 		}
 
-		// Add edges
+		/*
+		 * Add edges to the graph.
+		 */
 		for (let outerIndex = 0; outerIndex < nodes.length; outerIndex++) {
 			for (let innerIndex = 0; innerIndex < nodes[outerIndex].categories.length; innerIndex++) {
-				for (let index1 = 0; index1 < categories.length; index1++) {
-					if (categories[index1].abbreviation === nodes[outerIndex].categories[innerIndex]) {
-						graphInstance.addEdge(nodes[outerIndex].id, categories[index1].id, {
+				for (let index1 = 0; index1 < messageCategories.length; index1++) {
+					if (messageCategories[index1].abbreviation === nodes[outerIndex].categories[innerIndex]) {
+						graphInstance.addEdge(nodes[outerIndex].id, messageCategories[index1].id, {
 							type: 'arrow',
 							label: '',
-							size: 1.5,
+							size: EDGE_SIZE,
 							color: 'white'
 						});
 					}
 				}
-				// }
 			}
 		}
 
+		/*
+		 * Set the initial node and hub location before a layout algorithm is applied.
+		 */
 		graphInstance.nodes().forEach((node, i) => {
-			const angle = (i * 2 * Math.PI) / graphInstance.order;
+			const angle: number = (i * 2 * Math.PI) / graphInstance.order;
 			graphInstance.setNodeAttribute(node, 'x', 100 * Math.cos(angle));
 			graphInstance.setNodeAttribute(node, 'y', 100 * Math.sin(angle));
 		});
 
-		// The parameters are the same as for the synchronous version, minus `iterations` of course
+		/*
+		 * Set the layout algorithm parameters
+		 */
 		const layout = new FA2Layout(graphInstance, {
 			settings: {
 				gravity: 100,
@@ -108,11 +93,22 @@
 			}
 		});
 
-		// To start the layout
+		/*
+		 * To start the layout algorithm.
+		 */
 		layout.start();
 
-		function stopWW() {layout.stop();}
+		/*
+		 * Callback function to stop running the layout algorithm.
+		 */
+		function stopWW() {
+			layout.stop();
+		}
 
-		setTimeout(stopWW, 2 * graphInstance.order);
+		/*
+		 * Stop running the layout algorithm after a number of seconds
+		 * that is proportional to the size of input graph.
+		 */
+		setTimeout(stopWW, 2.0 * graphInstance.order);
 	}
 </script>

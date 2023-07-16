@@ -38,15 +38,11 @@
   "type": "module",
   "dependencies": {
     "@types/webgl2": "^0.0.7",
-    "cytoscape": "^3.25.0",
     "graphology": "^0.25.1",
     "graphology-layout": "^0.6.1",
-    "graphology-layout-force": "^0.2.4",
     "graphology-layout-forceatlas2": "^0.10.1",
-    "graphology-layout-noverlap": "^0.4.2",
     "install": "^0.13.0",
     "npm": "^9.8.0",
-    "svelte-collapsible": "^0.2.2",
     "svelte-fullscreen": "^2.0.0",
     "svelte-modals": "^1.2.1",
     "svelte-select": "^5.6.0"

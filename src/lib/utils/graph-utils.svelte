@@ -1,15 +1,18 @@
 <script lang="ts" context="module">
 	import type { NodeDisplayData, PartialButFor, PlainObject } from 'sigma/types';
-  import type { Settings } from 'sigma/settings'
+	import type { Settings } from 'sigma/settings';
 
-  export interface GraphState {
+	/**
+	 * Describe the object that is used to keep track of the graph state.
+	 */
+	export interface GraphState {
 		hoveredNode?: string;
 		hoveredNodeColor?: string;
 		hoveredNeighbors?: Set<string>;
 		selectedNode?: string;
 	}
 
-  /**
+	/**
 	 * This function draw in the input canvas 2D context a rectangle.
 	 * It only deals with tracing the path, and does not fill or stroke.
 	 */
