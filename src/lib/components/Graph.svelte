@@ -3,15 +3,16 @@
 	import Graph from 'graphology';
 	import { onMount, setContext } from 'svelte';
 	import { drawHover, drawLabel } from '$lib/utils/graph-utils.svelte';
+	import { COLOR_ERROR_500 } from '$lib/utils/constants.svelte';
 	import type { NodeDisplayData } from 'sigma/types';
 	import type { Settings } from 'sigma/settings';
-	import type { GraphState } from '$lib/utils/utils.svelte';
+	import type { GraphState } from '$lib/models/models.svelte';
 
-	export let state: GraphState;
+	export let graphState: GraphState;
 
-	let refElement: HTMLElement | undefined = undefined;
-	let graphInstance: Graph | undefined = undefined;
-	let renderer: Sigma | undefined = undefined;
+	let refElement: HTMLElement;
+	let graphInstance: Graph;
+	let renderer: Sigma;
 
 	setContext('graphSharedState', {
 		getGraphInstance: () => [graphInstance]
@@ -58,14 +59,14 @@
 		edgeProgramClasses: {}
 	};
 
-	function setHoveredNode(graphInstance: Graph, node?: string) {
+	function setHoveredNode(graphInstance: Graph, node?: string): void {
 		if (node) {
-			state.hoveredNode = node;
-			state.hoveredNodeColor = graphInstance.getNodeAttribute(node, 'color');
-			state.hoveredNeighbors = new Set(graphInstance.neighbors(node));
+			graphState.hoveredNode = node;
+			graphState.hoveredNodeColor = graphInstance.getNodeAttribute(node, 'color');
+			graphState.hoveredNeighbors = new Set(graphInstance.neighbors(node));
 		} else {
-			state.hoveredNode = undefined;
-			state.hoveredNeighbors = undefined;
+			graphState.hoveredNode = undefined;
+			graphState.hoveredNeighbors = undefined;
 		}
 
 		// Refresh rendering:
@@ -74,31 +75,42 @@
 
 	onMount(() => {
 		graphInstance = new Graph();
-		if (!renderer) {
-			renderer = new Sigma(graphInstance, refElement, settings);
-			renderer.on('clickNode', ({ node }) => {
-				state.clickedNode = node;
-			});
-		}
+
+		renderer = new Sigma(graphInstance, refElement, settings);
+
+		/*
+		 * Set the selected node when a user clicks a specific node in the graph.
+		 */
+		renderer.on('clickNode', ({ node }) => {
+			graphState.selectedNode = node;
+		});
+		/*
+		 * Start highlighting the node that is currently being hovered by the mouse pointer.
+		 */
 		renderer.on('enterNode', ({ node }) => {
 			setHoveredNode(graphInstance, node);
-			graphInstance.updateNodeAttribute(node, 'color', (_) => '#D41976');
+			graphInstance.updateNodeAttribute(node, 'color', (_) => COLOR_ERROR_500);
 		});
 
+		/*
+		 * Stop highlighting the node once the mouse pointer, currently hovering the node, leaves it.
+		 * The color of the node is changed back to its original/initial color.
+		 */
 		renderer.on('leaveNode', (node) => {
-			graphInstance.updateNodeAttribute(node.node, 'color', (_) => state.hoveredNodeColor);
+			graphInstance.updateNodeAttribute(node.node, 'color', (_) => graphState.hoveredNodeColor);
 			setHoveredNode(graphInstance, undefined);
 		});
 
-		// Render nodes accordingly to the internal state:
-		// 1. If a node is selected, it is highlighted
-		// 2. If there is query, all non-matching nodes are greyed
-		// 3. If there is a hovered node, all non-neighbor nodes are greyed
+		/*
+		 * Render graph nodes accordingly to the internal state:
+		 * 1. If a node is selected, it is highlighted
+		 * 2. If there is a hovered node, all neighbor nodes are highlighted as well
+		 */
 		renderer.setSetting('nodeReducer', (node, data) => {
 			const res: Partial<NodeDisplayData> = { ...data };
-			if (state.hoveredNeighbors && state.hoveredNeighbors.has(node)) {
+			if (graphState.hoveredNeighbors && graphState.hoveredNeighbors.has(node)) {
 				if (res.color) {
-					res.color = '#D41976';
+					res.color = COLOR_ERROR_500;
 				}
 			}
 			return res;

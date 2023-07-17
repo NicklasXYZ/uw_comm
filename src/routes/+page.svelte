@@ -2,29 +2,33 @@
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 	import { filterDimensions } from '$lib/utils/filters.svelte';
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
-	import Fullscreen from 'svelte-fullscreen';
-	import SigmaGraph from '$lib/components/SigmaGraph.svelte';
-	import GraphNodes from '$lib/components/GraphNodes.svelte';
-	import InfoDisplay from '$lib/components/InfoDisplay.svelte';
-	import MessageCard from '$lib/components/messageCard.svelte';
-	import type { FilteringState } from '$lib/utils/filters.svelte';
-	import type { GraphState } from '$lib/utils/graph-utils.svelte';
+	import ListView from '$lib/components/ListView.svelte';
+	import NetworkView from '$lib/components/NetworkView.svelte';
+	import type { GraphState, FilteringState, Message } from '$lib/models/models.svelte';
 
 	export let data: any;
 
-	const fullscreenLoc = '../assets/fullscreen.svg';
-	const fullscreenExitLoc = '../assets/fullscreen_exit.svg';
+	/*
+	 * Main object representing the current set of messages to display
+	 * in the list view or network view.
+	 */
+	let messageList: Message[] = data.messageList;
 
-	let filteredMessages = data.messageValues;
+	/*
+	 * Main object representing the current graph state.
+	 */
+	let graphState: GraphState = {};
 
+	/*
+	 * Main object representing the currently selected messge filtering
+	 * options.
+	 */
 	const state: FilteringState = {
 		spatialContextColocated: true,
 		spatialContextRemote: true,
 		temporalContextSync: true,
 		temporalContextAsync: true
 	};
-
-	let graphState: GraphState = {};
 
 	$: state.spatialContextColocated = true;
 	$: state.spatialContextRemote = true;
@@ -37,18 +41,23 @@
 			!state.temporalContextSync ||
 			!state.temporalContextAsync
 		) {
-			filteredMessages = filterDimensions(
-				data.messageValues,
+			messageList = filterDimensions(
+				data.messageList,
 				state.spatialContextColocated,
 				state.spatialContextRemote,
 				state.temporalContextSync,
 				state.temporalContextAsync
 			);
 		} else {
-			filteredMessages = data.messageValues;
+			messageList = data.messageList;
 		}
 	}
 
+	/*
+	 * Keep track of which tab the user is currently on:
+	 * 0: list view
+	 * 1: network view
+	 */
 	let tabSet: number = 0;
 </script>
 
@@ -184,46 +193,9 @@
 	<!-- Tab Panels -->
 	<svelte:fragment slot="panel">
 		{#if tabSet === 0}
-			<div class="px-4 py-0 grid gap-4 md:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1">
-				{#each filteredMessages as messageObject, index (index)}
-					<MessageCard {messageObject} />
-				{/each}
-			</div>
+			<ListView bind:messageList />
 		{:else if tabSet === 1}
-			<Fullscreen let:onRequest let:onExit>
-				<SigmaGraph bind:state={graphState}>
-					<!-- Display Some info about a selected node -->
-					<div class="px-4">
-						<div style="position: absolute; bottom: 0; width: 250px" class="py-14">
-							<InfoDisplay state={graphState} {filteredMessages} />
-						</div>
-
-						<div
-							style="position: absolute; bottom: 0; width: 250px; color: white"
-							class="btn-group flex rounded-md shadow-sm variant-filled-tertiary"
-						>
-							<button
-								type="button"
-								on:click={() => onRequest()}
-								style="color: white;"
-								class="py-0 px-4 w-1/2"
-							>
-								<img src={fullscreenLoc} width="24" height="24" alt="Fullscreen" />
-							</button>
-
-							<button
-								type="button"
-								on:click={() => onExit()}
-								style="color: white;"
-								class="py-0 px-4 w-1/2"
-							>
-								<img src={fullscreenExitLoc} width="24" height="24" alt="Fullscreen exit" />
-							</button>
-						</div>
-					</div>
-					<GraphNodes bind:nodes={filteredMessages} />
-				</SigmaGraph>
-			</Fullscreen>
+			<NetworkView bind:graphState bind:messageList/>
 		{/if}
 	</svelte:fragment>
 </TabGroup>

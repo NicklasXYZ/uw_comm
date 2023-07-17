@@ -6,6 +6,7 @@
 		COLOR_TERTIARY_500,
 		messageCategories
 	} from '$lib/utils/constants.svelte';
+	import type { Message } from '$lib/models/models.svelte';
 
 	const { getGraphInstance } = getContext('graphSharedState');
 	const [graphInstance] = getGraphInstance();
@@ -14,7 +15,7 @@
 	const NODE_SIZE: number = 7.5;
 	const EDGE_SIZE: number = 1.75;
 
-	export let nodes;
+	export let messageList: Message[];
 
 	$: if (graphInstance) {
 		/*
@@ -25,13 +26,13 @@
 		/*
 		 * Add nodes to the graph.
 		 */
-		for (let index = 0; index < nodes.length; index++) {
-			if (!graphInstance._nodes.has(nodes[index].id)) {
-				graphInstance.addNode(nodes[index].id, {
+		for (let index = 0; index < messageList.length; index++) {
+			if (!graphInstance._nodes.has(messageList[index].id)) {
+				graphInstance.addNode(messageList[index].id, {
 					x: 0,
 					y: 0,
 					size: NODE_SIZE,
-					label: nodes[index].message,
+					label: messageList[index].message,
 					color: COLOR_BG_SURFACE_600
 				});
 			}
@@ -40,7 +41,7 @@
 		/*
 		 * Add hubs to the graph.
 		 */
-		 for (let index = 0; index < messageCategories.length; index++) {
+		for (let index = 0; index < messageCategories.length; index++) {
 			if (!graphInstance._nodes.has(messageCategories[index].id)) {
 				graphInstance.addNode(messageCategories[index].id, {
 					x: 0,
@@ -55,11 +56,18 @@
 		/*
 		 * Add edges to the graph.
 		 */
-		for (let outerIndex = 0; outerIndex < nodes.length; outerIndex++) {
-			for (let innerIndex = 0; innerIndex < nodes[outerIndex].categories.length; innerIndex++) {
+		for (let outerIndex = 0; outerIndex < messageList.length; outerIndex++) {
+			for (
+				let innerIndex = 0;
+				innerIndex < messageList[outerIndex].categories.length;
+				innerIndex++
+			) {
 				for (let index1 = 0; index1 < messageCategories.length; index1++) {
-					if (messageCategories[index1].abbreviation === nodes[outerIndex].categories[innerIndex]) {
-						graphInstance.addEdge(nodes[outerIndex].id, messageCategories[index1].id, {
+					if (
+						messageCategories[index1].abbreviation ===
+						messageList[outerIndex].categories[innerIndex]
+					) {
+						graphInstance.addEdge(messageList[outerIndex].id, messageCategories[index1].id, {
 							type: 'arrow',
 							label: '',
 							size: EDGE_SIZE,
@@ -73,7 +81,7 @@
 		/*
 		 * Set the initial node and hub location before a layout algorithm is applied.
 		 */
-		graphInstance.nodes().forEach((node, i) => {
+		graphInstance.nodes().forEach((node: string, i: number) => {
 			const angle: number = (i * 2 * Math.PI) / graphInstance.order;
 			graphInstance.setNodeAttribute(node, 'x', 100 * Math.cos(angle));
 			graphInstance.setNodeAttribute(node, 'y', 100 * Math.sin(angle));

@@ -1,8 +1,11 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
-	import MessageCardHorizontal from './messageCardHorizontal.svelte';
-	export let filteredMessages;
-	export let state;
+	// import MessageCardHorizontal from './messageCardHorizontal.svelte';
+	import MessageCardTwo from './messageCardTwo.svelte';
+	import type { MessageShort, Message, GraphState } from '$lib/models/models.svelte';
+
+	export let messageList: Message[];
+	export let graphState: GraphState;
 
 	const innerHeighMax: number = 625;
 	const innerWidthMax: number = 768;
@@ -11,25 +14,24 @@
 	let innerHeight: number = 0;
 	let condition: boolean = true;
 
-	let displayInfo = state.clickedNode;
-	// let cardData = undefined;
+	let displayInfo: string | undefined = graphState.selectedNode;
 
-	let cardData = {
+	let messageObject: MessageShort = {
 		id: 'None',
 		message: '',
-		message_encoder: '',
-		message_decoder: '',
-		spatial_context: '',
-		temporal_context: '',
+		messageEncoder: '',
+		messageDecoder: '',
+		spatialContext: '',
+		temporalContext: '',
 		type: ''
 	};
 
-	$: if (state.clickedNode) {
-		displayInfo = state.clickedNode;
-		for (let index = 0; index < filteredMessages.length; index++) {
-			const element = filteredMessages[index];
+	$: if (graphState.selectedNode) {
+		displayInfo = graphState.selectedNode;
+		for (let index = 0; index < messageList.length; index++) {
+			const element = messageList[index];
 			if (displayInfo == element.id) {
-				cardData = filteredMessages[index];
+				messageObject = messageList[index];
 			}
 		}
 	}
@@ -39,16 +41,12 @@
 <svelte:window bind:innerWidth bind:innerHeight />
 
 {#if condition}
-	<Accordion
-		class="relative rounded-lg shadow bg-tertiary-500"
-		padding="px-4 py-2"
-		>
-		<!-- hover="hover:bg-tertiary-600" -->
+	<Accordion class="relative rounded-lg shadow bg-tertiary-500" padding="px-4 py-2">
 		<AccordionItem open>
 			<svelte:fragment slot="lead" />
 			<svelte:fragment slot="summary">Message Overview</svelte:fragment>
 			<svelte:fragment slot="content">
-				<MessageCardHorizontal messageObject={cardData} />
+				<MessageCardTwo {messageObject} />
 			</svelte:fragment>
 		</AccordionItem>
 	</Accordion>

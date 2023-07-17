@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import type { Message } from '$lib/models/message';
+	import type { Message } from '$lib/models/models.svelte';
 	import MessageDetailCard from '$lib/components/messageDetailCard.svelte';
 
 	export let data: PageData;
