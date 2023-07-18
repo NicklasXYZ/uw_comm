@@ -1,8 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import type { Message } from '$lib/models/models.svelte';
-	import MessageDetailCard from '$lib/components/messageDetailCard.svelte';
-
+	import MessageCardDetailed from '$lib/components/MessageCardDetailed.svelte';
 	export let data: PageData;
 	let messageObject: Message = data.message;
 </script>
@@ -12,5 +11,5 @@
 </svelte:head>
 
 <div class="px-auto pt-2">
-	<MessageDetailCard {messageObject} />
+	<MessageCardDetailed {messageObject} />
 </div>

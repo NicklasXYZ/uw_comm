@@ -1,10 +1,14 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
-	import MessageCardTwo from './messageCardTwo.svelte';
 	import type { MessageShort, Message, GraphState } from '$lib/models/models.svelte';
+	import MessageCardShortContainer from './MessageCardShortContainer.svelte';
 
 	export let messageList: Message[];
 	export let graphState: GraphState;
+
+	const itemPadding: number = 1;
+	const itemTopPadding: number = 2;
+	const itemBottomPadding: number = 2;
 
 	const innerHeighMax: number = 625;
 	const innerWidthMax: number = 768;
@@ -45,7 +49,7 @@
 			<svelte:fragment slot="lead" />
 			<svelte:fragment slot="summary">Message Overview</svelte:fragment>
 			<svelte:fragment slot="content">
-				<MessageCardTwo {messageObject} />
+				<MessageCardShortContainer {messageObject} {itemPadding} {itemTopPadding} {itemBottomPadding} />
 			</svelte:fragment>
 		</AccordionItem>
 	</Accordion>

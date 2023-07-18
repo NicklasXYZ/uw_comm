@@ -3,9 +3,9 @@
 	import type { FilteringState } from '$lib/models/models.svelte';
 
 	export let filteringState: FilteringState;
-    
-    // Set common styling of list of options
-    const listStyling: string = "text-surface-300 rounded-lg sm:flex bg-surface-500"
+
+	// Set common styling of list of options
+	const listStyling: string = 'text-surface-300 rounded-lg sm:flex bg-surface-500';
 </script>
 
 <div class="flex flex-col p-4 space-y-4">
@@ -31,38 +31,38 @@
 		/>
 	</ul>
 
-    <h1>Message Decoder</h1>
+	<h1>Message Decoder</h1>
 	<ul class={listStyling}>
 		<FilteringOption
-			elementID={'checkbox-list-1'}
+			elementID={'checkbox-list-4'}
 			option={'Diver'}
 			bind:state={filteringState.messageDecoderDiver}
 			lastOption={false}
 		/>
 		<FilteringOption
-			elementID={'checkbox-list-2'}
+			elementID={'checkbox-list-5'}
 			option={'Surface Attendant'}
 			bind:state={filteringState.messageDecoderSurfaceAttendant}
 			lastOption={false}
 		/>
 		<FilteringOption
-			elementID={'checkbox-list-3'}
+			elementID={'checkbox-list-6'}
 			option={'AUV'}
 			bind:state={filteringState.messageDecoderAUV}
 			lastOption={true}
 		/>
 	</ul>
 
-    <h1>Spatial Context</h1>
+	<h1>Spatial Context</h1>
 	<ul class={listStyling}>
 		<FilteringOption
-			elementID={'checkbox-list-5'}
+			elementID={'checkbox-list-7'}
 			option={'Colocated'}
 			bind:state={filteringState.spatialContextColocated}
 			lastOption={false}
 		/>
 		<FilteringOption
-			elementID={'checkbox-list-6'}
+			elementID={'checkbox-list-8'}
 			option={'Remote'}
 			bind:state={filteringState.spatialContextRemote}
 			lastOption={true}
@@ -72,13 +72,13 @@
 	<h1>Temporal Context</h1>
 	<ul class={listStyling}>
 		<FilteringOption
-			elementID={'checkbox-list-7'}
+			elementID={'checkbox-list-9'}
 			option={'Synchronous'}
 			bind:state={filteringState.temporalContextSync}
 			lastOption={false}
 		/>
 		<FilteringOption
-			elementID={'checkbox-list-8'}
+			elementID={'checkbox-list-10'}
 			option={'Asynchronous'}
 			bind:state={filteringState.temporalContextAsync}
 			lastOption={true}

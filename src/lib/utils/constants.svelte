@@ -3,11 +3,11 @@
 
 	export const COLOR_BG_SURFACE_600: string = '#495a8fff';
 	export const COLOR_TERTIARY_500: string = '#16a8eaff';
-	export const COLOR_ERROR_500: string = '#d41976ff'
+	export const COLOR_ERROR_500: string = '#d41976ff';
 
 	/**
-	 * TODO: Eventually move this data to the 'data.json' file
-	 * which is fetched from github.
+	 * TODO: Eventually move this data to the 'data.json' file which is fetched
+	 * from github.
 	 */
 	export let messageCategories: MessageCategory[] = [
 		{

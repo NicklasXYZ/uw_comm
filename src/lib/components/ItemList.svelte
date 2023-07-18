@@ -1,11 +1,11 @@
 <script lang="ts">
-	export let categories: string[]; 
+	export let items: string[];
 </script>
 
 <ul class="text-sm font-medium list-inside list-disc">
-	{#each categories as category}
+	{#each items as item}
 		<li>
-			{category}
+			{item}
 		</li>
 	{/each}
 </ul>

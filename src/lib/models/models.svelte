@@ -1,5 +1,8 @@
 <script lang="ts" context="module">
-	export interface Message {
+	/**
+	 * Describe the object that fully describes a pre-formatted message.
+	 */
+	 export interface Message {
 		id: string;
 		premise: string;
 		message: string;
@@ -15,7 +18,11 @@
 		references: string[];
 	}
 
-	export interface MessageShort {
+	/**
+	 * Describe the object that is used to present a short summary of a pre-formatted
+	 * message.
+	 */
+	 export interface MessageShort {
 		id: string;
 		message: string;
 		messageEncoder: string;
