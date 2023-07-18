@@ -4,6 +4,7 @@
 	import { TabGroup, Tab } from '@skeletonlabs/skeleton';
 	import ListView from '$lib/components/ListView.svelte';
 	import NetworkView from '$lib/components/NetworkView.svelte';
+	import FilteringOptions from '$lib/components/FilteringOptions.svelte';
 	import type { GraphState, FilteringState, Message } from '$lib/models/models.svelte';
 
 	export let data: any;
@@ -23,30 +24,54 @@
 	 * Main object representing the currently selected messge filtering
 	 * options.
 	 */
-	const state: FilteringState = {
+	let filteringState: FilteringState = {
+		messageEncoderDiver: true,
+		messageEncoderSurfaceAttendant: true,
+		messageEncoderAUV: true,
+		messageDecoderDiver: true,
+		messageDecoderSurfaceAttendant: true,
+		messageDecoderAUV: true,
 		spatialContextColocated: true,
 		spatialContextRemote: true,
 		temporalContextSync: true,
 		temporalContextAsync: true
 	};
 
-	$: state.spatialContextColocated = true;
-	$: state.spatialContextRemote = true;
-	$: state.temporalContextSync = true;
-	$: state.temporalContextAsync = true;
+	$: filteringState.messageEncoderDiver = true
+	$: filteringState.messageEncoderSurfaceAttendant = true
+	$: filteringState.messageEncoderAUV = true
+	$: filteringState.messageDecoderDiver = true
+	$: filteringState.messageDecoderSurfaceAttendant = true
+	$: filteringState.messageDecoderAUV = true
+	$: filteringState.spatialContextColocated = true;
+	$: filteringState.spatialContextRemote = true;
+	$: filteringState.temporalContextSync = true;
+	$: filteringState.temporalContextAsync = true;
 	$: {
 		if (
-			!state.spatialContextColocated ||
-			!state.spatialContextRemote ||
-			!state.temporalContextSync ||
-			!state.temporalContextAsync
+			!filteringState.messageEncoderDiver ||
+			!filteringState.messageEncoderSurfaceAttendant ||
+			!filteringState.messageEncoderAUV ||
+			!filteringState.messageDecoderDiver ||
+			!filteringState.messageDecoderSurfaceAttendant ||
+			!filteringState.messageDecoderAUV ||
+			!filteringState.spatialContextColocated ||
+			!filteringState.spatialContextRemote ||
+			!filteringState.temporalContextSync ||
+			!filteringState.temporalContextAsync
 		) {
 			messageList = filterDimensions(
 				data.messageList,
-				state.spatialContextColocated,
-				state.spatialContextRemote,
-				state.temporalContextSync,
-				state.temporalContextAsync
+				filteringState.messageEncoderDiver,
+				filteringState.messageEncoderSurfaceAttendant,
+				filteringState.messageEncoderAUV,
+				filteringState.messageDecoderDiver,
+				filteringState.messageDecoderSurfaceAttendant,
+				filteringState.messageDecoderAUV,
+				filteringState.spatialContextColocated,
+				filteringState.spatialContextRemote,
+				filteringState.temporalContextSync,
+				filteringState.temporalContextAsync
 			);
 		} else {
 			messageList = data.messageList;
@@ -73,107 +98,9 @@
 	>
 		<AccordionItem>
 			<svelte:fragment slot="lead" />
-			<svelte:fragment slot="summary">Filtering & Sorting</svelte:fragment>
+			<svelte:fragment slot="summary">Filtering Options</svelte:fragment>
 			<svelte:fragment slot="content">
-				<div class="flex flex-col p-4 space-y-4">
-					<h1 class="font-semibold">Filtering</h1>
-					<hr class="!border-t-2" />
-
-					<!-- <h1>Message Encoder</h1>
-					<ul class="text-surface-300 rounded-lg sm:flex bg-surface-500">
-						<li class="w-full border-white sm:border-b-0 sm:border-r">
-							<div class="flex items-center pl-3">
-								<input id="checkbox-list-1" type="checkbox" value="" class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
-								<label for="checkbox-list-1" class="w-full py-3 ml-2 text-sm font-medium text-white">Diver</label>
-							</div>
-						</li>
-						<li class="w-full">
-							<div class="flex items-center pl-3">
-								<input id="checkbox-list-2" type="checkbox" value="" class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
-								<label for="checkbox-list-2" class="w-full py-3 ml-2 text-sm font-medium text-white">Surface Attendant</label>
-							</div>
-						</li>
-					</ul> -->
-
-					<!-- <h1>Message Decoder</h1>
-					<ul class="text-surface-300 rounded-lg sm:flex bg-surface-500">
-						<li class="w-full border-white sm:border-b-0 sm:border-r">
-							<div class="flex items-center pl-3">
-								<input id="checkbox-list-3" type="checkbox" value="" class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
-								<label for="checkbox-list-3" class="w-full py-3 ml-2 text-sm font-medium text-white">Diver</label>
-							</div>
-						</li>
-						<li class="w-full">
-							<div class="flex items-center pl-3">
-								<input id="checkbox-list-4" type="checkbox" value="" class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2">
-								<label for="checkbox-list-4" class="w-full py-3 ml-2 text-sm font-medium text-white">Surface Attendant</label>
-							</div>
-						</li>
-					</ul> -->
-
-					<h1>Spatial Context</h1>
-					<ul class="text-surface-300 rounded-lg sm:flex bg-surface-500">
-						<li class="w-full border-white sm:border-b-0 sm:border-r">
-							<div class="flex items-center pl-3">
-								<input
-									id="checkbox-list-5"
-									type="checkbox"
-									bind:checked={state.spatialContextColocated}
-									class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2"
-								/>
-								<label for="checkbox-list-5" class="w-full py-3 ml-2 text-sm font-medium text-white"
-									>Colocated</label
-								>
-							</div>
-						</li>
-						<li class="w-full">
-							<div class="flex items-center pl-3">
-								<input
-									id="checkbox-list-6"
-									type="checkbox"
-									bind:checked={state.spatialContextRemote}
-									class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2"
-								/>
-								<label for="checkbox-list-6" class="w-full py-3 ml-2 text-sm font-medium text-white"
-									>Remote</label
-								>
-							</div>
-						</li>
-					</ul>
-
-					<h1>Temporal Context</h1>
-					<ul class="text-surface-300 rounded-lg sm:flex bg-surface-500">
-						<li class="w-full border-white sm:border-b-0 sm:border-r">
-							<div class="flex items-center pl-3">
-								<input
-									id="checkbox-list-7"
-									type="checkbox"
-									bind:checked={state.temporalContextSync}
-									class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2"
-								/>
-								<label for="checkbox-list-7" class="w-full py-3 ml-2 text-sm font-medium text-white"
-									>Synchronous</label
-								>
-							</div>
-						</li>
-						<li class="w-full">
-							<div class="flex items-center pl-3">
-								<input
-									id="checkbox-list-8"
-									type="checkbox"
-									bind:checked={state.temporalContextAsync}
-									class="w-4 h-4 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2"
-								/>
-								<label for="checkbox-list-8" class="w-full py-3 ml-2 text-sm font-medium text-white"
-									>Asynchronous</label
-								>
-							</div>
-						</li>
-					</ul>
-					<h1 class="font-semibold">Sorting</h1>
-					<hr class="!border-t-2" />
-					TODO...
-				</div>
+				<FilteringOptions bind:filteringState />
 			</svelte:fragment>
 		</AccordionItem>
 	</Accordion>
@@ -195,7 +122,7 @@
 		{#if tabSet === 0}
 			<ListView bind:messageList />
 		{:else if tabSet === 1}
-			<NetworkView bind:graphState bind:messageList/>
+			<NetworkView bind:graphState bind:messageList />
 		{/if}
 	</svelte:fragment>
 </TabGroup>

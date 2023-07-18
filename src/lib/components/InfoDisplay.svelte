@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
-	// import MessageCardHorizontal from './messageCardHorizontal.svelte';
 	import MessageCardTwo from './messageCardTwo.svelte';
 	import type { MessageShort, Message, GraphState } from '$lib/models/models.svelte';
 

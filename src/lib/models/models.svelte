@@ -50,6 +50,12 @@
 	 * filtering options.
 	 */
 	export interface FilteringState {
+		messageEncoderDiver: boolean;
+		messageEncoderSurfaceAttendant: boolean;
+		messageEncoderAUV: boolean;
+		messageDecoderDiver: boolean;
+		messageDecoderSurfaceAttendant: boolean;
+		messageDecoderAUV: boolean;
 		spatialContextColocated: boolean;
 		spatialContextRemote: boolean;
 		temporalContextSync: boolean;
