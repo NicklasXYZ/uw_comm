@@ -1,33 +1,47 @@
 <script lang="ts">
-	// Your selected Skeleton theme:
-	// import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
+	/*
+	 * Set the main (default) Skeleton user interface theme to use.
+	 */
 	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
 
-	// This contains the bulk of Skeletons required styles:
-	// NOTE: this will be renamed skeleton.css in the v2.x release.
+	/*
+	 * Load required stylesheet.
+	 */
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 
+	/*
+	 * Import the AppBar and AppShell component.
+	 */
 	import { AppBar, AppShell } from '@skeletonlabs/skeleton';
-	// Finally, your application's global stylesheet (sometimes labeled 'app.css')
+
+	/*
+	 * Import the app's global stylesheet.
+	 */
 	import '../app.postcss';
 
-	const globeLoc = '../assets/underwater.svg';
+	/*
+	 * Set the filepath to the main logo to display in the AppBar.
+	 */
+	const logoLoc: string = '../assets/underwater.svg';
 
-	var todayDate = new Date().toISOString().slice(0, 10);
+	/*
+	 * Generate a string of the current date and time, which is to
+	 * be placed on the AppBar together with the current app version.
+	 */
+	let todayDate: string = new Date().toISOString().slice(0, 10);
 </script>
 
 <!-- AppShell -->
 <AppShell>
 	<svelte:fragment slot="header">
-			
-		<AppBar background="bg-surface-500"> 
+		<AppBar background="bg-surface-500">
 			<svelte:fragment slot="lead">
 				<a href="/">
 					<div class="flex mx-2">
-						<img class="mx-2" src={globeLoc} width="42" height="42" alt="Globe" />
+						<img class="mx-2" src={logoLoc} width="42" height="42" alt="Logo" />
 						<div class="pl-4">
 							<p class="h3">Underwater Communication</p>
-							<p class="text-sm font-medium text-surface-300">v0.0.1 .::. {todayDate}</p>
+							<p class="text-sm font-medium text-surface-300">v0.0.3 .::. {todayDate}</p>
 						</div>
 					</div>
 				</a>
@@ -39,7 +53,7 @@
 						<p class="h3">About</p>
 					</div>
 				</a>
-			</svelte:fragment>				
+			</svelte:fragment>
 		</AppBar>
 	</svelte:fragment>
 
@@ -47,5 +61,4 @@
 	<div class="max-w-6xl mx-auto">
 		<slot />
 	</div>
-	
 </AppShell>

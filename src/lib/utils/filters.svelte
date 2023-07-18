@@ -1,26 +1,91 @@
 <script lang="ts" context="module">
-	import type { Message } from '$lib/models/message';
+	import type { Message } from '$lib/models/models.svelte';
 
-	function checkSpatialContext(message: Message, includeSpatialContextColocated: boolean, includeSpatialContextRemote: boolean): boolean {
-		return (includeSpatialContextColocated == true && message.spatial_context.trim().toLowerCase() == "colocated") ||
-		(includeSpatialContextRemote == true && message.spatial_context.trim().toLowerCase() == "remote")
+	function checkMessageEncoder(
+		message: Message,
+		includeMessageEncoderDiver: boolean,
+		includeMessageEncoderSurfaceAttendant: boolean,
+		includeMessageEncoderAUV: boolean
+	): boolean {
+		return (
+			(includeMessageEncoderDiver == true &&
+				message.messageEncoder.trim().toLowerCase() == 'diver') ||
+			(includeMessageEncoderSurfaceAttendant == true &&
+				message.messageEncoder.trim().toLowerCase() == 'surface attendant') ||
+			(includeMessageEncoderAUV == true && message.messageEncoder.trim().toLowerCase() == 'auv')
+		);
 	}
 
-	function checkTemporalContext(message: Message, includeTemporalContextSync: boolean, includeTemporalContextAsync: boolean): boolean {
-		return (includeTemporalContextSync == true && message.temporal_context.trim().toLowerCase() == "synchronous") ||
-		(includeTemporalContextAsync == true && message.temporal_context.trim().toLowerCase() == "asynchronous")
+	function checkMessageDecoder(
+		message: Message,
+		includeMessageDecoderDiver: boolean,
+		includeMessageDecoderSurfaceAttendant: boolean,
+		includeMessageDecoderAUV: boolean
+	): boolean {
+		return (
+			(includeMessageDecoderDiver == true &&
+				message.messageEncoder.trim().toLowerCase() == 'diver') ||
+			(includeMessageDecoderSurfaceAttendant == true &&
+				message.messageEncoder.trim().toLowerCase() == 'surface attendant') ||
+			(includeMessageDecoderAUV == true && message.messageEncoder.trim().toLowerCase() == 'auv')
+		);
+	}
+
+	function checkSpatialContext(
+		message: Message,
+		includeSpatialContextColocated: boolean,
+		includeSpatialContextRemote: boolean
+	): boolean {
+		return (
+			(includeSpatialContextColocated == true &&
+				message.spatialContext.trim().toLowerCase() == 'colocated') ||
+			(includeSpatialContextRemote == true &&
+				message.spatialContext.trim().toLowerCase() == 'remote')
+		);
+	}
+
+	function checkTemporalContext(
+		message: Message,
+		includeTemporalContextSync: boolean,
+		includeTemporalContextAsync: boolean
+	): boolean {
+		return (
+			(includeTemporalContextSync == true &&
+				message.temporalContext.trim().toLowerCase() == 'synchronous') ||
+			(includeTemporalContextAsync == true &&
+				message.temporalContext.trim().toLowerCase() == 'asynchronous')
+		);
 	}
 
 	export function filterDimensions(
-		messages: Message[], 
+		messages: Message[],
+		includeMessageEncoderDiver: boolean,
+		includeMessageEncoderSurfaceAttendant: boolean,
+		includeMessageEncoderAUV: boolean,
+		includeMessageDecoderDiver: boolean,
+		includeMessageDecoderSurfaceAttendant: boolean,
+		includeMessageDecoderAUV: boolean,
 		includeSpatialContextColocated: boolean,
 		includeSpatialContextRemote: boolean,
 		includeTemporalContextSync: boolean,
-		includeTemporalContextAsync: boolean,
+		includeTemporalContextAsync: boolean
 	) {
 		return messages.filter(
-			(message: Message): boolean => checkSpatialContext(message, includeSpatialContextColocated, includeSpatialContextRemote) ||
-			checkTemporalContext(message, includeTemporalContextSync, includeTemporalContextAsync)
+			(message: Message): boolean =>
+				checkMessageEncoder(
+					message,
+					includeMessageEncoderDiver,
+					includeMessageEncoderSurfaceAttendant,
+					includeMessageEncoderAUV
+				) ||
+				checkMessageDecoder(
+					message,
+					includeMessageDecoderDiver,
+					includeMessageDecoderSurfaceAttendant,
+					includeMessageDecoderAUV
+				) ||
+				checkSpatialContext(message, includeSpatialContextColocated, includeSpatialContextRemote) ||
+				checkTemporalContext(message, includeTemporalContextSync, includeTemporalContextAsync)
 		);
 	}
 </script>

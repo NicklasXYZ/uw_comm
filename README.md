@@ -8,7 +8,7 @@ A website that aims to collect, organize and showcase documented information reg
 ### Local
 
 ```bash
-nvm use 16 && npm instlal && npm run dev 
+nvm use 16 && npm install && npm run dev 
 ```
 
 ### Docker
