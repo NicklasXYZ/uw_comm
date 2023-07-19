@@ -6,7 +6,7 @@
 	export let itemPadding: number = 1;
 	export let itemTopPadding: number = 2;
 	export let itemBottomPadding: number = 2;
-	
+
 	const messageLoc: string = '../assets/message.svg';
 </script>
 
