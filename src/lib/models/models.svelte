@@ -2,8 +2,8 @@
 	/**
 	 * Describe the object that fully describes a pre-formatted message.
 	 */
-	 export interface Message {
-		id: string;
+	export interface Message {
+		id: string | undefined;
 		premise: string;
 		message: string;
 		messageVariations: string[];
@@ -22,8 +22,8 @@
 	 * Describe the object that is used to present a short summary of a pre-formatted
 	 * message.
 	 */
-	 export interface MessageShort {
-		id: string;
+	export interface MessageShort {
+		id: string | undefined;
 		message: string;
 		messageEncoder: string;
 		messageDecoder: string;

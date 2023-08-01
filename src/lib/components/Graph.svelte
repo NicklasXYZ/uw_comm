@@ -69,7 +69,7 @@
 			graphState.hoveredNeighbors = undefined;
 		}
 
-		// Refresh rendering:
+		// Refresh the graph rendering
 		renderer.refresh();
 	}
 

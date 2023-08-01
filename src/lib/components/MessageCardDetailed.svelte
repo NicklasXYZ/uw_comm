@@ -47,5 +47,6 @@
 		/>
 		<MessageCardDetailedItem itemTitle={'Communication Type'} itemContent={messageObject.type} />
 		<MessageCardDetailedItem itemTitle={'Categorization'} itemContent={messageObject.categories} />
+		<MessageCardDetailedItem itemTitle={'References'} itemContent={messageObject.references} />
 	</tbody>
 </table>

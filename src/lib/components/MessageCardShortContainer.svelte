@@ -8,7 +8,7 @@
 	export let itemBottomPadding: number = 2;
 </script>
 
-{#if messageObject}
+{#if messageObject.id}
 	<!-- Card with hyperlink -->
 	<a href={`/message/${messageObject.id}`} target="_blank">
 		<!-- Card with hover effect -->

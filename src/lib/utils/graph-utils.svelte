@@ -1,6 +1,7 @@
 <script lang="ts" context="module">
 	import type { NodeDisplayData, PartialButFor, PlainObject } from 'sigma/types';
 	import type { Settings } from 'sigma/settings';
+	import { COLOR_BG_SURFACE_100_800_TOKEN } from './constants.svelte';
 
 	/**
 	 * This function draw in the input canvas 2D context a rectangle.
@@ -42,7 +43,7 @@
 		context.font = `${weight} ${size}px ${font}`;
 
 		// Then we draw the label background
-		context.fillStyle = '#425181ff';
+		context.fillStyle = COLOR_BG_SURFACE_100_800_TOKEN;
 		context.shadowOffsetX = 0;
 		context.shadowOffsetY = 0;
 		context.shadowBlur = 8;

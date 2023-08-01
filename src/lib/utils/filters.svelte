@@ -24,10 +24,10 @@
 	): boolean {
 		return (
 			(includeMessageDecoderDiver == true &&
-				message.messageEncoder.trim().toLowerCase() == 'diver') ||
+				message.messageDecoder.trim().toLowerCase() == 'diver') ||
 			(includeMessageDecoderSurfaceAttendant == true &&
-				message.messageEncoder.trim().toLowerCase() == 'surface attendant') ||
-			(includeMessageDecoderAUV == true && message.messageEncoder.trim().toLowerCase() == 'auv')
+				message.messageDecoder.trim().toLowerCase() == 'surface attendant') ||
+			(includeMessageDecoderAUV == true && message.messageDecoder.trim().toLowerCase() == 'auv')
 		);
 	}
 

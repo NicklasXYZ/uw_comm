@@ -37,12 +37,12 @@
 		temporalContextAsync: true
 	};
 
-	$: filteringState.messageEncoderDiver = true
-	$: filteringState.messageEncoderSurfaceAttendant = true
-	$: filteringState.messageEncoderAUV = true
-	$: filteringState.messageDecoderDiver = true
-	$: filteringState.messageDecoderSurfaceAttendant = true
-	$: filteringState.messageDecoderAUV = true
+	$: filteringState.messageEncoderDiver = true;
+	$: filteringState.messageEncoderSurfaceAttendant = true;
+	$: filteringState.messageEncoderAUV = true;
+	$: filteringState.messageDecoderDiver = true;
+	$: filteringState.messageDecoderSurfaceAttendant = true;
+	$: filteringState.messageDecoderAUV = true;
 	$: filteringState.spatialContextColocated = true;
 	$: filteringState.spatialContextRemote = true;
 	$: filteringState.temporalContextSync = true;
@@ -80,8 +80,8 @@
 
 	/*
 	 * Keep track of which tab the user is currently on:
-	 * 0: list view
-	 * 1: network view
+	 * 0, then show 'List View'
+	 * 1, then show 'Network View'
 	 */
 	let tabSet: number = 0;
 </script>
@@ -90,6 +90,7 @@
 	<title>Underwater Communication</title>
 </svelte:head>
 
+<!-- Accordian: Filtering Options -->
 <div class="flex flex-col py-4 space-y-4">
 	<Accordion
 		class="relative rounded-lg shadow bg-surface-100-800-token"
@@ -106,7 +107,7 @@
 	</Accordion>
 </div>
 
-<!-- Data View Tabs -->
+<!-- Tab Group: List & Network Data View -->
 <TabGroup
 	hover="hover:bg-surface-600"
 	justify="justify-center"

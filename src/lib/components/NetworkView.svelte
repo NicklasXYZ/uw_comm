@@ -8,7 +8,7 @@
 
 	/*
 	 * Set the filepath to the fullscreen and fullscreen exit icons to
-	 * display in the network view.
+	 * display in the 'Network View'.
 	 */
 	const fullscreenLoc: string = '../assets/fullscreen.svg';
 	const fullscreenExitLoc: string = '../assets/fullscreen_exit.svg';

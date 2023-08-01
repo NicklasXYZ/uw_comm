@@ -20,7 +20,7 @@
 	let displayInfo: string | undefined = graphState.selectedNode;
 
 	let messageObject: MessageShort = {
-		id: 'None',
+		id: undefined,
 		message: '',
 		messageEncoder: '',
 		messageDecoder: '',
