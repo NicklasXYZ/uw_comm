@@ -75,7 +75,8 @@
                 "BL23",
                 "PG90",
                 "USND16",
-                "PADI16"
+                "PADI16",
+                "SD09"
             ]
         },
         {
@@ -335,14 +336,17 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
             "id": "61a4da7b-e15e-474d-8d2d-cb99a72273b9",
             "premise": "",
             "message": "Ascend to level",
-            "messageVariations": [],
+            "messageVariations": [
+                "Ascend to a certain depth"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -354,7 +358,8 @@
                 "NP"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -479,9 +484,8 @@
             "premise": "",
             "message": "Level off (at this depth)",
             "messageVariations": [
-                "Stay at this depth",
-                "How deep?",
-                "What is the depth"
+                "Level off, this depth",
+                "Stay at this depth"
             ],
             "description": "",
             "meaning": "",
@@ -495,8 +499,34 @@
             ],
             "references": [
                 "BL23",
+                "PG90",
                 "RD07",
                 "RSTC05",
+                "USND16",
+                "BJ06",
+                "SD09"
+            ]
+        },
+        {
+            "id": "1a5f67ee-f1b4-407d-a354-f25a6d37a365",
+            "premise": "",
+            "message": "What is your depth?",
+            "messageVariations": [
+                "How deep?",
+                "What is the depth?"
+            ],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "PG90",
                 "USND16",
                 "BJ06",
                 "SD09"
@@ -526,7 +556,8 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -627,7 +658,8 @@
             "references": [
                 "BL23",
                 "PG90",
-                "RSTC05"
+                "RSTC05",
+                "SD09"
             ]
         },
         {
@@ -654,7 +686,8 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -688,7 +721,8 @@
             "message": "Faster",
             "messageVariations": [
                 "Hurry up",
-                "Speed up"
+                "Speed up",
+                "Fast"
             ],
             "description": "",
             "meaning": "",
@@ -702,7 +736,8 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
             ]
         },
         {
@@ -806,7 +841,8 @@
             ],
             "references": [
                 "BL23",
-                "RSTC05"
+                "RSTC05",
+                "SD09"
             ]
         },
         {
@@ -832,7 +868,9 @@
             "id": "8e7dedc6-ef7d-467d-8df1-6c07b10329cf",
             "premise": "",
             "message": "Navigate",
-            "messageVariations": [],
+            "messageVariations": [
+                "Which compass heading?"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -844,7 +882,8 @@
                 "NP"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -887,6 +926,25 @@
             ]
         },
         {
+            "id": "61b029aa-b44a-4424-9be0-b8500fc268f4",
+            "premise": "",
+            "message": "Check surface",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
             "id": "c19ab83a-ee83-4bd4-ae89-010efdefaa92",
             "premise": "",
             "message": "Safety stop",
@@ -902,14 +960,17 @@
                 "NP"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
             "id": "90aa4c7c-820e-463c-b833-ccc81cde72b5",
             "premise": "",
             "message": "Ceiling",
-            "messageVariations": [],
+            "messageVariations": [
+                "Decompression ceiling"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -922,7 +983,30 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
+            ]
+        },
+        {
+            "id": "63a47100-c4b2-4263-b3d1-cd84ad0ac0c9",
+            "premise": "Decompression",
+            "message": "",
+            "messageVariations": [
+                "I am in deco",
+                "I am in decompression"
+            ],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "SE"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -965,7 +1049,8 @@
             "premise": "",
             "message": "Write it down",
             "messageVariations": [
-                "Write down message"
+                "Write down message",
+                "Write it out"
             ],
             "description": "",
             "meaning": "",
@@ -979,7 +1064,27 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
+            ]
+        },
+        {
+            "id": "74f04b0b-b167-4103-99d8-819a171076c8",
+            "premise": "",
+            "message": "Lift bag",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "ECM"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -1037,7 +1142,8 @@
                 "PG90",
                 "USND16",
                 "BJ06",
-                "PADI16"
+                "PADI16",
+                "SD09"
             ]
         },
         {
@@ -1116,7 +1222,8 @@
                 "RD07",
                 "RSTC05",
                 "NOAA01",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -1169,7 +1276,27 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
+            ]
+        },
+        {
+            "id": "ed2b3b89-76d5-47ed-941d-5029404e0d74",
+            "premise": "",
+            "message": "Far",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Body Language",
+            "categories": [
+                "NP"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -1190,7 +1317,8 @@
             "references": [
                 "BL23",
                 "RD07",
-                "RSTC05"
+                "RSTC05",
+                "SD09"
             ]
         },
         {
@@ -1280,6 +1408,26 @@
                 "RSTC05",
                 "NOAA01",
                 "USND16"
+            ]
+        },
+        {
+            "id": "561b368c-7770-4e77-b5ed-658f0e7b0b94",
+            "premise": "",
+            "message": "Half tank",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "SE"
+            ],
+            "references": [
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -1459,7 +1607,9 @@
             "id": "a3fc44dd-e376-45ad-a67d-d24d29b03e20",
             "premise": "",
             "message": "Exhaustion",
-            "messageVariations": [],
+            "messageVariations": [
+                "Tired"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -1471,7 +1621,8 @@
                 "SE"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -1605,7 +1756,27 @@
                 "EC"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
+            ]
+        },
+        {
+            "id": "81ed0f2a-b714-4e8d-b46e-1aad04b93f0b",
+            "premise": "",
+            "message": "It is getting dark",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Body Language",
+            "categories": [
+                "EC"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -1884,7 +2055,9 @@
             "id": "dad862bc-4f8f-40ec-be93-e8cb838b2057",
             "premise": "",
             "message": "Ascend slowly",
-            "messageVariations": [],
+            "messageVariations": [
+                "Ascend using bottom profile"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -1896,7 +2069,8 @@
                 "NP"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -1915,7 +2089,8 @@
                 "NP"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -1958,7 +2133,9 @@
             "id": "d635411c-6c2d-4c1b-805d-91692cb722d2",
             "premise": "",
             "message": "How much air?",
-            "messageVariations": [],
+            "messageVariations": [
+                "How much air do you have?"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -1970,7 +2147,8 @@
                 "ECM"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -3765,14 +3943,17 @@
                 "EC"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
             "id": "155662e3-9ced-4331-af9a-9cda5b4078ea",
             "premise": "",
             "message": "Temperature rising",
-            "messageVariations": [],
+            "messageVariations": [
+                "Temperature increase"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -3784,13 +3965,36 @@
                 "EC"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
             "id": "b62e2058-5eae-4e84-ac99-1edb389b7828",
             "premise": "",
             "message": "Temperature falling",
+            "messageVariations": [
+                "Temperature decrease"
+            ],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "EC"
+            ],
+            "references": [
+                "BL23",
+                "SD09"
+            ]
+        },
+        {
+            "id": "",
+            "premise": "c716cf54-2165-4148-b238-78375df65425",
+            "message": "Listen",
             "messageVariations": [],
             "description": "",
             "meaning": "",
@@ -3803,7 +4007,26 @@
                 "EC"
             ],
             "references": [
-                "BL23"
+                "SD09"
+            ]
+        },
+        {
+            "id": "46e65188-d194-4f4c-9e4e-f1ff5e1a27cc",
+            "premise": "",
+            "message": "Silence",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "EC"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -4456,7 +4679,8 @@
             "messageVariations": [
                 "What time?",
                 "What is the time?",
-                "What is the remaining bottom time?"
+                "What is the remaining bottom time?",
+                "Bottom time"
             ],
             "description": "",
             "meaning": "",
@@ -4472,7 +4696,8 @@
                 "BL23",
                 "NOAA01",
                 "USND16",
-                "BJ06"
+                "BJ06",
+                "SD09"
             ]
         },
         {
@@ -4502,7 +4727,10 @@
             "id": "ba8fd767-5b78-4b34-b28b-cb7e3e9f35b7",
             "premise": "",
             "message": "Return",
-            "messageVariations": [],
+            "messageVariations": [
+                "Let us go home",
+                "Let's go home"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -4514,14 +4742,18 @@
                 "NP"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
             "id": "a34b9dae-d1e4-4403-ad45-ab60b28c65a1",
             "premise": "",
             "message": "Abort",
-            "messageVariations": [],
+            "messageVariations": [
+                "Abort dive",
+                "End of dive"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -4533,7 +4765,8 @@
                 "SE"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -4575,7 +4808,8 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
             ]
         },
         {
@@ -4634,7 +4868,27 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
+            ]
+        },
+        {
+            "id": "1591aaae-5caa-4ae9-a177-42d60f30ba2f",
+            "premise": "",
+            "message": "Fising line",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "ECM"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -4654,7 +4908,46 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
+            ]
+        },
+        {
+            "id": "410ac34b-2d34-40e8-bb2b-f33bd9158d01",
+            "premise": "",
+            "message": "Sharp",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "EC"
+            ],
+            "references": [
+                "SD09"
+            ]
+        },
+        {
+            "id": "8332500b-dde6-413a-9d39-f20ede82f8a2",
+            "premise": "",
+            "message": "Lookup in book after dive",
+            "messageVariations": [],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "ECM"
+            ],
+            "references": [
+                "SD09"
             ]
         },
         {
@@ -4682,7 +4975,9 @@
             "id": "efa6d730-83b6-4793-8503-1fcdf7c1c8e0",
             "premise": "",
             "message": "Deploy surface marker buoy",
-            "messageVariations": [],
+            "messageVariations": [
+                "Surface marker buoy up"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -4694,7 +4989,8 @@
                 "ECM"
             ],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -4741,7 +5037,9 @@
             "premise": "",
             "message": "Hold",
             "messageVariations": [
-                "Hang on"
+                "Hold on to the line",
+                "Hang on",
+                "Hang on to descent line"
             ],
             "description": "",
             "meaning": "",
@@ -4755,7 +5053,7 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "SD09"
             ]
         },
         {
@@ -4775,7 +5073,8 @@
             ],
             "references": [
                 "BL23",
-                "PG90"
+                "PG90",
+                "SD09"
             ]
         },
         {
@@ -4811,7 +5110,8 @@
             "type": "Hand Signals",
             "categories": [],
             "references": [
-                "BL23"
+                "BL23",
+                "SD09"
             ]
         },
         {
@@ -4940,7 +5240,30 @@
         {
             "id": "7aa05b45-d749-41d6-9d86-4b19b0cd426e",
             "premise": "",
-            "message": "Light torch",
+            "message": "Light on",
+            "messageVariations": [
+                "Torch",
+                "Light"
+            ],
+            "description": "",
+            "meaning": "",
+            "messageEncoder": "Diver",
+            "messageDecoder": "Diver",
+            "spatialContext": "Colocated",
+            "temporalContext": "Synchronous",
+            "type": "Hand Signals",
+            "categories": [
+                "ECM"
+            ],
+            "references": [
+                "BL23",
+                "SD09"
+            ]
+        },
+        {
+            "id": "c071818f-902f-43f6-923d-bf7471c7ea12",
+            "premise": "",
+            "message": "Light off",
             "messageVariations": [],
             "description": "",
             "meaning": "",
@@ -4953,7 +5276,7 @@
                 "ECM"
             ],
             "references": [
-                "BL23"
+                "SD09"
             ]
         },
         {
@@ -5118,7 +5441,9 @@
             "id": "73137983-a99a-43b4-a83c-7077c946f0c1",
             "premise": "",
             "message": "Tie off",
-            "messageVariations": [],
+            "messageVariations": [
+                "Tie line"
+            ],
             "description": "",
             "meaning": "",
             "messageEncoder": "Diver",
@@ -5128,7 +5453,8 @@
             "type": "Hand Signals",
             "categories": [],
             "references": [
-                "PG90"
+                "PG90",
+                "SD09"
             ]
         },
         {
@@ -6842,23 +7168,6 @@
             "id": "e0b29905-1760-4071-9123-451625acab23",
             "premise": "",
             "message": "I am sorry",
-            "messageVariations": [],
-            "description": "",
-            "meaning": "",
-            "messageEncoder": "Diver",
-            "messageDecoder": "Diver",
-            "spatialContext": "Colocated",
-            "temporalContext": "Synchronous",
-            "type": "Hand Signals",
-            "categories": [],
-            "references": [
-                "SD09"
-            ]
-        },
-        {
-            "id": "51749b51-ce71-40ca-ae15-6c8ccbef38d0",
-            "premise": "",
-            "message": "Hold on",
             "messageVariations": [],
             "description": "",
             "meaning": "",
