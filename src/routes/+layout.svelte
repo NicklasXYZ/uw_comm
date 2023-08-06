@@ -41,7 +41,7 @@
 						<img class="mx-2" src={logoLoc} width="42" height="42" alt="Logo" />
 						<div class="pl-4">
 							<p class="h3">Underwater Communication</p>
-							<p class="text-sm font-medium text-surface-300">v0.0.3 .::. {todayDate}</p>
+							<p class="text-sm font-medium text-surface-300">v0.0.4 .::. {todayDate}</p>
 						</div>
 					</div>
 				</a>

@@ -11,7 +11,7 @@
 	</p>
 	<slot />
 {:else}
-	<p class="flex items-center p-2 pb-0 pt-2 text-l font-medium leading-8">
+	<p class="flex items-center p-4 pb-0 pt-2 text-l font-medium leading-8">
 		{subSectionTitle}
 	</p>
 	<slot />

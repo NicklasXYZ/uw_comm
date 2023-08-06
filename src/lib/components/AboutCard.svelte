@@ -381,34 +381,66 @@
 				</AboutSection>
 
 				<AboutSection sectionTitle={'Message Categories'}>
-					<AboutSectionText>TODO: ...</AboutSectionText>
+					<AboutSectionText>
+						The various collected messages have been categorized according to a set of categories
+						generated through an initial inspection of the collected messages. The categories unveil
+						general patterns and trends regarding the messages exchanged and allow for a further
+						systematic examination rather than navigating a disjointed array of messages.
+					</AboutSectionText>
 
-					<AboutSubSection subSectionTitle={'Emotions & Expressions (EE)'}>
-						<AboutSubSectionText>TODO: ...</AboutSubSectionText>
+					<AboutSubSection subSectionTitle={'(EE) Emotions & Expressions'}>
+						<AboutSubSectionText>
+							Messages in this category relate to or convey human emotions and expressions during a
+							dive. Since face-to-face communication is limited underwater, and traditional
+							communication methods might not encompass every sentiment a diver wants to express,
+							this category helps divers communicate feelings like joy, discomfort, amazement, or
+							unease.
+						</AboutSubSectionText>
 					</AboutSubSection>
 
-					<AboutSubSection subSectionTitle={'Environmental Conditions (EC)'}>
-						<AboutSubSectionText>TODO: ...</AboutSubSectionText>
+					<AboutSubSection subSectionTitle={'(EC) Environmental Conditions'}>
+						<AboutSubSectionText>
+							Messages in this category provide information about the surrounding environment, i.e.,
+							the messages in this category may help divers understand and communicate the current
+							state of the water, visibility, and other environmental factors.
+						</AboutSubSectionText>
 					</AboutSubSection>
 
-					<AboutSubSection subSectionTitle={'Equipment & Communication (ECM)'}>
-						<AboutSubSectionText>TODO: ...</AboutSubSectionText>
+					<AboutSubSection subSectionTitle={'(ECM) Equipment & Communication'}>
+						<AboutSubSectionText>
+							Messages in this category relate to equipment and auxiliary information related to
+							equipment and include messages about the status or problems related to diving gear.
+						</AboutSubSectionText>
 					</AboutSubSection>
 
-					<AboutSubSection subSectionTitle={'Navigation & Positioning (NP)'}>
-						<AboutSubSectionText>TODO: ...</AboutSubSectionText>
+					<AboutSubSection subSectionTitle={'(NP) Navigation & Positioning'}>
+						<AboutSubSectionText>
+							Proper navigation is essential, especially in unfamiliar terrains. Messages in this
+							category assist divers in conveying their positions, directions, or any landmarks
+							they've encountered.
+						</AboutSubSectionText>
 					</AboutSubSection>
 
-					<AboutSubSection subSectionTitle={'Safety & Emergency (SE)'}>
-						<AboutSubSectionText>TODO: ...</AboutSubSectionText>
+					<AboutSubSection subSectionTitle={'(SE) Safety & Emergency'}>
+						<AboutSubSectionText>
+							Messages in this category relate to information that is vital for a safe operation
+							underwater, the signaling of danger or the immediate request for assistance.
+						</AboutSubSectionText>
 					</AboutSubSection>
 
-					<AboutSubSection subSectionTitle={'Wildlife Sightings (WS)'}>
-						<AboutSubSectionText>TODO: ...</AboutSubSectionText>
+					<AboutSubSection subSectionTitle={'(WS) Wildlife Sightings'}>
+						<AboutSubSectionText>
+							Messages in this category allow divers to share their wildlife encounters, which can
+							be both for enjoyment and safety purposes.
+						</AboutSubSectionText>
 					</AboutSubSection>
 
-					<AboutSubSection subSectionTitle={'Quantitative Information (QI)'}>
-						<AboutSubSectionText>TODO: ...</AboutSubSectionText>
+					<AboutSubSection subSectionTitle={'(QI) Quantitative Information'}>
+						<AboutSubSectionText>
+							Quantitative information is crucial in many diving scenarios. Messages in this
+							category relate to conveying numeric data such as depth, air supply level, time spent
+							underwater, size, or distance.
+						</AboutSubSectionText>
 					</AboutSubSection>
 				</AboutSection>
 
