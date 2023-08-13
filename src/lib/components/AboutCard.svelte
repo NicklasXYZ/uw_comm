@@ -48,7 +48,7 @@
 						be conveyed depend on the location and time of the specific actor sending and/or
 						receiving the message. Furthermore, the messages can be exchanged through various
 						communication methods such as body language, flags & buoys, hand signals, light signals,
-						etc. In the following sections, we thus describe these aspects to introduce the various
+						etc. In the following sections, we describe these aspects to then introduce the various
 						criteria by which we organize the messages exchanged by various actors.
 
 						<div class="pt-8 photo-wrapper">
@@ -57,7 +57,7 @@
 								<figcaption class="text-sm font-medium">
 									Figure 1: An illustration of the different actors that may need to communicate
 									during a dive. Surface supporting personnel is typically located on a ship above
-									the surface, while divers operate below the surface. Professional dive missions
+									the surface, while divers operate below the surface. Professional diving activities
 									may also be supported by a Geographical Positioning System (GPS), Autonomous
 									Surface Vehicles (ASVs), and Autonomous Underwater Vehicles (AUVs).
 								</figcaption>
@@ -84,11 +84,11 @@
 					>
 						<AboutSubSectionText>
 							Divers are underwater personnel trained in diving techniques and equipped with diving
-							gear making them capable of working in an aquatic environment. Diver's activities span
+							gear making them capable of working in an aquatic environment. Divers' activities span
 							from recreational to professional activities that may involve conducting scientific
-							research, underwater inspections, maintenance, and search and rescue operations. In
-							these various activities, divers may want to communicate with each other to ensure
-							safety and enable task coordination. Additionally, they might want to exchange
+							research, underwater inspections, maintenance, search and rescue operations, etc. In
+							these various activities, divers may want to communicate with each other or other actors
+                                                        to ensure safety and enable task coordination. Additionally, they might want to exchange
 							information about the environment they are exploring.
 						</AboutSubSectionText>
 					</AboutSubSection>
@@ -178,8 +178,8 @@
 					>
 						<AboutSubSectionText>
 							Synchronous communication refers to real-time exchanges where individuals are actively
-							engaged and respond immediately. This mode is useful for time-sensitive situations,
-							quick decision-making, and immediate coordination. However, this mode relies on
+							engaged and respond immediately. This mode of communication is useful for time-sensitive
+                                                        situations, quick decision-making, and immediate coordination. However, this mode relies on
 							individuals being available at the same time for effective engagement.
 						</AboutSubSectionText>
 					</AboutSubSection>
@@ -191,7 +191,7 @@
 					>
 						<AboutSubSectionText>
 							Asynchronous communication involves a delay between sending and receiving messages,
-							such as with email or discussion boards. This mode of communication allows for more
+							such as with, e.g., email or discussion boards. This mode of communication allows for more
 							thoughtful and composed responses, and it is beneficial in less time-sensitive
 							situations.
 						</AboutSubSectionText>
@@ -216,11 +216,11 @@
 					>
 						<AboutSubSectionText>
 							Body language is an extension of hand signaling, allowing divers to convey messages
-							and emotions through physical movements and positions involving or engaging body parts
-							beyond just the hands. For example, body language gestures may include nodding to
-							indicate agreement, shaking the head to convey disagreement, or shrugging to express
-							uncertainty. Body language may also refer to how posture and orientation can indicate
-							direction or how eye contact and gaze can be used to draw attention.
+							through physical movements and positions involving or engaging body parts beyond just 
+                                                        the hands. For example, body language gestures may include nodding to indicate agreement,
+                                                        shaking the head to convey disagreement, or shrugging to express uncertainty. Body 
+                                                        language may also refer to how posture and orientation can indicate direction or how eye
+                                                        contact and gaze can be used to draw attention.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
@@ -230,12 +230,12 @@
 						iconAltText={'Flags & Buoys'}
 					>
 						<AboutSubSectionText>
-							Flags and buoys are visual tools used for communication in underwater and surface
-							environments and are vital tools for divers to engage with surface-supporting
-							personnel. They come in various colors, shapes, and patterns, each representing a
-							specific message or indicating a particular situation. By deploying and holding a
-							signaling device like a surface marker buoy, divers can signal their presence and the
-							need for attention or assistance.
+							Flags and buoys are visual tools used for communication in a surface environment
+                                                        and are vital tools for divers to engage with surface-supporting personnel. They come
+                                                        in various colors, shapes, and patterns, each representing a specific message or 
+                                                        indicating a particular situation. By deploying and holding a signaling device like
+                                                        a surface marker buoy, divers can signal their presence and the need for attention
+                                                        or assistance.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
@@ -263,10 +263,7 @@
 						<AboutSubSectionText>
 							Light signaling is a technique that divers can use to communicate by turning them on
 							and off, shining them in specific patterns, or directing the light toward a person or
-							object. Essential light signals convey whether a diver is OK or needs attention. More
-							advanced light signaling includes using Morse code which can also be adapted for
-							underwater communication, with divers quickly turning the light on and off to
-							represent dots and dashes.
+							object. Essential light signals convey whether a diver is OK or needs attention.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
@@ -339,7 +336,7 @@
 						iconAltText={'Touch Contact'}
 					>
 						<AboutSubSectionText>
-							Touch contract is a method divers use to communicate underwater through tactile
+							Touch contact is a method divers use to communicate underwater through tactile
 							signals. It involves establishing physical contact with another diver and conveying
 							messages through touches, such as taps, nudges, or squeezes. Since the messages that
 							can be conveyed are often limited, the signals typically indicate important
@@ -371,7 +368,7 @@
 						<AboutSubSectionText>
 							Underwater writing slates are compact and waterproof boards divers use for
 							communication and note-taking underwater. They have a smooth surface for writing with
-							specialized underwater pencils or markers and a clip or loop for attachment to dive
+							specialized underwater pencils or markers and a clip or loop for attachment to equipped dive
 							gear. Divers hold the slate underwater with one hand while using the other to write or
 							draw. They are commonly used to communicate with dive buddies, record dive plans,
 							depth readings, and observations. In addition, writing slates can be easily wiped
@@ -382,10 +379,11 @@
 
 				<AboutSection sectionTitle={'Message Categories'}>
 					<AboutSectionText>
-						The various collected messages have been categorized according to a set of categories
-						generated through an initial inspection of the collected messages. The categories unveil
-						general patterns and trends regarding the messages exchanged and allow for a further
-						systematic examination rather than navigating a disjointed array of messages.
+                                        	The various messages documented in the literature and research collected on this website have been
+						categorized according to a set of categories generated through an initial inspection of the 
+						collected messages. The categories unveil general patterns and trends regarding the messages 
+						exchanged and allow for a further systematic examination rather than navigating a disjointed array
+						of messages.
 					</AboutSectionText>
 
 					<AboutSubSection subSectionTitle={'(EE) Emotions & Expressions'}>
@@ -401,14 +399,14 @@
 					<AboutSubSection subSectionTitle={'(EC) Environmental Conditions'}>
 						<AboutSubSectionText>
 							Messages in this category provide information about the surrounding environment, i.e.,
-							the messages in this category may help divers understand and communicate the current
-							state of the water, visibility, and other environmental factors.
+							they may help divers understand and communicate the current state of the water, visibility,
+							and other environmental factors.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
 					<AboutSubSection subSectionTitle={'(ECM) Equipment & Communication'}>
 						<AboutSubSectionText>
-							Messages in this category relate to equipment and auxiliary information related to
+							Messages in this category relate to equipment or other auxiliary information related to
 							equipment and include messages about the status or problems related to diving gear.
 						</AboutSubSectionText>
 					</AboutSubSection>
@@ -417,7 +415,7 @@
 						<AboutSubSectionText>
 							Proper navigation is essential, especially in unfamiliar terrains. Messages in this
 							category assist divers in conveying their positions, directions, or any landmarks
-							they've encountered.
+							they have encountered.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
