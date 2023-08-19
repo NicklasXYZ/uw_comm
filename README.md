@@ -25,4 +25,4 @@ The website deploys to http://uwcomm.infonest.xyz/ via [Netlify](https://www.net
 
 ## License
 
-The code and data is provided under a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) lisence.
+The code and data is provided under a [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) license.
