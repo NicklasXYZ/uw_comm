@@ -88,7 +88,7 @@
 							from recreational to professional activities that may involve conducting scientific
 							research, underwater inspections, maintenance, search and rescue operations, etc. In
 							these various activities, divers may want to communicate with each other or other actors
-                                                        to ensure safety and enable task coordination. Additionally, they might want to exchange
+                            to ensure safety and enable task coordination. Additionally, they might want to exchange
 							information about the environment they are exploring.
 						</AboutSubSectionText>
 					</AboutSubSection>
@@ -179,7 +179,7 @@
 						<AboutSubSectionText>
 							Synchronous communication refers to real-time exchanges where individuals are actively
 							engaged and respond immediately. This mode of communication is useful for time-sensitive
-                                                        situations, quick decision-making, and immediate coordination. However, this mode relies on
+                            situations, quick decision-making, and immediate coordination. However, this mode relies on
 							individuals being available at the same time for effective engagement.
 						</AboutSubSectionText>
 					</AboutSubSection>
@@ -217,10 +217,10 @@
 						<AboutSubSectionText>
 							Body language is an extension of hand signaling, allowing divers to convey messages
 							through physical movements and positions involving or engaging body parts beyond just 
-                                                        the hands. For example, body language gestures may include nodding to indicate agreement,
-                                                        shaking the head to convey disagreement, or shrugging to express uncertainty. Body 
-                                                        language may also refer to how posture and orientation can indicate direction or how eye
-                                                        contact and gaze can be used to draw attention.
+                            the hands. For example, body language gestures may include nodding to indicate agreement,
+                            shaking the head to convey disagreement, or shrugging to express uncertainty. Body 
+                            language may also refer to how posture and orientation can indicate direction or how eye
+                            contact and gaze can be used to draw attention.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
@@ -231,11 +231,11 @@
 					>
 						<AboutSubSectionText>
 							Flags and buoys are visual tools used for communication in a surface environment
-                                                        and are vital tools for divers to engage with surface-supporting personnel. They come
-                                                        in various colors, shapes, and patterns, each representing a specific message or 
-                                                        indicating a particular situation. By deploying and holding a signaling device like
-                                                        a surface marker buoy, divers can signal their presence and the need for attention
-                                                        or assistance.
+                            and are vital tools for divers to engage with surface-supporting personnel. They come
+                            in various colors, shapes, and patterns, each representing a specific message or 
+                            indicating a particular situation. By deploying and holding a signaling device like
+                            a surface marker buoy, divers can signal their presence and the need for attention
+                            or assistance.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
@@ -379,20 +379,30 @@
 
 				<AboutSection sectionTitle={'Message Categories'}>
 					<AboutSectionText>
-                                        	The various messages documented in the literature and research collected on this website have been
+                        The various messages documented in the literature and research collected on this website have been
 						categorized according to a set of categories generated through an initial inspection of the 
 						collected messages. The categories unveil general patterns and trends regarding the messages 
 						exchanged and allow for a further systematic examination rather than navigating a disjointed array
 						of messages.
 					</AboutSectionText>
+					
+					<AboutSubSection subSectionTitle={'(CO) Coordination'}>
+						<AboutSubSectionText>
+							Messages in this category pertain to the logistical aspects of a recreational or
+							professional dive, aimed at ensuring seamless operation among divers/surface
+							attendants/AUVs. Coordination messages are versatile messages that can be adapted
+							and used in various contexts. Thet help harmonize the actions of everyone involved,
+							allowing for a more efficient and safe operation.
+						</AboutSubSectionText>
+					</AboutSubSection>
 
 					<AboutSubSection subSectionTitle={'(EE) Emotions & Expressions'}>
 						<AboutSubSectionText>
-							Messages in this category relate to or convey human emotions and expressions during a
-							dive. Since face-to-face communication is limited underwater, and traditional
-							communication methods might not encompass every sentiment a diver wants to express,
-							this category helps divers communicate feelings like joy, discomfort, amazement, or
-							unease.
+							Messages in this category relate to or convey human emotions and expressions.
+							Since most communication methods described earlier might not encompass every
+							sentiment a diver/surface attendant wants to express, this category of messages
+							helps divers and/or surface attendants communicate feelings like joy,
+							discomfort, amazement, or unease.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
@@ -413,23 +423,25 @@
 
 					<AboutSubSection subSectionTitle={'(NP) Navigation & Positioning'}>
 						<AboutSubSectionText>
-							Proper navigation is essential, especially in unfamiliar terrains. Messages in this
-							category assist divers in conveying their positions, directions, or any landmarks
-							they have encountered.
+							Proper navigation is essential, especially in unfamiliar terrains. Messages in
+							this category assist divers/surface attendants/AUVs in conveying positions,
+							directions, orientation, or, e.g., landmarks for coordination or purely informational
+							purposes.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
 					<AboutSubSection subSectionTitle={'(SE) Safety & Emergency'}>
 						<AboutSubSectionText>
-							Messages in this category relate to information that is vital for a safe operation
-							underwater, the signaling of danger or the immediate request for assistance.
+							Messages in this category relate to information that is vital for a safe
+							operation underwater, the current status of a diver, the signaling of danger or
+							the immediate request for assistance.
 						</AboutSubSectionText>
 					</AboutSubSection>
 
 					<AboutSubSection subSectionTitle={'(WS) Wildlife Sightings'}>
 						<AboutSubSectionText>
-							Messages in this category allow divers to share their wildlife encounters, which can
-							be both for enjoyment and safety purposes.
+							Messages in this category allow divers/surface attendants to share wildlife
+							encounters, which can be both for enjoyment and safety purposes.
 						</AboutSubSectionText>
 					</AboutSubSection>
 

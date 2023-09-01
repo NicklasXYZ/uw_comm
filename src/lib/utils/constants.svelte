@@ -40,31 +40,36 @@
 	export const messageCategories: MessageCategory[] = [
 		{
 			id: 'cat0',
+			name: 'Coordination',
+			abbreviation: 'CO'
+		},
+		{
+			id: 'cat1',
 			name: 'Emotions & Expressions',
 			abbreviation: 'EE'
 		},
 		{
-			id: 'cat1',
+			id: 'cat2',
 			name: 'Environmental Conditions',
 			abbreviation: 'EC'
 		},
 		{
-			id: 'cat2',
+			id: 'cat3',
 			name: 'Navigation & Positioning',
 			abbreviation: 'NP'
 		},
 		{
-			id: 'cat3',
+			id: 'cat4',
 			name: 'Safety & Emergency',
 			abbreviation: 'SE'
 		},
 		{
-			id: 'cat4',
+			id: 'cat5',
 			name: 'Wildlife Sightings',
 			abbreviation: 'WS'
 		},
 		{
-			id: 'cat5',
+			id: 'cat6',
 			name: 'Quantitative Information',
 			abbreviation: 'QI'
 		}
