@@ -10104,7 +10104,7 @@
             "temporalContext": "Synchronous",
             "type": "Line Pulling",
             "categories": [
-                "NP",
+                "NP"
             ],
             "references": [
                 "NOAA01",
