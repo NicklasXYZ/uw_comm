@@ -55,21 +55,26 @@
 		},
 		{
 			id: 'cat3',
+			name: 'Equipment & Communication',
+			abbreviation: 'ECM'
+		},
+		{
+			id: 'cat4',
 			name: 'Navigation & Positioning',
 			abbreviation: 'NP'
 		},
 		{
-			id: 'cat4',
+			id: 'cat5',
 			name: 'Safety & Emergency',
 			abbreviation: 'SE'
 		},
 		{
-			id: 'cat5',
+			id: 'cat6',
 			name: 'Wildlife Sightings',
 			abbreviation: 'WS'
 		},
 		{
-			id: 'cat6',
+			id: 'cat7',
 			name: 'Quantitative Information',
 			abbreviation: 'QI'
 		}
