@@ -1,0 +1,15 @@
+<script is:inline>
+	(() => {
+		document.documentElement.dataset.theme = 'dark';
+
+		try {
+			localStorage.setItem('starlight-theme', 'dark');
+		} catch {
+			// Local storage can be unavailable in stricter browser contexts.
+		}
+
+		window.StarlightThemeProvider = {
+			updatePickers() {}
+		};
+	})();
+</script>

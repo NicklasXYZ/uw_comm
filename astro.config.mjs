@@ -15,6 +15,10 @@ export default defineConfig({
 			},
 			pagefind: false,
 			customCss: ['./src/styles/global.css'],
+			components: {
+				ThemeProvider: './src/components/ThemeProvider.astro',
+				ThemeSelect: './src/components/ThemeSelect.astro'
+			},
 			sidebar: [
 				{ label: 'Catalogue', link: '/' },
 				{ label: 'About', link: '/about/' },
