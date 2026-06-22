@@ -1,0 +1,167 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import {
+  actorHref,
+  asList,
+  categoryHref,
+  categoryLabel,
+  contextHref,
+  methodHref,
+  messages,
+  messageTitle,
+  referenceHref,
+  type Message,
+} from '../../data/messages';
+
+export function getStaticPaths() {
+  return messages.map((message) => ({
+    params: { id: message.id },
+    props: { message },
+  }));
+}
+
+interface Props {
+  message: Message;
+}
+
+const { message } = Astro.props as Props;
+const title = messageTitle(message);
+const detailRows = (
+  [
+    { title: 'Message Variations', values: asList(message.messageVariations), kind: 'text' },
+    { title: 'Description', values: asList(message.description), kind: 'text' },
+    { title: 'Meaning', values: asList(message.meaning), kind: 'text' },
+    { title: 'Categorization', values: message.categories, kind: 'category' },
+    { title: 'References', values: message.references, kind: 'reference' },
+  ] satisfies Array<{ title: string; values: string[]; kind: 'text' | 'category' | 'reference' }>
+).filter((row) => row.values.length > 0);
+---
+
+<StarlightPage
+  frontmatter={{
+    title,
+    description: message.meaning || message.description || message.premise || title,
+  }}
+>
+  <article class="detail-page not-content">
+    <a class="back-link" href="/">Catalogue</a>
+
+    <header class="detail-header">
+      <div class="detail-heading">
+        <span class="detail-eyebrow">Message</span>
+        <p class="detail-title">{title}</p>
+        <div class="detail-chips" aria-label="Message metadata">
+          <a class="method-pill" href={methodHref(message.type)} aria-label={`Read about ${message.type}`}>
+            {message.type}
+          </a>
+          {message.categories.map((category) => (
+            <a
+              class:list={['tag', `tag-${category.toLowerCase()}`]}
+              href={categoryHref(category)}
+              title={categoryLabel(category)}
+            >
+              {categoryLabel(category)}
+            </a>
+          ))}
+        </div>
+      </div>
+    </header>
+
+    <dl class="detail-overview" aria-label="Communication overview">
+      <div>
+        <dt>Encoder</dt>
+        <dd>
+          <a
+            class="metadata-link"
+            href={actorHref(message.messageEncoder)}
+            aria-label={`Read about ${message.messageEncoder} as message encoder or decoder`}
+          >
+            {message.messageEncoder}
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt>Decoder</dt>
+        <dd>
+          <a
+            class="metadata-link"
+            href={actorHref(message.messageDecoder)}
+            aria-label={`Read about ${message.messageDecoder} as message encoder or decoder`}
+          >
+            {message.messageDecoder}
+          </a>
+        </dd>
+      </div>
+      <div>
+        <dt>Context</dt>
+        <dd>
+          <a
+            class="metadata-link"
+            href={contextHref(message.spatialContext)}
+            aria-label={`Read about ${message.spatialContext} context`}
+          >
+            {message.spatialContext}
+          </a>
+          <span> / </span>
+          <a
+            class="metadata-link"
+            href={contextHref(message.temporalContext)}
+            aria-label={`Read about ${message.temporalContext} context`}
+          >
+            {message.temporalContext}
+          </a>
+        </dd>
+      </div>
+    </dl>
+
+    {
+      message.premise && (
+        <div class="premise-box">
+          <strong>Premise</strong>
+          <p>{message.premise}</p>
+        </div>
+      )
+    }
+
+    <dl class="detail-list">
+      {
+        detailRows.map(({ title, values, kind }) => (
+          <div>
+            <dt>{title}</dt>
+            <dd>
+              {values.length > 1 ? (
+                <ul class:list={[kind !== 'text' && 'linked-detail-list']}>
+                  {values.map((value) => (
+                    <li>
+                      {kind === 'category' ? (
+                        <a class="metadata-link" href={categoryHref(value)}>
+                          {categoryLabel(value)}
+                        </a>
+                      ) : kind === 'reference' ? (
+                        <a class="metadata-link" href={referenceHref(value)}>
+                          {value}
+                        </a>
+                      ) : (
+                        value
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              ) : kind === 'category' ? (
+                <a class="metadata-link" href={categoryHref(values[0])}>
+                  {categoryLabel(values[0])}
+                </a>
+              ) : kind === 'reference' ? (
+                <a class="metadata-link" href={referenceHref(values[0])}>
+                  {values[0]}
+                </a>
+              ) : (
+                values[0]
+              )}
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </article>
+</StarlightPage>

@@ -1,0 +1,129 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { referenceAnchor, slugify } from '../data/anchors';
+import {
+  aboutSections,
+  bibliography,
+  citationAPA,
+  citationBibtex,
+  type AboutSection,
+} from '../data/about';
+
+const headings = aboutSections
+  .map((section) => ({ depth: 2, slug: slugify(section.title), text: section.title }))
+  .concat([
+    { depth: 2, slug: 'bibliography', text: 'Bibliography' },
+    { depth: 2, slug: 'citing-this-website', text: 'Citing This Website' },
+    { depth: 2, slug: 'website-source-code', text: 'Website Source Code' },
+  ]);
+
+const sectionHasVisuals = (section: AboutSection) =>
+  section.figure || section.subsections?.some((subsection) => subsection.icon);
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'About',
+    description:
+      'Background information, message taxonomy, communication method descriptions, bibliography, and citation details for Underwater Communication.',
+  }}
+  headings={headings}
+>
+  <div class="about-page not-content">
+    {
+      aboutSections.map((section) => (
+        <section class:list={['about-section', sectionHasVisuals(section) && 'with-visuals']}>
+          <h2 id={slugify(section.title)}>{section.title}</h2>
+          {section.body?.map((paragraph) => <p>{paragraph}</p>)}
+
+          {section.figure && (
+            <figure class="about-figure">
+              <img src={section.figure.src} alt={section.figure.alt} loading="lazy" />
+              <figcaption>{section.figure.caption}</figcaption>
+            </figure>
+          )}
+
+          {section.subsections && (
+            <div class="subsection-grid">
+              {section.subsections.map((subsection) => (
+                <article class="about-subsection">
+                  <header>
+                    {subsection.icon && (
+                      <img src={subsection.icon} alt={subsection.iconAlt ?? ''} width="40" height="40" loading="lazy" />
+                    )}
+                    <h3 id={slugify(subsection.title)}>{subsection.title}</h3>
+                  </header>
+                  {subsection.body.map((paragraph) => (
+                    <p>{paragraph}</p>
+                  ))}
+                </article>
+              ))}
+            </div>
+          )}
+        </section>
+      ))
+    }
+
+    <section class="about-section">
+      <h2 id="bibliography">Bibliography</h2>
+      <div class="table-wrap">
+        <table class="bibliography-table">
+          <thead>
+            <tr>
+              <th>Ref.</th>
+              <th>Author</th>
+              <th>Year</th>
+              <th>Title</th>
+              <th>Publication</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              bibliography.map((entry) => (
+                <tr id={referenceAnchor(entry.refName)}>
+                  <td>
+                    <a href={`#${referenceAnchor(entry.refName)}`}>{entry.refName}</a>
+                  </td>
+                  <td>{entry.author}</td>
+                  <td>{entry.year}</td>
+                  <td>
+                    <span>{entry.title}</span>
+                    {entry.note && <small>{entry.note}</small>}
+                    {entry.doi && <small>DOI: {entry.doi}</small>}
+                  </td>
+                  <td>
+                    {entry.publisher || entry.journal}
+                    {entry.pageNumbers && <small>{entry.pageNumbers}</small>}
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2 id="citing-this-website">Citing This Website</h2>
+      <div class="citation-grid">
+        <article>
+          <h3>APA</h3>
+          <pre><code>{citationAPA}</code></pre>
+        </article>
+        <article>
+          <h3>BibTeX</h3>
+          <pre><code>{citationBibtex}</code></pre>
+        </article>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2 id="website-source-code">Website Source Code</h2>
+      <p>
+        The source code and underlying data is available under a
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> license on
+        <a href="https://github.com/NicklasXYZ/uw_comms">Github</a>.
+      </p>
+    </section>
+  </div>
+</StarlightPage>
