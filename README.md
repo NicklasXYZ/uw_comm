@@ -2,7 +2,7 @@
 
 A static Astro/Starlight website that collects, organizes, and showcases documented information regarding the communication methods and specific messages that divers underwater and/or surface-supporting personnel may exchange during a recreational or professional dive.
 
-The website version is defined in `package.json` and displayed discreetly in the site footer. The dataset freshness date is tracked separately in `data/data.json`.
+The website version is defined in `package.json` and displayed beside the site title. The dataset freshness date is tracked separately in `data/data.json` and displayed in the catalogue metadata.
 
 ## Development
 

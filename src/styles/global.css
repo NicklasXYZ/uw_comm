@@ -177,41 +177,6 @@ starlight-menu-button button {
 	gap: 1.25rem;
 }
 
-.catalogue-intro {
-	align-items: center;
-	border-bottom: 1px solid var(--uw-border);
-	border-top: 1px solid var(--uw-border);
-	color: var(--uw-text-muted);
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.65rem 1rem;
-	justify-content: space-between;
-	padding: 0.8rem 0.1rem;
-}
-
-.catalogue-intro p {
-	font-size: 0.96rem;
-	line-height: 1.55;
-	margin: 0;
-	max-width: 48rem;
-}
-
-.catalogue-intro-link {
-	border-bottom: 1px solid currentColor;
-	color: var(--uw-text);
-	font-size: 0.9rem;
-	font-weight: 700;
-	text-decoration: none;
-	text-underline-offset: 0.16em;
-	text-transform: uppercase;
-}
-
-.catalogue-intro-link:hover {
-	background: var(--uw-text);
-	color: var(--uw-surface);
-	text-decoration: none;
-}
-
 .message-card,
 .catalogue-empty-state,
 .detail-header,
@@ -273,7 +238,6 @@ starlight-menu-button button {
 .search-field input:focus-visible,
 .facet input:focus-visible,
 .secondary-button:focus-visible,
-.catalogue-intro-link:focus-visible,
 .message-title:focus-visible,
 .back-link:focus-visible,
 .metadata-link:focus-visible,
@@ -1012,10 +976,6 @@ body:has(.catalogue-page) .right-sidebar-container {
 	.about-subsection,
 	.citation-grid > article {
 		padding: 0.85rem;
-	}
-
-	.catalogue-intro {
-		padding: 0.75rem 0.1rem;
 	}
 
 	.message-card-meta {
