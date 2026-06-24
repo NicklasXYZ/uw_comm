@@ -1,11 +1,10 @@
-version: '3.4'
-
 services:
-  app:
-    image: uw-comms:latest
+  web:
+    image: uw-comms:${UW_COMMS_VERSION:-latest}
     container_name: uw-comms
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 4321:4321
+      - '${UW_COMMS_PORT:-8080}:8080'
+    restart: unless-stopped

@@ -1,0 +1,12 @@
+.agents
+.astro
+.codex
+.git
+.gitignore
+.vscode
+dist
+node_modules
+npm-debug.log*
+papers
+.env
+.env.*
