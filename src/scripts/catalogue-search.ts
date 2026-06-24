@@ -12,6 +12,7 @@ interface SearchRecord {
 
 interface PreparedField extends SearchField {
 	normalized: string;
+	wordList: string[];
 	words: Set<string>;
 }
 
@@ -28,6 +29,18 @@ interface RankedEntry {
 	entry: CatalogueEntry;
 	score: number;
 	visible: boolean;
+}
+
+interface FilterGroup {
+	name: string;
+	inputs: HTMLInputElement[];
+	isList: boolean;
+}
+
+interface SelectedFilterGroup {
+	name: string;
+	selected: Set<string>;
+	isList: boolean;
 }
 
 const queryParam = 'q';
@@ -75,17 +88,19 @@ function readSearchIndex(root: ParentNode): SearchRecord[] {
 
 function prepareField(field: SearchField): PreparedField {
 	const normalized = normalizeText(field.value);
+	const wordList = normalized.split(' ').filter(Boolean);
 	return {
 		...field,
 		normalized,
-		words: new Set(normalized.split(' ').filter(Boolean))
+		wordList,
+		words: new Set(wordList)
 	};
 }
 
 function tokenScore(field: PreparedField, token: string): number {
 	if (!field.normalized.includes(token)) return 0;
 	if (field.words.has(token)) return field.weight * 6;
-	if ([...field.words].some((word) => word.startsWith(token))) return field.weight * 4;
+	if (field.wordList.some((word) => word.startsWith(token))) return field.weight * 4;
 	return field.weight * 2;
 }
 
@@ -98,17 +113,22 @@ function scoreEntry(
 
 	let score = 0;
 	for (const token of tokens) {
-		const bestTokenScore = Math.max(...entry.fields.map((field) => tokenScore(field, token)));
+		let bestTokenScore = 0;
+		for (const field of entry.fields) {
+			bestTokenScore = Math.max(bestTokenScore, tokenScore(field, token));
+		}
 		if (bestTokenScore <= 0) return null;
 		score += bestTokenScore;
 	}
 
-	const phraseBoost = Math.max(
-		0,
-		...entry.fields.map((field) =>
-			normalizedQuery && field.normalized.includes(normalizedQuery) ? field.weight * 3 : 0
-		)
-	);
+	let phraseBoost = 0;
+	if (normalizedQuery) {
+		for (const field of entry.fields) {
+			if (field.normalized.includes(normalizedQuery)) {
+				phraseBoost = Math.max(phraseBoost, field.weight * 3);
+			}
+		}
+	}
 
 	return score + phraseBoost;
 }
@@ -168,7 +188,7 @@ function initCatalogueSearch(): void {
 	const clearSearchButton = catalogueRoot.querySelector<HTMLButtonElement>('[data-clear-search]');
 	const emptyResetButton = catalogueRoot.querySelector<HTMLButtonElement>('[data-empty-reset]');
 	const emptyState = catalogueRoot.querySelector<HTMLElement>('[data-empty-state]');
-	const groups = (catalogueRoot.dataset.filterGroups ?? '').split(' ').filter(Boolean);
+	const groupNames = (catalogueRoot.dataset.filterGroups ?? '').split(' ').filter(Boolean);
 	const searchIndex = readSearchIndex(catalogueRoot);
 
 	if (!searchInputElement || !messageGridElement || !resultCountElement || searchIndex.length === 0)
@@ -177,6 +197,19 @@ function initCatalogueSearch(): void {
 	const searchInput: HTMLInputElement = searchInputElement;
 	const messageGrid: HTMLElement = messageGridElement;
 	const resultCount: HTMLOutputElement = resultCountElement;
+	const allFilterInputs = Array.from(
+		catalogueRoot.querySelectorAll<HTMLInputElement>('[data-filter-group]')
+	);
+	const filterGroups = groupNames
+		.map((name): FilterGroup => {
+			const inputs = allFilterInputs.filter((input) => input.dataset.filterGroup === name);
+			return {
+				name,
+				inputs,
+				isList: listGroups.has(name)
+			};
+		})
+		.filter((group) => group.inputs.length > 0);
 
 	const cardById = new Map(
 		Array.from(catalogueRoot.querySelectorAll<HTMLElement>('[data-message-card]')).map((card) => [
@@ -202,41 +235,32 @@ function initCatalogueSearch(): void {
 		})
 		.filter((entry): entry is CatalogueEntry => Boolean(entry));
 
-	function filterInputs(group?: string): HTMLInputElement[] {
-		return Array.from(
-			catalogueRoot.querySelectorAll<HTMLInputElement>('[data-filter-group]')
-		).filter((input) => !group || input.dataset.filterGroup === group);
+	function selectedValues(inputs: HTMLInputElement[]): Set<string> {
+		return new Set(inputs.filter((input) => input.checked).map((input) => input.value));
 	}
 
-	function selectedValues(group: string): Set<string> {
-		return new Set(
-			filterInputs(group)
-				.filter((input) => input.checked)
-				.map((input) => input.value)
-		);
+	function selectedFilterGroups(): SelectedFilterGroup[] {
+		return filterGroups.map((group) => ({
+			name: group.name,
+			selected: selectedValues(group.inputs),
+			isList: group.isList
+		}));
 	}
 
-	function matchesSingle(card: HTMLElement, group: string, selected: Set<string>): boolean {
-		if (selected.size === 0) return false;
-		return selected.has(card.dataset[group] ?? '');
+	function matchesFilterGroup(card: HTMLElement, group: SelectedFilterGroup): boolean {
+		if (group.selected.size === 0) return false;
+		const value = card.dataset[group.name] ?? '';
+		return group.isList
+			? value.split('|').some((item) => group.selected.has(item))
+			: group.selected.has(value);
 	}
 
-	function matchesList(card: HTMLElement, group: string, selected: Set<string>): boolean {
-		if (selected.size === 0) return false;
-		return (card.dataset[group] ?? '').split('|').some((value) => selected.has(value));
-	}
-
-	function matchesFilters(entry: CatalogueEntry): boolean {
-		return groups.every((group) => {
-			const selected = selectedValues(group);
-			return listGroups.has(group)
-				? matchesList(entry.card, group, selected)
-				: matchesSingle(entry.card, group, selected);
-		});
+	function matchesFilters(entry: CatalogueEntry, selectedGroups: SelectedFilterGroup[]): boolean {
+		return selectedGroups.every((group) => matchesFilterGroup(entry.card, group));
 	}
 
 	function hasActiveFilters(): boolean {
-		return filterInputs().some((input) => !input.checked);
+		return allFilterInputs.some((input) => !input.checked);
 	}
 
 	function updateUrlState(): void {
@@ -249,14 +273,14 @@ function initCatalogueSearch(): void {
 			params.delete(queryParam);
 		}
 
-		for (const group of groups) {
-			params.delete(group);
-			const inputs = filterInputs(group);
+		for (const group of filterGroups) {
+			params.delete(group.name);
+			const inputs = group.inputs;
 			const selected = inputs.filter((input) => input.checked);
 			if (selected.length === 0) {
-				params.set(group, emptyFilterValue);
+				params.set(group.name, emptyFilterValue);
 			} else if (selected.length !== inputs.length) {
-				selected.forEach((input) => params.append(group, input.value));
+				selected.forEach((input) => params.append(group.name, input.value));
 			}
 		}
 
@@ -271,18 +295,18 @@ function initCatalogueSearch(): void {
 		const params = new URLSearchParams(window.location.search);
 		searchInput.value = params.get(queryParam) ?? '';
 
-		for (const group of groups) {
-			const selected = params.getAll(group);
+		for (const group of filterGroups) {
+			const selected = params.getAll(group.name);
 			if (selected.length === 0) continue;
 
-			filterInputs(group).forEach((input) => {
+			group.inputs.forEach((input) => {
 				input.checked = !selected.includes(emptyFilterValue) && selected.includes(input.value);
 			});
 		}
 	}
 
 	function setAllFilters(checked: boolean): void {
-		filterInputs().forEach((input) => {
+		allFilterInputs.forEach((input) => {
 			input.checked = checked;
 		});
 		applyFilters();
@@ -298,9 +322,10 @@ function initCatalogueSearch(): void {
 		const { updateUrl = true } = options;
 		const tokens = tokenize(searchInput.value);
 		const normalizedQuery = normalizeText(searchInput.value);
+		const selectedGroups = selectedFilterGroups();
 		const rankedEntries: RankedEntry[] = entries.map((entry) => {
 			const score = scoreEntry(entry, tokens, normalizedQuery);
-			const visible = matchesFilters(entry) && score !== null;
+			const visible = matchesFilters(entry, selectedGroups) && score !== null;
 			return {
 				entry,
 				score: score ?? 0,
@@ -327,9 +352,8 @@ function initCatalogueSearch(): void {
 			visible === 1 ? 'message' : 'messages'
 		}`;
 
-		const inputs = filterInputs();
-		const selectedCount = inputs.filter((input) => input.checked).length;
-		if (selectAllButton) selectAllButton.disabled = selectedCount === inputs.length;
+		const selectedCount = allFilterInputs.filter((input) => input.checked).length;
+		if (selectAllButton) selectAllButton.disabled = selectedCount === allFilterInputs.length;
 		if (emptyState) emptyState.hidden = visible > 0;
 		if (clearSearchButton) clearSearchButton.disabled = tokens.length === 0;
 		if (updateUrl) updateUrlState();
