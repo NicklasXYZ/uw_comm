@@ -1,0 +1,43 @@
+---
+import {
+  actorHref,
+  categoryHref,
+  categoryLabel,
+  contextHref,
+  methodHref,
+  referenceHref,
+} from '../data/messages';
+
+type MetadataKind = 'actor' | 'category' | 'context' | 'method' | 'reference';
+
+interface Props {
+  kind: MetadataKind;
+  value: string;
+  label?: string;
+  ariaLabel?: string;
+}
+
+const { kind, value, label, ariaLabel } = Astro.props;
+
+const hrefByKind: Record<MetadataKind, (value: string) => string> = {
+  actor: actorHref,
+  category: categoryHref,
+  context: contextHref,
+  method: methodHref,
+  reference: referenceHref,
+};
+
+const text = label ?? (kind === 'category' ? categoryLabel(value) : value);
+const defaultAriaLabel =
+  kind === 'actor'
+    ? `Read about ${value} as message encoder or decoder`
+    : kind === 'context'
+      ? `Read about ${value} context`
+      : kind === 'category'
+        ? `Read about ${categoryLabel(value)}`
+        : `Read about ${value}`;
+---
+
+<a class="metadata-link" href={hrefByKind[kind](value)} aria-label={ariaLabel ?? defaultAriaLabel}>
+  {text}
+</a>

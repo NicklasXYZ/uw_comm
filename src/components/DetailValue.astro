@@ -1,0 +1,18 @@
+---
+import MetadataLink from './MetadataLink.astro';
+
+interface Props {
+  kind: 'text' | 'category' | 'reference';
+  value: string;
+}
+
+const { kind, value } = Astro.props;
+---
+
+{
+  kind === 'text' ? (
+    value
+  ) : (
+    <MetadataLink kind={kind} value={value} />
+  )
+}

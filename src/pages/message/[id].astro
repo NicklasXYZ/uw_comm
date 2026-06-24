@@ -1,15 +1,13 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import CategoryTag from '../../components/CategoryTag.astro';
+import DetailValue from '../../components/DetailValue.astro';
+import MetadataLink from '../../components/MetadataLink.astro';
+import MethodPill from '../../components/MethodPill.astro';
 import {
-  actorHref,
   asList,
-  categoryHref,
-  categoryLabel,
-  contextHref,
-  methodHref,
   messages,
   messageTitle,
-  referenceHref,
   type Message,
 } from '../../data/messages';
 
@@ -52,17 +50,9 @@ const detailRows = (
         <span class="detail-eyebrow">Message</span>
         <p class="detail-title">{title}</p>
         <div class="detail-chips" aria-label="Message metadata">
-          <a class="method-pill" href={methodHref(message.type)} aria-label={`Read about ${message.type}`}>
-            {message.type}
-          </a>
+          <MethodPill method={message.type} />
           {message.categories.map((category) => (
-            <a
-              class="tag"
-              href={categoryHref(category)}
-              title={categoryLabel(category)}
-            >
-              {categoryLabel(category)}
-            </a>
+            <CategoryTag category={category} display="label" />
           ))}
         </div>
       </div>
@@ -72,45 +62,21 @@ const detailRows = (
       <div>
         <dt>Encoder</dt>
         <dd>
-          <a
-            class="metadata-link"
-            href={actorHref(message.messageEncoder)}
-            aria-label={`Read about ${message.messageEncoder} as message encoder or decoder`}
-          >
-            {message.messageEncoder}
-          </a>
+          <MetadataLink kind="actor" value={message.messageEncoder} />
         </dd>
       </div>
       <div>
         <dt>Decoder</dt>
         <dd>
-          <a
-            class="metadata-link"
-            href={actorHref(message.messageDecoder)}
-            aria-label={`Read about ${message.messageDecoder} as message encoder or decoder`}
-          >
-            {message.messageDecoder}
-          </a>
+          <MetadataLink kind="actor" value={message.messageDecoder} />
         </dd>
       </div>
       <div>
         <dt>Context</dt>
         <dd>
-          <a
-            class="metadata-link"
-            href={contextHref(message.spatialContext)}
-            aria-label={`Read about ${message.spatialContext} context`}
-          >
-            {message.spatialContext}
-          </a>
+          <MetadataLink kind="context" value={message.spatialContext} />
           <span> / </span>
-          <a
-            class="metadata-link"
-            href={contextHref(message.temporalContext)}
-            aria-label={`Read about ${message.temporalContext} context`}
-          >
-            {message.temporalContext}
-          </a>
+          <MetadataLink kind="context" value={message.temporalContext} />
         </dd>
       </div>
     </dl>
@@ -134,30 +100,12 @@ const detailRows = (
                 <ul class:list={[kind !== 'text' && 'linked-detail-list']}>
                   {values.map((value) => (
                     <li>
-                      {kind === 'category' ? (
-                        <a class="metadata-link" href={categoryHref(value)}>
-                          {categoryLabel(value)}
-                        </a>
-                      ) : kind === 'reference' ? (
-                        <a class="metadata-link" href={referenceHref(value)}>
-                          {value}
-                        </a>
-                      ) : (
-                        value
-                      )}
+                      <DetailValue kind={kind} value={value} />
                     </li>
                   ))}
                 </ul>
-              ) : kind === 'category' ? (
-                <a class="metadata-link" href={categoryHref(values[0])}>
-                  {categoryLabel(values[0])}
-                </a>
-              ) : kind === 'reference' ? (
-                <a class="metadata-link" href={referenceHref(values[0])}>
-                  {values[0]}
-                </a>
               ) : (
-                values[0]
+                <DetailValue kind={kind} value={values[0]} />
               )}
             </dd>
           </div>

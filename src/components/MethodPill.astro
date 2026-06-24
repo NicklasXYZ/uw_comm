@@ -1,0 +1,13 @@
+---
+import { methodHref } from '../data/messages';
+
+interface Props {
+  method: string;
+}
+
+const { method } = Astro.props;
+---
+
+<a class="method-pill" href={methodHref(method)} aria-label={`Read about ${method}`}>
+  {method}
+</a>

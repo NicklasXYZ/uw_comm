@@ -1,0 +1,15 @@
+---
+import { categoryHref, categoryLabel } from '../data/messages';
+
+interface Props {
+  category: string;
+  display?: 'abbreviation' | 'label';
+}
+
+const { category, display = 'abbreviation' } = Astro.props;
+const label = categoryLabel(category);
+---
+
+<a class="tag" href={categoryHref(category)} title={label} aria-label={`Read about ${label}`}>
+  {display === 'label' ? label : category}
+</a>
