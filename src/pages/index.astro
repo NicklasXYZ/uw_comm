@@ -4,17 +4,18 @@ import CategoryTag from '../components/CategoryTag.astro';
 import MetadataLink from '../components/MetadataLink.astro';
 import MethodPill from '../components/MethodPill.astro';
 import {
+  catalogueSearchIndex,
   categoryLabel,
   dataUpdated,
   filterOptions,
   messageCount,
   messages,
   messageTitle,
-  searchText,
 } from '../data/messages';
 
 const description =
   'Browse documented underwater and surface communication messages by sender, receiver, context, communication method, and category.';
+const searchIndexJson = JSON.stringify(catalogueSearchIndex).replace(/</g, '\\u003c');
 
 const defaultFacetLabel = (option: string) => option;
 const facetGroups = [
@@ -116,17 +117,17 @@ const facetGroups = [
     </form>
 
     <div class="catalogue-list-meta" aria-label="Catalogue results">
-      <output data-result-count>{messageCount} messages</output>
+      <output data-result-count aria-live="polite">{messageCount} messages</output>
       {dataUpdated && <span>Last updated {dataUpdated}</span>}
     </div>
 
-    <div class="message-grid">
+    <div class="message-grid" data-message-grid>
       {
         messages.map((message) => (
           <article
             class="message-card"
             data-message-card
-            data-search={searchText(message)}
+            data-message-id={message.id}
             data-encoder={message.messageEncoder}
             data-decoder={message.messageDecoder}
             data-spatial={message.spatialContext}
@@ -143,7 +144,9 @@ const facetGroups = [
               </div>
             </div>
 
-            <a class="message-title" href={`/message/${message.id}/`}>{messageTitle(message)}</a>
+            <a class="message-title" data-message-title href={`/message/${message.id}/`}>
+              {messageTitle(message)}
+            </a>
 
             <div class="message-flow" aria-label="Communication path">
               <MetadataLink kind="actor" value={message.messageEncoder} />
@@ -171,84 +174,19 @@ const facetGroups = [
         ))
       }
     </div>
+
+    <div class="catalogue-empty-state" data-empty-state role="status" hidden>
+      <p>No messages match the current search and filters.</p>
+      <div class="filter-action-buttons" aria-label="Empty result actions">
+        <button type="button" class="secondary-button" data-clear-search>Clear search</button>
+        <button type="button" class="secondary-button" data-empty-reset>Reset</button>
+      </div>
+    </div>
+
+    <script is:inline type="application/json" data-search-index set:html={searchIndexJson}></script>
   </section>
 
-  <script is:inline>
-    const catalogue = document.querySelector('[data-catalogue]');
-    const searchInput = catalogue?.querySelector('[data-search]');
-    const cards = Array.from(catalogue?.querySelectorAll('[data-message-card]') ?? []);
-    const resultCount = catalogue?.querySelector('[data-result-count]');
-    const selectAllButton = catalogue?.querySelector('[data-select-all]');
-    const resetButton = catalogue?.querySelector('[data-reset]');
-    const groups = (catalogue?.dataset.filterGroups ?? '').split(' ').filter(Boolean);
-    const listGroups = new Set(['category']);
-
-    function filterInputs() {
-      return Array.from(catalogue?.querySelectorAll('[data-filter-group]') ?? []);
-    }
-
-    function selectedValues(group) {
-      return new Set(
-        Array.from(catalogue?.querySelectorAll(`[data-filter-group="${group}"]:checked`) ?? []).map(
-          (input) => input.value
-        )
-      );
-    }
-
-    function matchesSingle(card, group, selected) {
-      if (selected.size === 0) return false;
-      return selected.has(card.dataset[group]);
-    }
-
-    function matchesList(card, group, selected) {
-      if (selected.size === 0) return false;
-      return (card.dataset[group] || '').split('|').some((value) => selected.has(value));
-    }
-
-    function applyFilters() {
-      if (!searchInput || !resultCount) return;
-
-      const query = searchInput.value.trim().toLowerCase();
-      const selected = Object.fromEntries(groups.map((group) => [group, selectedValues(group)]));
-      let visible = 0;
-
-      for (const card of cards) {
-        const matchesFilters = groups.every((group) =>
-          listGroups.has(group)
-            ? matchesList(card, group, selected[group])
-            : matchesSingle(card, group, selected[group])
-        );
-        const matches =
-          (!query || (card.dataset.search || '').includes(query)) && matchesFilters;
-
-        card.hidden = !matches;
-        if (matches) visible += 1;
-      }
-
-      resultCount.value = `${visible} ${visible === 1 ? 'message' : 'messages'}`;
-
-      const inputs = filterInputs();
-      const selectedCount = inputs.filter((input) => input.checked).length;
-      if (selectAllButton) selectAllButton.disabled = selectedCount === inputs.length;
-    }
-
-    function setAllFilters(checked) {
-      filterInputs().forEach((input) => {
-        input.checked = checked;
-      });
-      applyFilters();
-    }
-
-    catalogue?.addEventListener('input', applyFilters);
-    catalogue?.querySelector('[data-filters]')?.addEventListener('submit', (event) => {
-      event.preventDefault();
-    });
-    selectAllButton?.addEventListener('click', () => setAllFilters(true));
-    resetButton?.addEventListener('click', () => {
-      if (searchInput) searchInput.value = '';
-      setAllFilters(true);
-    });
-
-    applyFilters();
+  <script>
+    import '../scripts/catalogue-search';
   </script>
 </StarlightPage>

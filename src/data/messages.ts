@@ -22,6 +22,18 @@ interface MessageData {
 	updated?: string;
 }
 
+export interface CatalogueSearchField {
+	name: string;
+	value: string;
+	weight: number;
+}
+
+export interface CatalogueSearchRecord {
+	id: string;
+	title: string;
+	fields: CatalogueSearchField[];
+}
+
 const messageData = rawData as MessageData;
 
 export function messageTitle(message: Message): string {
@@ -113,22 +125,37 @@ export function referenceHref(refName: string): string {
 	return aboutHref(referenceAnchor(refName));
 }
 
-export function searchText(message: Message): string {
-	return [
-		message.message,
-		message.premise,
-		message.description,
-		message.meaning,
-		message.messageEncoder,
-		message.messageDecoder,
-		message.spatialContext,
-		message.temporalContext,
-		message.type,
-		...message.categories,
-		...message.references,
-		...message.messageVariations
-	]
-		.filter(Boolean)
-		.join(' ')
-		.toLowerCase();
+function searchField(
+	name: string,
+	value: string | string[],
+	weight: number
+): CatalogueSearchField | null {
+	const text = asList(value).filter(Boolean).join(' ').trim();
+	return text ? { name, value: text, weight } : null;
 }
+
+export function catalogueSearchRecord(message: Message): CatalogueSearchRecord {
+	const title = messageTitle(message);
+	const categoryText = message.categories.map(categoryLabel).join(' ');
+	const fields = [
+		searchField('title', title, 12),
+		searchField('message', message.message, 10),
+		searchField('variations', message.messageVariations, 8),
+		searchField('meaning', message.meaning, 8),
+		searchField('description', message.description, 7),
+		searchField('premise', message.premise, 6),
+		searchField('actors', [message.messageEncoder, message.messageDecoder], 5),
+		searchField('context', [message.spatialContext, message.temporalContext], 4),
+		searchField('method', message.type, 4),
+		searchField('categories', [categoryText, ...message.categories], 5),
+		searchField('references', message.references, 2)
+	].filter((field): field is CatalogueSearchField => Boolean(field));
+
+	return {
+		id: message.id,
+		title,
+		fields
+	};
+}
+
+export const catalogueSearchIndex = messages.map(catalogueSearchRecord);

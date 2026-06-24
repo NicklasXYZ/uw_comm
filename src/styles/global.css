@@ -146,6 +146,11 @@ body {
 	text-decoration: none;
 }
 
+.pagination-links a:hover *,
+.pagination-links a:focus-visible * {
+	color: inherit;
+}
+
 main h1 {
 	border-bottom: 1px solid var(--uw-border);
 	font-size: clamp(2.2rem, 8vw, 5.8rem);
@@ -208,6 +213,7 @@ starlight-menu-button button {
 }
 
 .message-card,
+.catalogue-empty-state,
 .detail-header,
 .detail-overview > div,
 .premise-box,
@@ -434,6 +440,23 @@ starlight-menu-button button {
 	display: none;
 }
 
+.catalogue-empty-state {
+	color: var(--uw-text-muted);
+	display: grid;
+	gap: 0.85rem;
+	justify-items: center;
+	padding: 1.2rem;
+	text-align: center;
+}
+
+.catalogue-empty-state[hidden] {
+	display: none;
+}
+
+.catalogue-empty-state p {
+	margin: 0;
+}
+
 .message-card:hover {
 	box-shadow: 5px 5px 0 var(--uw-border);
 	transform: translate(-2px, -2px);
@@ -526,6 +549,17 @@ starlight-menu-button button {
 .message-title:hover {
 	background: var(--uw-text);
 	color: var(--uw-surface);
+}
+
+.message-title mark {
+	background: var(--uw-text);
+	color: var(--uw-surface);
+	padding: 0 0.08em;
+}
+
+.message-title:hover mark {
+	background: var(--uw-surface);
+	color: var(--uw-text);
 }
 
 .metadata-link {
@@ -969,6 +1003,7 @@ body:has(.catalogue-page) .right-sidebar-container {
 
 	.filter-panel,
 	.message-card,
+	.catalogue-empty-state,
 	.detail-header,
 	.detail-overview > div,
 	.premise-box,
