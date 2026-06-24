@@ -16,12 +16,22 @@ import {
 
 const description =
   'Browse documented underwater and surface communication messages by sender, receiver, context, communication method, and category.';
+
+const facetGroups = [
+  { title: 'Message Encoder', filterGroup: 'encoder', options: filterOptions.encoders },
+  { title: 'Message Decoder', filterGroup: 'decoder', options: filterOptions.decoders },
+  { title: 'Spatial Context', filterGroup: 'spatial', options: filterOptions.spatialContexts },
+  { title: 'Temporal Context', filterGroup: 'temporal', options: filterOptions.temporalContexts },
+  { title: 'Communication Method', filterGroup: 'type', options: filterOptions.types },
+  { title: 'Category', filterGroup: 'category', options: filterOptions.categories },
+];
 ---
 
 <StarlightPage
   frontmatter={{
     title: 'Catalogue',
     description,
+    tableOfContents: false,
   }}
 >
   <section class="catalogue-page not-content" data-catalogue>
@@ -46,89 +56,21 @@ const description =
       </label>
 
       <div class="facet-grid">
-        <details class="facet">
-          <summary>Message Encoder</summary>
-          <div class="facet-options">
-            {
-              filterOptions.encoders.map((option) => (
-                <label>
-                  <input type="checkbox" data-filter-group="encoder" value={option} checked />
-                  <span>{option}</span>
-                </label>
-              ))
-            }
-          </div>
-        </details>
-
-        <details class="facet">
-          <summary>Message Decoder</summary>
-          <div class="facet-options">
-            {
-              filterOptions.decoders.map((option) => (
-                <label>
-                  <input type="checkbox" data-filter-group="decoder" value={option} checked />
-                  <span>{option}</span>
-                </label>
-              ))
-            }
-          </div>
-        </details>
-
-        <details class="facet">
-          <summary>Spatial Context</summary>
-          <div class="facet-options">
-            {
-              filterOptions.spatialContexts.map((option) => (
-                <label>
-                  <input type="checkbox" data-filter-group="spatial" value={option} checked />
-                  <span>{option}</span>
-                </label>
-              ))
-            }
-          </div>
-        </details>
-
-        <details class="facet">
-          <summary>Temporal Context</summary>
-          <div class="facet-options">
-            {
-              filterOptions.temporalContexts.map((option) => (
-                <label>
-                  <input type="checkbox" data-filter-group="temporal" value={option} checked />
-                  <span>{option}</span>
-                </label>
-              ))
-            }
-          </div>
-        </details>
-
-        <details class="facet">
-          <summary>Communication Method</summary>
-          <div class="facet-options">
-            {
-              filterOptions.types.map((option) => (
-                <label>
-                  <input type="checkbox" data-filter-group="type" value={option} checked />
-                  <span>{option}</span>
-                </label>
-              ))
-            }
-          </div>
-        </details>
-
-        <details class="facet">
-          <summary>Category</summary>
-          <div class="facet-options">
-            {
-              filterOptions.categories.map((option) => (
-                <label>
-                  <input type="checkbox" data-filter-group="category" value={option} checked />
-                  <span>{categoryLabel(option)}</span>
-                </label>
-              ))
-            }
-          </div>
-        </details>
+        {
+          facetGroups.map(({ title, filterGroup, options }) => (
+            <details class="facet">
+              <summary>{title}</summary>
+              <div class="facet-options">
+                {options.map((option) => (
+                  <label>
+                    <input type="checkbox" data-filter-group={filterGroup} value={option} checked />
+                    <span>{filterGroup === 'category' ? categoryLabel(option) : option}</span>
+                  </label>
+                ))}
+              </div>
+            </details>
+          ))
+        }
       </div>
 
       <div class="filter-actions">
@@ -148,10 +90,7 @@ const description =
       {
         messages.map((message) => (
           <article
-            class:list={[
-              'message-card',
-              message.categories[0] && `message-card-${message.categories[0].toLowerCase()}`,
-            ]}
+            class="message-card"
             data-message-card
             data-search={searchText(message)}
             data-encoder={message.messageEncoder}
@@ -172,7 +111,7 @@ const description =
               <div class="tag-row" aria-label="Categories">
                 {message.categories.map((category) => (
                   <a
-                    class:list={['tag', `tag-${category.toLowerCase()}`]}
+                    class="tag"
                     href={categoryHref(category)}
                     title={categoryLabel(category)}
                     aria-label={`Read about ${categoryLabel(category)}`}
@@ -308,6 +247,9 @@ const description =
     }
 
     catalogue?.addEventListener('input', applyFilters);
+    catalogue?.querySelector('[data-filters]')?.addEventListener('submit', (event) => {
+      event.preventDefault();
+    });
     selectAllButton?.addEventListener('click', () => setAllFilters(true));
     resetButton?.addEventListener('click', () => {
       searchInput.value = '';

@@ -61,6 +61,10 @@ html:root[data-theme='light'] {
 	--uw-invert-icon: brightness(0) invert(0.86);
 }
 
+html {
+	scrollbar-gutter: stable;
+}
+
 body {
 	background: var(--uw-page-grid), var(--sl-color-bg);
 	color: var(--uw-text);
@@ -112,12 +116,12 @@ body {
 	z-index: 1;
 }
 
-.sidebar-pane {
-	border-right: 1px solid var(--uw-border);
+.header .social-icons::after {
+	content: none;
 }
 
-.right-sidebar-panel {
-	border-left: 0;
+.sidebar-pane {
+	border-right: 1px solid var(--uw-border);
 }
 
 .top-level a,
@@ -126,6 +130,10 @@ body {
 	border-radius: 0;
 	color: var(--uw-text);
 	font-weight: 700;
+}
+
+.top-level a,
+.pagination-links a {
 	text-transform: uppercase;
 }
 
@@ -159,8 +167,7 @@ starlight-menu-button button {
 
 .catalogue-page,
 .detail-page,
-.about-page,
-.source-page {
+.about-page {
 	display: grid;
 	gap: 1.25rem;
 }
@@ -206,8 +213,7 @@ starlight-menu-button button {
 .premise-box,
 .detail-list > div,
 .about-subsection,
-.citation-grid > article,
-.source-panel {
+.citation-grid > article {
 	border: 1px solid var(--uw-border);
 	border-radius: 0;
 	background: var(--uw-surface);
@@ -413,7 +419,6 @@ starlight-menu-button button {
 }
 
 .message-card {
-	--card-accent: var(--uw-text);
 	border-width: 1px;
 	display: flex;
 	flex-direction: column;
@@ -432,54 +437,6 @@ starlight-menu-button button {
 .message-card:hover {
 	box-shadow: 5px 5px 0 var(--uw-border);
 	transform: translate(-2px, -2px);
-}
-
-.message-card-co,
-.tag-co {
-	--card-accent: var(--uw-text);
-	--tag-color: var(--uw-text);
-}
-
-.message-card-ee,
-.tag-ee {
-	--card-accent: var(--uw-text);
-	--tag-color: var(--uw-text);
-}
-
-.message-card-ec,
-.tag-ec {
-	--card-accent: var(--uw-text);
-	--tag-color: var(--uw-text);
-}
-
-.message-card-ecm,
-.tag-ecm {
-	--card-accent: var(--uw-text);
-	--tag-color: var(--uw-text);
-}
-
-.message-card-np,
-.tag-np {
-	--card-accent: var(--uw-text);
-	--tag-color: var(--uw-text);
-}
-
-.message-card-se,
-.tag-se {
-	--card-accent: var(--uw-text);
-	--tag-color: var(--uw-text);
-}
-
-.message-card-ws,
-.tag-ws {
-	--card-accent: var(--uw-text);
-	--tag-color: var(--uw-text);
-}
-
-.message-card-qi,
-.tag-qi {
-	--card-accent: var(--uw-text);
-	--tag-color: var(--uw-text);
 }
 
 .message-card-meta {
@@ -750,16 +707,14 @@ starlight-menu-button button {
 	margin: 0 0 0.75rem;
 }
 
-.about-section a,
-.source-panel a {
+.about-section a {
 	color: var(--uw-text);
 	font-weight: 700;
 	text-decoration: underline;
 	text-underline-offset: 0.16em;
 }
 
-.about-section a:hover,
-.source-panel a:hover {
+.about-section a:hover {
 	background: var(--uw-text);
 	color: var(--uw-surface);
 	text-decoration: none;
@@ -910,42 +865,10 @@ starlight-menu-button button {
 	white-space: pre-wrap;
 }
 
-.source-panel {
-	min-width: 0;
-	padding: 1rem;
-}
-
-.source-panel h2 {
-	border-bottom: 1px solid var(--uw-border);
-	border-left: 0;
-	color: var(--uw-text);
-	font-size: 1.08rem;
-	line-height: 1.3;
-	margin: 0 0 0.6rem;
-	padding: 0 0 0.55rem;
-	text-transform: uppercase;
-}
-
-.source-panel p {
-	color: var(--uw-text);
-	line-height: 1.68;
-	margin: 0;
-}
-
-.source-panel code {
-	background: var(--uw-surface-muted);
-	border: 1px solid var(--uw-border);
-	border-radius: 0;
-	color: var(--uw-text);
-	font-size: 0.92em;
-	padding: 0.08rem 0.28rem;
-}
-
 starlight-toc h2,
 mobile-starlight-toc summary {
 	color: var(--uw-text);
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 @media (max-width: 72rem) {
@@ -955,10 +878,32 @@ mobile-starlight-toc summary {
 }
 
 @media (min-width: 72rem) {
-	.right-sidebar {
-		top: var(--sl-nav-height);
+	:root[data-has-sidebar][data-has-toc] .right-sidebar-container {
+		flex: 0 0 var(--sl-sidebar-width);
+		width: var(--sl-sidebar-width);
+	}
+
+	:root[data-has-sidebar][data-has-toc] .right-sidebar {
+		background: var(--uw-surface);
+		border-inline-start: 1px solid var(--uw-border);
 		height: calc(100vh - var(--sl-nav-height));
 		padding-top: 0;
+		top: var(--sl-nav-height);
+		width: var(--sl-sidebar-width);
+	}
+
+	:root[data-has-sidebar][data-has-toc] .right-sidebar-panel {
+		padding: 1rem var(--sl-sidebar-pad-x);
+	}
+
+	:root[data-has-sidebar][data-has-toc] .right-sidebar-panel .sl-container {
+		max-width: none;
+		width: auto;
+	}
+
+	:root[data-has-sidebar][data-has-toc] .main-pane {
+		--sl-content-margin-inline: auto;
+		width: calc(100% - var(--sl-sidebar-width));
 	}
 }
 
@@ -1001,8 +946,7 @@ mobile-starlight-toc summary {
 	.premise-box,
 	.detail-list > div,
 	.about-subsection,
-	.citation-grid > article,
-	.source-panel {
+	.citation-grid > article {
 		padding: 0.85rem;
 	}
 

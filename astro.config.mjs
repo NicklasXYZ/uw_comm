@@ -14,6 +14,10 @@ export default defineConfig({
 				alt: 'Underwater Communication'
 			},
 			pagefind: false,
+			tableOfContents: {
+				minHeadingLevel: 2,
+				maxHeadingLevel: 2
+			},
 			customCss: ['./src/styles/global.css'],
 			components: {
 				ThemeProvider: './src/components/ThemeProvider.astro',
@@ -22,7 +26,7 @@ export default defineConfig({
 			sidebar: [
 				{ label: 'Catalogue', link: '/' },
 				{ label: 'About', link: '/about/' },
-				{ slug: 'source-data' }
+				{ label: 'Source Data', link: '/source-data/' }
 			],
 			social: [
 				{

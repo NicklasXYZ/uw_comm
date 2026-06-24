@@ -41,6 +41,7 @@ const detailRows = (
   frontmatter={{
     title,
     description: message.meaning || message.description || message.premise || title,
+    tableOfContents: false,
   }}
 >
   <article class="detail-page not-content">
@@ -56,7 +57,7 @@ const detailRows = (
           </a>
           {message.categories.map((category) => (
             <a
-              class:list={['tag', `tag-${category.toLowerCase()}`]}
+              class="tag"
               href={categoryHref(category)}
               title={categoryLabel(category)}
             >

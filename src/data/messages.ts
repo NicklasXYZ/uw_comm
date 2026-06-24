@@ -22,7 +22,7 @@ interface MessageData {
 	updated?: string;
 }
 
-export const messageData = rawData as MessageData;
+const messageData = rawData as MessageData;
 
 export function messageTitle(message: Message): string {
 	return (
@@ -52,11 +52,11 @@ export const categories = [
 	{ abbreviation: 'QI', name: 'Quantitative Information' }
 ];
 
-export const categoryNameByAbbreviation = new Map(
+const categoryNameByAbbreviation = new Map(
 	categories.map((category) => [category.abbreviation, category.name])
 );
 
-export function uniqueValues(selector: (message: Message) => string): string[] {
+function uniqueValues(selector: (message: Message) => string): string[] {
 	return [...new Set(messages.map(selector).filter(Boolean))].sort((a, b) =>
 		a.localeCompare(b, 'en', { sensitivity: 'base' })
 	);
@@ -70,10 +70,6 @@ export const filterOptions = {
 	types: uniqueValues((message) => message.type),
 	categories: categories.map((category) => category.abbreviation)
 };
-
-export function getMessageById(id: string): Message | undefined {
-	return messages.find((message) => message.id === id);
-}
 
 export function asList(value: string | string[] | undefined): string[] {
 	if (!value) return [];

@@ -6,7 +6,6 @@ import {
   bibliography,
   citationAPA,
   citationBibtex,
-  type AboutSection,
 } from '../data/about';
 
 const headings = aboutSections
@@ -16,9 +15,6 @@ const headings = aboutSections
     { depth: 2, slug: 'citing-this-website', text: 'Citing This Website' },
     { depth: 2, slug: 'website-source-code', text: 'Website Source Code' },
   ]);
-
-const sectionHasVisuals = (section: AboutSection) =>
-  section.figure || section.subsections?.some((subsection) => subsection.icon);
 ---
 
 <StarlightPage
@@ -32,7 +28,7 @@ const sectionHasVisuals = (section: AboutSection) =>
   <div class="about-page not-content">
     {
       aboutSections.map((section) => (
-        <section class:list={['about-section', sectionHasVisuals(section) && 'with-visuals']}>
+        <section class="about-section">
           <h2 id={slugify(section.title)}>{section.title}</h2>
           {section.body?.map((paragraph) => <p>{paragraph}</p>)}
 
@@ -107,11 +103,11 @@ const sectionHasVisuals = (section: AboutSection) =>
       <h2 id="citing-this-website">Citing This Website</h2>
       <div class="citation-grid">
         <article>
-          <h3>APA</h3>
+          <h3 id="apa">APA</h3>
           <pre><code>{citationAPA}</code></pre>
         </article>
         <article>
-          <h3>BibTeX</h3>
+          <h3 id="bibtex">BibTeX</h3>
           <pre><code>{citationBibtex}</code></pre>
         </article>
       </div>
